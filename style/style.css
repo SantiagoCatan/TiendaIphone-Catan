@@ -139,6 +139,21 @@ section.miniBanners{
     margin: auto;
     padding: auto;
 }  
+
+.listas ul li:hover{
+    transform: scale(1.5);
+}
+
+.registro:hover{
+    transform: scale(1.5);
+}
+
+.carrito:hover{
+    transform: scale(1.5);
+}
+
+
+
 /*/redes/*/
 section.redes{
     display:grid ;
@@ -174,6 +189,12 @@ section.redes{
     border: 0.5em double black;
 
 }
+
+.redes ul li:hover{
+    transform: scale(1.5);
+}
+
+
 /*/ footer/*/
 footer{
     display: grid;
@@ -341,6 +362,12 @@ section.cabeceraMain{
     font: bolder;
     text-align: center;
 }
+
+.cabeceraSectores  ul li:hover{
+    transform: scale(1.25);
+}
+
+/*/ iphones/*/
 
 section.iphones{
     display:grid ;

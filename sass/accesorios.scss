@@ -1,0 +1,147 @@
+/*/accessorios/*/
+.airpods2, .airpods3, .airpodsMax {
+    display: grid;
+    grid-template-columns: 40fr 15fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+  }
+  
+  .AccessoriosMain {
+    display: grid;
+    img {
+        height: 500px;
+        width: 500px;
+        border: 0.5em solid black;
+      }
+      h1 {
+        font-size: 10em;
+        font-weight: normal;
+      }
+      H2 {
+        font-size: 1em;
+        font-weight: bolder;
+      }
+      ul li {
+        font-size: 2cm;
+        font-weight: bolder;
+        list-style-type: disc;
+        text-align: justify;
+        margin-left: 2em;
+      }
+  }
+  
+  .compra a img {
+    height: 100px;
+    width: 100px;
+    border: 0.5em solid black;
+  }
+  
+  
+
+  
+  section.fundas {
+    display: grid;
+  }
+  
+  section.Vidrios {
+    display: grid;
+  }
+  
+  .fundas h1, .vidrios h1 {
+    font-size: 1em;
+    font-weight: bolder;
+  }
+
+
+
+  /*/Redes/*/
+section.redes{
+  display:grid ;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding: 2em;
+  h1{
+      text-align: center;
+      font-size: 5em;
+      margin-bottom: 1em;
+      font-weight: bolder;  
+  
+  }
+  ul{
+      display: flex;
+      flex-flow: row wrap;
+      list-style-type: none;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      a {
+          width:5em; 
+          height:3em;
+          padding: 2em;
+      }
+      
+  
+  }
+  img {
+      width: 300px ;
+      height: 100px;
+      border: 0.5em double black;
+  
+  }
+  .redes ul li:hover{
+      transform: scale(1.5);
+  }
+  
+}
+
+
+/*/footer /*/
+
+.footer{
+  display: grid;
+  grid-template-rows: 1fr;
+  padding: 2em;
+  background-color: $fondos;
+  justify-items: center;
+  
+  h1{
+      text-align: justify;
+      font-size:1em ;
+      font-weight:bolder ;
+  
+
+  img {
+      height:10em  ;
+      width:10em ;
+  }
+}
+}
+  
+  .AccessoriosMain {
+    grid-area: AccessoriosMain;
+  }
+  
+  .fundas {
+    grid-area: fundas;
+  }
+  
+  .Vidrios {
+    grid-area: vidrios;
+  }
+  
+  .redes {
+    grid-area: redes;
+  }
+  
+  .footer {
+    grid-area: footer;
+  }
+  
+  .AllAccesorios {
+    background-color: white;
+    margin-top: 1.5em;
+    display: grid;
+    gap: 166px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "RC" "cabecera" "AccessoriosMain" "fundas" "vidrios " "redes" "footer";
+  }

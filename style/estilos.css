@@ -1,8 +1,775 @@
-@import "https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;300&family=Roboto:ital,wght@0,100;0,300;1,700&display=swap";
-@import "accesorios.scss";
-@import "Index.scss";
-@import "_iphone.scss";
-@import "ipads.scss";
-@import "Registro.scss";
-@import "servicios.scss";
-/*# sourceMappingURL=estilos.css.map */
+@import "https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;300&family=Roboto:ital,wght@0,100;0,300;1,700&display=swap"; /*/accessorios/*/
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;300&family=Roboto:ital,wght@0,100;0,300;1,700&display=swap");
+.airpods2, .airpods3, .airpodsMax {
+  display: grid;
+  grid-template-columns: 40fr 15fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+}
+
+.AccessoriosMain {
+  display: grid;
+}
+.AccessoriosMain img {
+  height: 500px;
+  width: 500px;
+  border: 0.5em solid black;
+}
+.AccessoriosMain h1 {
+  font-size: 10em;
+  font-weight: normal;
+}
+.AccessoriosMain H2 {
+  font-size: 1em;
+  font-weight: bolder;
+}
+.AccessoriosMain ul li {
+  font-size: 2cm;
+  font-weight: bolder;
+  list-style-type: disc;
+  text-align: justify;
+  margin-left: 2em;
+}
+
+.compra a img {
+  height: 100px;
+  width: 100px;
+  border: 0.5em solid black;
+}
+
+section.fundas {
+  display: grid;
+}
+
+section.Vidrios {
+  display: grid;
+}
+
+.fundas h1, .vidrios h1 {
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+/*/Redes/*/
+section.redes {
+  display: grid;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding: 2em;
+}
+section.redes h1 {
+  text-align: center;
+  font-size: 5em;
+  margin-bottom: 1em;
+  font-weight: bolder;
+}
+section.redes ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+section.redes ul a {
+  width: 5em;
+  height: 3em;
+  padding: 2em;
+}
+section.redes img {
+  width: 300px;
+  height: 100px;
+  border: 0.5em double black;
+}
+section.redes .redes ul li:hover {
+  transform: scale(1.5);
+}
+
+/*/footer /*/
+.footer {
+  display: grid;
+  grid-template-rows: 1fr;
+  padding: 2em;
+  background-color: slategrey;
+  justify-items: center;
+}
+.footer h1 {
+  text-align: justify;
+  font-size: 1em;
+  font-weight: bolder;
+}
+.footer h1 img {
+  height: 10em;
+  width: 10em;
+}
+
+.AccessoriosMain {
+  grid-area: AccessoriosMain;
+}
+
+.fundas {
+  grid-area: fundas;
+}
+
+.Vidrios {
+  grid-area: vidrios;
+}
+
+.redes {
+  grid-area: redes;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.AllAccesorios {
+  background-color: white;
+  margin-top: 1.5em;
+  display: grid;
+  gap: 166px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "RC" "cabecera" "AccessoriosMain" "fundas" "vidrios " "redes" "footer";
+}
+
+.AllIndex {
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+  min-width: 100%;
+}
+
+header {
+  display: grid;
+  background-color: blueviolet;
+  background-size: cover;
+  padding: 7em;
+  margin-bottom: 1em;
+}
+header .cabecera {
+  display: flex;
+}
+header .cabecera .logo {
+  display: flex;
+}
+header .cabecera .logo img {
+  height: 7em;
+  width: 7em;
+}
+header .cabecera h1 {
+  display: flex;
+  color: black;
+  text-align: center;
+  font-style: italic;
+  font-size: 7em;
+}
+
+/*/ index/*/
+section.menuPricipal {
+  display: grid;
+  margin-top: 15em;
+  margin-bottom: 8em;
+}
+section.menuPricipal .tituloMenu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: space-between;
+  padding: 2em;
+  font-weight: lighter;
+  text-decoration: none;
+}
+section.menuPricipal .tituloMenu h1 {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 8em;
+}
+section.menuPricipal .tituloMenuprincipal {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: auto;
+}
+section.menuPricipal .tituloMenuprincipal .registro {
+  padding: 1em;
+  margin: 1em;
+}
+section.menuPricipal .tituloMenuprincipal .registro img {
+  width: 7em;
+  height: 7em;
+  border: 1em double black;
+}
+section.menuPricipal .tituloMenuprincipal .registro:hover {
+  transform: scale(1.5);
+}
+section.menuPricipal .tituloMenuprincipal .carrito {
+  padding: 1em;
+  margin: 1em;
+}
+section.menuPricipal .tituloMenuprincipal .carrito img {
+  width: 7em;
+  height: 7em;
+  border: 1em double black;
+}
+section.menuPricipal .tituloMenuprincipal carrito:hover {
+  transform: scale(1.5);
+}
+
+/*/nav/*/
+.listas {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25fr;
+  gap: 15px;
+  justify-items: center;
+}
+.listas ul li {
+  margin-top: 1cm;
+  margin-bottom: 2cm;
+  list-style-type: none;
+}
+.listas ul li img {
+  width: 90%;
+  height: 20em;
+  border: 1em solid black;
+}
+.listas .listas ul li:hover {
+  transform: scale(1.5);
+}
+
+section.miniBanners {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 33em 37em;
+  padding: 2em;
+}
+section.miniBanners .metodoPago {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1cm;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+section.miniBanners .metodoPago img {
+  padding: 0.5em;
+  height: 7em;
+  width: 15em;
+}
+section.miniBanners .metodoPago h2 {
+  font-size: 3em;
+  text-align: justify;
+}
+
+.contacto {
+  display: flex;
+  flex-flow: row wrap;
+  border: 0.25em double black;
+  padding: auto;
+  margin: auto;
+  font-size: 1cm;
+  text-align: right;
+  font-weight: bolder;
+}
+.contacto form fieldset {
+  font-size: 2cm;
+  margin: auto;
+  padding: auto;
+}
+
+/*/redes/*/
+section.redes {
+  display: grid;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding: 2em;
+}
+section.redes h1 {
+  text-align: center;
+  font-size: 5em;
+  margin-bottom: 1em;
+  font-weight: bolder;
+}
+section.redes ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+section.redes ul a {
+  width: 5em;
+  height: 3em;
+  padding: 2em;
+}
+section.redes img {
+  width: 300px;
+  height: 100px;
+  border: 0.5em double black;
+}
+section.redes .redes ul li:hover {
+  transform: scale(1.5);
+}
+
+/*/footer /*/
+.footer {
+  display: grid;
+  grid-template-rows: 1fr;
+  padding: 2em;
+  background-color: slategrey;
+  justify-items: center;
+}
+.footer h1 {
+  text-align: justify;
+  font-size: 1em;
+  font-weight: bolder;
+}
+.footer h1 img {
+  height: 10em;
+  width: 10em;
+}
+
+/*/declaro area en grilla /*/
+header {
+  grid-area: index;
+}
+
+.menuPricipal {
+  grid-area: menuPrincipal;
+}
+
+.listas {
+  grid-area: listas;
+}
+
+.miniBanners {
+  grid-area: miniBanners;
+}
+
+.redes {
+  grid-area: redes;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.AllIndex {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  grid-template-areas: "index" "menuPrincipal" "listas" "miniBanners" "redes" "footer";
+}
+
+.HeaderSectores {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-size: cover;
+  padding: 7em;
+  background-color: slategrey;
+}
+
+.cabecera {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.cabecera h1 {
+  color: black;
+  text-align: center;
+  font-style: normal;
+  font-size: 7em;
+}
+.cabecera .logo {
+  display: flex;
+}
+.cabecera .logo img {
+  height: 8em;
+  width: 8em;
+}
+
+.headerRC {
+  display: flex;
+  padding: 11em 18em;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.headerRC .registroSector a {
+  display: flex;
+}
+.headerRC .registroSector a img {
+  width: 5em;
+  height: 5em;
+  border: 1em double black;
+}
+.headerRC .carritoSector a {
+  display: flex;
+}
+.headerRC .carritoSector a img {
+  width: 5em;
+  height: 5em;
+  border: 1em double black;
+}
+
+section.cabeceraMain {
+  display: grid;
+  grid-template-columns: 62em;
+  grid-template-rows: 40em;
+  margin-bottom: 23em;
+  justify-items: center;
+  justify-content: center;
+}
+
+.cabeceraSectores {
+  display: flex;
+  margin-top: 37em;
+  padding: 1em;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+.cabeceraSectores li {
+  background-color: white;
+  margin-bottom: 5em;
+  margin-top: 0em;
+  border: 1em double black;
+  list-style-type: none;
+}
+.cabeceraSectores li a {
+  color: black;
+  font-size: 3em;
+  padding: 5em;
+  word-spacing: 0em;
+  text-decoration: none;
+  list-style-type: none;
+  letter-spacing: 0.5em;
+  font: bolder;
+  text-align: center;
+}
+
+.cabeceraSectores ul li:hover {
+  transform: scale(1.25);
+}
+
+/*/ iphones/*/
+section.iphones {
+  display: grid;
+  grid-area: iphones;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  padding: 0em;
+}
+section.iphones .TituloIphone {
+  display: flex;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 3em;
+  text-align: center;
+  background-color: gray;
+  padding: 0em 9em;
+  margin: 2em 3em;
+}
+section.iphones .iphone- {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.iphones .iphone- img {
+  height: 600px;
+  width: 500px;
+}
+section.iphones .iphone- .Caracteristica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0em 17em;
+}
+section.iphones .iphone- .Caracteristica h2 {
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: 4em;
+}
+section.iphones .iphone- .Caracteristica li {
+  font-size: 2em;
+  font-style: normal;
+}
+
+/*/Redes/*/
+section.redes {
+  display: grid;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding: 2em;
+}
+section.redes h1 {
+  text-align: center;
+  font-size: 5em;
+  margin-bottom: 1em;
+  font-weight: bolder;
+}
+section.redes ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+section.redes ul a {
+  width: 5em;
+  height: 3em;
+  padding: 2em;
+}
+section.redes img {
+  width: 300px;
+  height: 100px;
+  border: 0.5em double black;
+}
+section.redes .redes ul li:hover {
+  transform: scale(1.5);
+}
+
+/*/footer /*/
+.footer {
+  display: grid;
+  grid-template-rows: 1fr;
+  padding: 2em;
+  background-color: slategrey;
+  justify-items: center;
+}
+.footer h1 {
+  text-align: justify;
+  font-size: 1em;
+  font-weight: bolder;
+}
+.footer h1 img {
+  height: 10em;
+  width: 10em;
+}
+
+/*/responsive/*/
+.HeaderSectores {
+  grid-area: HeaderSectores;
+}
+
+.headerRC {
+  grid-area: RC;
+}
+
+.cabeceraMain {
+  grid-area: cabecera;
+}
+
+.iphones {
+  grid-area: iphones;
+}
+
+.redes {
+  grid-area: redes;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.Alliphone {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template: "HeaderSectores" "RC" "cabecera" "iphones" "redes" "footer";
+}
+
+/*/ipads/mac/*/
+.ipadsMac {
+  grid-area: ipadsMac;
+  display: grid;
+  margin-top: 100em;
+  margin-bottom: 20em;
+}
+
+.bannerIM img {
+  margin-top: 70em;
+  width: 1000;
+  height: 100vh;
+}
+
+.mac {
+  display: flex;
+}
+
+/*/Redes/*/
+section.redes {
+  display: grid;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding: 2em;
+}
+section.redes h1 {
+  text-align: center;
+  font-size: 5em;
+  margin-bottom: 1em;
+  font-weight: bolder;
+}
+section.redes ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+section.redes ul a {
+  width: 5em;
+  height: 3em;
+  padding: 2em;
+}
+section.redes img {
+  width: 300px;
+  height: 100px;
+  border: 0.5em double black;
+}
+section.redes .redes ul li:hover {
+  transform: scale(1.5);
+}
+
+/*/footer /*/
+.footer {
+  display: grid;
+  grid-template-rows: 1fr;
+  padding: 2em;
+  background-color: slategrey;
+  justify-items: center;
+}
+.footer h1 {
+  text-align: justify;
+  font-size: 1em;
+  font-weight: bolder;
+}
+.footer h1 img {
+  height: 10em;
+  width: 10em;
+}
+
+.envolventeMac {
+  background-color: white;
+  margin-top: 1.5em;
+  display: grid;
+  grid-template-areas: "header" "cabecera" "ipadsMac" "footer";
+}
+
+/*/Redes/*/
+section.redes {
+  display: grid;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding: 2em;
+}
+section.redes h1 {
+  text-align: center;
+  font-size: 5em;
+  margin-bottom: 1em;
+  font-weight: bolder;
+}
+section.redes ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+section.redes ul a {
+  width: 5em;
+  height: 3em;
+  padding: 2em;
+}
+section.redes img {
+  width: 300px;
+  height: 100px;
+  border: 0.5em double black;
+}
+section.redes .redes ul li:hover {
+  transform: scale(1.5);
+}
+
+/*/footer /*/
+.footer {
+  display: grid;
+  grid-template-rows: 1fr;
+  padding: 2em;
+  background-color: slategrey;
+  justify-items: center;
+}
+.footer h1 {
+  text-align: justify;
+  font-size: 1em;
+  font-weight: bolder;
+}
+.footer h1 img {
+  height: 10em;
+  width: 10em;
+}
+
+/*/Redes/*/
+section.redes {
+  display: grid;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding: 2em;
+}
+section.redes h1 {
+  text-align: center;
+  font-size: 5em;
+  margin-bottom: 1em;
+  font-weight: bolder;
+}
+section.redes ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+section.redes ul a {
+  width: 5em;
+  height: 3em;
+  padding: 2em;
+}
+section.redes img {
+  width: 300px;
+  height: 100px;
+  border: 0.5em double black;
+}
+section.redes .redes ul li:hover {
+  transform: scale(1.5);
+}
+
+/*/footer /*/
+.footer {
+  display: grid;
+  grid-template-rows: 1fr;
+  padding: 2em;
+  background-color: slategrey;
+  justify-items: center;
+}
+.footer h1 {
+  text-align: justify;
+  font-size: 1em;
+  font-weight: bolder;
+}
+.footer h1 img {
+  height: 10em;
+  width: 10em;
+}/*# sourceMappingURL=estilos.css.map */

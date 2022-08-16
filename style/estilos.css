@@ -281,7 +281,7 @@ section.redes h1 {
   margin-bottom: 1em;
   font-weight: bolder;
 }
-section.redes .ListasRedes {
+section.redes .ul {
   display: flex;
   flex-flow: row wrap;
   list-style-type: none;
@@ -289,12 +289,15 @@ section.redes .ListasRedes {
   flex-direction: row;
   flex-wrap: nowrap;
 }
-section.redes .ListasRedes a {
+section.redes .ul li:hover {
+  transform: scale(1.5);
+}
+section.redes .ul li a {
   width: 5em;
   height: 3em;
   padding: 2em;
 }
-section.redes .ListasRedes a img {
+section.redes .ul li a img {
   width: 300px;
   height: 100px;
   border: 0.5em double black;

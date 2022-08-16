@@ -111,7 +111,6 @@ header {
             }
           }  
   }
- 
   section.miniBanners {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -159,14 +158,19 @@ header {
       margin-bottom: 1em;
       font-weight: bolder;  
         }
-    .ListasRedes{
+    .ul{
         display: flex;
         flex-flow: row wrap;
         list-style-type: none;
         justify-content: center;
         flex-direction: row;
         flex-wrap: nowrap;
-        a {
+        li{
+
+          &:hover{
+            transform: scale(1.5);
+        }
+          a {
             width:5em; 
             height:3em;
             padding: 2em;
@@ -176,6 +180,8 @@ header {
               border: 0.5em double black;
               }
             } 
+        }
+        
           }
         }
     

@@ -303,10 +303,6 @@ section.redes .ul li a img {
   border: 0.5em double black;
 }
 
-ul li:hover {
-  transform: scale(1.5);
-}
-
 /*/footer /*/
 .footer {
   display: grid;

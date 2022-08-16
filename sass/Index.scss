@@ -172,15 +172,16 @@ header {
             width:5em; 
             height:3em;
             padding: 2em;
+            img {
+              width: 300px ;
+              height: 100px;
+              border: 0.5em double black;
+          
+          }
         }
     }
-    img {
-        width: 300px ;
-        height: 100px;
-        border: 0.5em double black;
     
-    }
-    .redes ul li:hover{
+    li:hover{
         transform: scale(1.5);
     }
     

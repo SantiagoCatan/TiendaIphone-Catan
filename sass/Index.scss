@@ -169,6 +169,7 @@ header {
         justify-content: center;
         flex-direction: row;
         flex-wrap: nowrap;
+        li{
         a {
             width:5em; 
             height:3em;
@@ -178,9 +179,10 @@ header {
               height: 100px;
               border: 0.5em double black;
           
+        
+              }
+            } 
           }
-        }
-    }
     
    ul li:hover{
         transform: scale(1.5);

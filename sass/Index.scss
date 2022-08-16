@@ -154,14 +154,14 @@ header {
     margin-top: 2em;
     margin-bottom: 1em;
     padding: 2em;
-
     h1{
-        text-align: center;
-        font-size: 5em;
-        margin-bottom: 1em;
-        font-weight: bolder;  
-    
-    }
+      text-align: center;
+      font-size: 5em;
+      margin-bottom: 1em;
+      font-weight: bolder;  
+        }
+    .ListasRedes{
+
     ul{
         display: flex;
         flex-flow: row wrap;
@@ -169,7 +169,6 @@ header {
         justify-content: center;
         flex-direction: row;
         flex-wrap: nowrap;
-        li{
         a {
             width:5em; 
             height:3em;
@@ -183,6 +182,7 @@ header {
               }
             } 
           }
+        }
     
    ul li:hover{
         transform: scale(1.5);

@@ -218,34 +218,35 @@ section.menuPricipal .tituloMenuprincipal carrito:hover {
   gap: 15px;
   justify-items: center;
 }
-.listas ul li {
+.listas ul {
   margin-top: 1cm;
   margin-bottom: 2cm;
+}
+.listas ul li {
   list-style-type: none;
 }
-.listas ul li img {
+.listas ul li:hover {
+  transform: scale(1.5);
+}
+.listas ul li a img {
   width: 90%;
   height: 20em;
   border: 1em solid black;
-}
-.listas .listas ul li:hover {
-  transform: scale(1.5);
 }
 
 section.miniBanners {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
-  padding: 2em;
 }
 section.miniBanners .metodoPago {
   display: flex;
   flex-flow: row wrap;
   font-size: 1cm;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
+  flex-direction: column;
   margin-bottom: 1.5em;
+  justify-content: center;
+  align-items: center;
 }
 section.miniBanners .metodoPago img {
   padding: 0.5em;
@@ -280,7 +281,7 @@ section.redes h1 {
   margin-bottom: 1em;
   font-weight: bolder;
 }
-section.redes ul {
+section.redes .ListasRedes {
   display: flex;
   flex-flow: row wrap;
   list-style-type: none;
@@ -288,17 +289,18 @@ section.redes ul {
   flex-direction: row;
   flex-wrap: nowrap;
 }
-section.redes ul a {
+section.redes .ListasRedes a {
   width: 5em;
   height: 3em;
   padding: 2em;
 }
-section.redes img {
+section.redes .ListasRedes a img {
   width: 300px;
   height: 100px;
   border: 0.5em double black;
 }
-section.redes .redes ul li:hover {
+
+ul li:hover {
   transform: scale(1.5);
 }
 
@@ -353,7 +355,6 @@ header {
   min-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 15px;
   grid-template-areas: "index index" "menuPrincipal menuPrincipal" "listas listas" "miniBanners miniBanners" "redes redes" "footer footer";
 }

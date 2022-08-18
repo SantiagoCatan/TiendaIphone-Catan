@@ -148,7 +148,7 @@ header {
   
   /*/redes/*/
   section.redes{
-    display:grid ;
+    display:flex;
     margin-top: 2em;
     margin-bottom: 1em;
     padding: 2em;
@@ -169,7 +169,7 @@ header {
           &:hover{
             transform: scale(1.5);
         }
-          a {
+          a{
             width:5em; 
             height:3em;
             padding: 2em;

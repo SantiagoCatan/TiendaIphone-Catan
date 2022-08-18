@@ -187,22 +187,17 @@ header {
 
 /*/footer /*/
 .footer{
-    display: grid;
-    grid-template-rows: 1fr;
+    display: flex;
     padding: 2em;
     background-color: $fondos;
-    justify-items: center;
-    
     h1{
         text-align: justify;
         font-size:1em ;
         font-weight:bolder ;
-    
-
-    img {
-        height:10em  ;
-        width:10em ;
-    }
+        img {
+              height:10em  ;
+               width:10em ;
+            }
 }
 }
   

@@ -208,6 +208,9 @@ header {
   .menuPricipal {
     grid-area: menuPrincipal;
   }
+  .CarruselMain{
+    grid-area: CarruselMain;
+  }
   .listas {
     grid-area: listas;
   }
@@ -233,6 +236,7 @@ header {
        grid-template-areas:
                         "index index" 
                         "menuPrincipal menuPrincipal"
+                        "CarruselMain CarruselMain"
                         "listas listas" 
                         "miniBanners miniBanners" 
                         "redes redes"

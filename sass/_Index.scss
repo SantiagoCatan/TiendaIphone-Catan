@@ -85,9 +85,7 @@ header {
     
       }
   }
-  .CarruselMain{
-    display:  grid;
-  }
+
   /*/nav/*/
   .listas {
     display: grid;
@@ -190,8 +188,15 @@ header {
 /*/footer /*/
 .footer{
     display: flex;
-    padding: 2em;
     background-color: $fondos;
+    .ubicacionC{
+
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0em 0em;
+    }
     h1{
         text-align: justify;
         font-size:1em ;
@@ -231,14 +236,13 @@ header {
       color: black;
       font-weight: bolder;
       font-family: "Roboto", sans-serif;
-      
-      display: grid;
       grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr ;
        gap: 15px;
        grid-template-areas:
                         "index index" 
-                        "menuPrincipal menuPrincipal"
                         "CarruselMain CarruselMain"
+                        "menuPrincipal menuPrincipal"
                         "listas listas" 
                         "miniBanners miniBanners" 
                         "redes redes"

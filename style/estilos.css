@@ -270,7 +270,7 @@ section.miniBanners .contacto {
 
 /*/redes/*/
 section.redes {
-  display: grid;
+  display: flex;
   margin-top: 2em;
   margin-bottom: 1em;
   padding: 2em;
@@ -281,7 +281,7 @@ section.redes h1 {
   margin-bottom: 1em;
   font-weight: bolder;
 }
-section.redes .ul {
+section.redes ul {
   display: flex;
   flex-flow: row wrap;
   list-style-type: none;
@@ -289,15 +289,15 @@ section.redes .ul {
   flex-direction: row;
   flex-wrap: nowrap;
 }
-section.redes .ul li:hover {
+section.redes ul li:hover {
   transform: scale(1.5);
 }
-section.redes .ul li a {
+section.redes ul li a {
   width: 5em;
   height: 3em;
   padding: 2em;
 }
-section.redes .ul li a img {
+section.redes ul li a img {
   width: 300px;
   height: 100px;
   border: 0.5em double black;
@@ -305,11 +305,15 @@ section.redes .ul li a img {
 
 /*/footer /*/
 .footer {
-  display: grid;
-  grid-template-rows: 1fr;
-  padding: 2em;
+  display: flex;
   background-color: slategrey;
-  justify-items: center;
+}
+.footer .ubicacionC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 0em 0em;
 }
 .footer h1 {
   text-align: justify;
@@ -328,6 +332,10 @@ header {
 
 .menuPricipal {
   grid-area: menuPrincipal;
+}
+
+.CarruselMain {
+  grid-area: CarruselMain;
 }
 
 .listas {
@@ -351,10 +359,10 @@ header {
   color: black;
   font-weight: bolder;
   font-family: "Roboto", sans-serif;
-  display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 15px;
-  grid-template-areas: "index index" "menuPrincipal menuPrincipal" "listas listas" "miniBanners miniBanners" "redes redes" "footer footer";
+  grid-template-areas: "index index" "CarruselMain CarruselMain" "menuPrincipal menuPrincipal" "listas listas" "miniBanners miniBanners" "redes redes" "footer footer";
 }
 
 .HeaderSectores {

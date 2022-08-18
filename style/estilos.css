@@ -351,7 +351,6 @@ header {
   color: black;
   font-weight: bolder;
   font-family: "Roboto", sans-serif;
-  min-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;

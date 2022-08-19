@@ -1,6 +1,11 @@
 
 
 /*/accessorios/*/
+
+
+
+
+
 .airpods2, .airpods3, .airpodsMax {
     display: grid;
     grid-template-columns: 40fr 15fr;
@@ -140,10 +145,43 @@ section.redes{
   }
   
   .AllAccesorios {
-    background-color: white;
-    margin-top: 1.5em;
+    background-color: beige;
+    height: 90%;
+    width: 100vh;
+    color: black;
+    font-weight: bolder;
+    font-family: "Roboto", sans-serif;
     display: grid;
-    gap: 166px;
     grid-template-columns: 1fr;
-    grid-template-areas: "header" "RC" "cabecera" "AccessoriosMain" "fundas" "vidrios " "redes" "footer";
+    gap: 20px;
+    grid-template-areas: "header" 
+                          "RC" 
+                          "cabecera"
+                           "AccessoriosMain"
+                          "fundas"
+                          "vidrios "
+                         "redes" 
+                          "footer";
   }
+
+
+
+
+@media screen and (min-width: 480px){
+  
+
+  .AllAccesorios {
+      background-color: aquamarine;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr ;
+       gap: 10px;
+       grid-template-areas: "header" 
+       "RC" 
+       "cabecera"
+        "AccessoriosMain"
+       "fundas"
+       "vidrios "
+      "redes" 
+       "footer";
+    }
+}

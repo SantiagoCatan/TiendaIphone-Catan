@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;300&family=Roboto:ital,wght@0,100;0,300;1,700&display=swap");
-$colorDeLetra:black;
-$fondos:slategrey;
+
 
 .HeaderSectores{
     display: grid;
@@ -36,7 +34,7 @@ $fondos:slategrey;
 
 .headerRC{
     display: flex;
-    padding: 11em 18em;
+    padding: 4em  18em;
     justify-items: center;
     justify-content: space-between;
     align-items: center;
@@ -63,8 +61,8 @@ $fondos:slategrey;
 
 section.cabeceraMain{
     display: grid;
-    grid-template-columns: 62em;
-    grid-template-rows: 40em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90%;
     margin-bottom: 23em;
     justify-items: center;
     justify-content: center;
@@ -72,7 +70,7 @@ section.cabeceraMain{
     .cabeceraSectores{
         display: flex;
     
-        margin-top:37em;
+        margin-top: 9em;
         padding: 1em;
         flex-direction: column;
         justify-content: center;
@@ -86,9 +84,8 @@ section.cabeceraMain{
             list-style-type: none;
             a{
                 color: $colorDeLetra;
-                font-size: 3em;
-                padding: 5em;
-                word-spacing: 0em;
+                font-size: 4em;
+                padding: 0em 4em 0em 4em;
                 text-decoration: none;
                 list-style-type: none;
                 letter-spacing: 0.5em;
@@ -245,11 +242,17 @@ section.redes{
     grid-area: footer;
 }
 
-.Alliphone{
-    display: grid;
-    grid-template-columns:1fr  ;
-    grid-template-rows:1fr;
-    grid-template: 
+.AllIphone{
+    background-color: beige;
+      height: 90%;
+      width: 100vh;
+      color: black;
+      font-weight: bolder;
+      font-family: "Roboto", sans-serif;
+      display: grid;
+      grid-template-columns: 1fr;
+    gap: 20px;
+     grid-template: 
                     "HeaderSectores"
                     "RC"
                     "cabecera"
@@ -259,4 +262,24 @@ section.redes{
 
 
 
+}
+
+
+
+@media screen and (min-width: 480px){
+  
+
+    .AllIndex {
+      background-color: aquamarine;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr ;
+       gap: 10px;
+       grid-template: 
+                    "HeaderSectores"
+                    "RC"
+                    "cabecera"
+                    "iphones"
+                    "redes"
+                    "footer";
+    }
 }

@@ -1,33 +1,50 @@
 @import "https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;300&family=Roboto:ital,wght@0,100;0,300;1,700&display=swap"; /*/accessorios/*/
-.airpods2, .airpods3, .airpodsMax {
-  display: grid;
-  grid-template-columns: 40fr 15fr;
-  grid-template-rows: 1fr 1fr;
-  align-items: center;
-}
-
 .AccessoriosMain {
   display: grid;
+  grid-area: iphones;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  padding: 0em;
 }
-.AccessoriosMain img {
-  height: 500px;
-  width: 500px;
-  border: 0.5em solid black;
+.AccessoriosMain .Titulos {
+  display: flex;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 1em;
+  text-align: center;
+  background-color: gray;
+  padding: 0em 9em;
+  margin: 1em 1em;
 }
-.AccessoriosMain h1 {
+.AccessoriosMain .Titulos h1 {
   font-size: 10em;
   font-weight: normal;
 }
-.AccessoriosMain H2 {
-  font-size: 1em;
-  font-weight: bolder;
+.AccessoriosMain .airpods {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.AccessoriosMain ul li {
-  font-size: 2cm;
+.AccessoriosMain .airpods img {
+  height: 600px;
+  width: 400px;
+  border: 0.5em solid black;
+}
+.AccessoriosMain .airpods .Caracteristica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0em 17em;
+}
+.AccessoriosMain .airpods .Caracteristica h2 {
+  font-style: oblique;
   font-weight: bolder;
-  list-style-type: disc;
-  text-align: justify;
-  margin-left: 2em;
+  font-size: 4em;
+}
+.AccessoriosMain .airpods .Caracteristica li {
+  font-size: 2em;
+  font-style: normal;
 }
 
 .compra a img {
@@ -102,6 +119,14 @@ section.redes .redes ul li:hover {
   width: 10em;
 }
 
+.HeaderSectores {
+  grid-area: HeaderSectores;
+}
+
+.RC {
+  grid-area: RC;
+}
+
 .AccessoriosMain {
   grid-area: AccessoriosMain;
 }
@@ -132,7 +157,7 @@ section.redes .redes ul li:hover {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  grid-template-areas: "header" "RC" "cabecera" "AccessoriosMain" "fundas" "vidrios " "redes" "footer";
+  grid-template-areas: "HeaderSectores" "RC" "cabecera" "AccessoriosMain" "fundas" "vidrios " "redes" "footer";
 }
 
 @media screen and (min-width: 480px) {

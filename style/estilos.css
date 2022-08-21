@@ -394,7 +394,7 @@ header {
   grid-area: footer;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 520px) {
   .AllIndex {
     background-color: beige;
     color: black;
@@ -403,10 +403,10 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-    grid-template-areas: " index  " "CarruselMain  " "menuPrincipal  " "listas  " "miniBanners " " miniBanners" "redes  " " footer ";
+    grid-template-areas: " index  " "CarruselMain  " "menuPrincipal  " "listas  " "miniBanners " " miniBanners" "redes " " footer ";
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 975px) {
   .AllIndex {
     background-color: aquamarine;
     grid-template-columns: 1fr 1fr;

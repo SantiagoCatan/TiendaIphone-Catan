@@ -239,12 +239,11 @@ header {
     grid-area: footer;
   }
 
-  @media (min-width: 320px){
-  
-
+  @media (min-width: 520px){
   
 
   .AllIndex {
+
       background-color: beige;
 
       color: black;
@@ -260,12 +259,12 @@ header {
                         "listas  " 
                         "miniBanners "
                         " miniBanners" 
-                        "redes  "
+                        "redes "
                         " footer ";
   }
   }
 
- @media (min-width: 576px){
+ @media (min-width: 975px){
   
 
   .AllIndex {

@@ -394,19 +394,18 @@ header {
   grid-area: footer;
 }
 
-.AllIndex {
-  background-color: beige;
-  height: 90%;
-  width: 100vh;
-  color: black;
-  font-weight: bolder;
-  font-family: "Roboto", sans-serif;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  grid-template-areas: " index  " "CarruselMain  " "menuPrincipal  " "listas  " "miniBanners " " miniBanners" "redes  " " footer ";
+@media (min-width: 320px) {
+  .AllIndex {
+    background-color: beige;
+    color: black;
+    font-weight: bolder;
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    grid-template-areas: " index  " "CarruselMain  " "menuPrincipal  " "listas  " "miniBanners " " miniBanners" "redes  " " footer ";
+  }
 }
-
 @media (min-width: 576px) {
   .AllIndex {
     background-color: aquamarine;

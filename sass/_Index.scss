@@ -239,10 +239,13 @@ header {
     grid-area: footer;
   }
 
+  @media (min-width: 320px){
+  
+
+  
+
   .AllIndex {
       background-color: beige;
-      height: 90%;
-      width: 100vh;
 
       color: black;
       font-weight: bolder;
@@ -260,7 +263,7 @@ header {
                         "redes  "
                         " footer ";
   }
-
+  }
 
  @media (min-width: 576px){
   

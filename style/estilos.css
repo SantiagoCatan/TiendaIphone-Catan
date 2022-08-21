@@ -176,11 +176,21 @@ section.redes .redes ul li:hover {
   margin: 0px;
 }
 
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
 header {
-  display: grid;
+  display: flex;
   background-color: beige;
   background-size: cover;
-  padding: 7em;
+  padding: 2em;
   margin-bottom: 1em;
 }
 header .cabecera {
@@ -190,15 +200,15 @@ header .cabecera .logo {
   display: flex;
 }
 header .cabecera .logo img {
-  height: 7em;
-  width: 7em;
+  height: 4em;
+  width: 4em;
 }
 header .cabecera h1 {
   display: flex;
   color: black;
   text-align: center;
   font-style: italic;
-  font-size: 7em;
+  font-size: 3em;
 }
 
 /*carrusel*/
@@ -208,9 +218,9 @@ header .cabecera h1 {
 
 /*/ index/*/
 section.menuPricipal {
-  display: grid;
-  margin-top: 15em;
-  margin-bottom: 8em;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 section.menuPricipal .tituloMenu {
   display: flex;
@@ -224,7 +234,7 @@ section.menuPricipal .tituloMenu {
 section.menuPricipal .tituloMenu h1 {
   font-style: italic;
   font-weight: bolder;
-  font-size: 8em;
+  font-size: 3em;
 }
 section.menuPricipal .tituloMenuprincipal {
   display: flex;
@@ -239,8 +249,8 @@ section.menuPricipal .tituloMenuprincipal .registro {
   margin: 1em;
 }
 section.menuPricipal .tituloMenuprincipal .registro img {
-  width: 7em;
-  height: 7em;
+  width: 4em;
+  height: 4em;
   border: 1em double black;
 }
 section.menuPricipal .tituloMenuprincipal .registro:hover {
@@ -251,8 +261,8 @@ section.menuPricipal .tituloMenuprincipal .carrito {
   margin: 1em;
 }
 section.menuPricipal .tituloMenuprincipal .carrito img {
-  width: 7em;
-  height: 7em;
+  width: 4em;
+  height: 4em;
   border: 1em double black;
 }
 section.menuPricipal .tituloMenuprincipal carrito:hover {
@@ -261,90 +271,85 @@ section.menuPricipal .tituloMenuprincipal carrito:hover {
 
 /*/nav/*/
 .listas {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 25fr;
-  gap: 15px;
-  justify-items: center;
-}
-.listas ul {
-  margin-top: 1cm;
-  margin-bottom: 2cm;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: auto;
 }
 .listas ul li {
   list-style-type: none;
   padding: 2em;
 }
 .listas ul li:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 .listas ul li a img {
-  width: 100%;
-  height: 30em;
+  width: auto;
+  height: 15em;
   border: 1em solid black;
 }
 
 section.miniBanners {
   display: grid;
-  width: 90%;
-  padding-bottom: 27EM;
   grid-template-columns: 90%;
-  grid-template-rows: 90%;
-  border: 0.5EM SOLID rgb(15, 4, 4);
   justify-content: center;
+  align-content: center;
 }
 section.miniBanners .metodoPago {
   display: flex;
   flex-flow: row wrap;
-  font-size: 2cm;
   flex-direction: column;
-  margin-bottom: 1.5em;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5em;
 }
 section.miniBanners .metodoPago img {
-  height: 5em;
-  width: 6em;
+  height: 10em;
+  width: 13em;
   border: 0.125em solid black;
 }
 section.miniBanners .metodoPago h2 {
-  font-size: 1em;
+  font-weight: bolder;
+  font-size: 3em;
   text-align: justify;
 }
 section.miniBanners .contacto {
   display: flex;
   flex-flow: row wrap;
   border: 0.25em double black;
-  padding: auto;
-  margin: auto;
-  font-size: 1cm;
-  text-align: right;
-  font-weight: bolder;
+  justify-content: center;
+}
+section.miniBanners .contacto legend {
+  float: none;
+  width: 90%;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  font-size: calc(1.275rem + 0.3vw);
+  line-height: inherit;
 }
 
 /*/redes/*/
 section.redes {
   display: flex;
-  margin-top: 2em;
-  margin-bottom: 1em;
-  padding: 2em;
 }
 section.redes h1 {
   text-align: center;
-  font-size: 5em;
-  margin-bottom: 1em;
+  font-size: 3em;
+  margin-bottom: 2em;
   font-weight: bolder;
 }
 section.redes ul {
   display: flex;
-  flex-flow: row wrap;
   list-style-type: none;
+  flex-direction: column;
   justify-content: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  align-items: center;
+}
+section.redes ul li {
+  margin-bottom: 1em;
 }
 section.redes ul li:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 section.redes ul li a {
   width: 5em;
@@ -352,27 +357,38 @@ section.redes ul li a {
   padding: 2em;
 }
 section.redes ul li a img {
-  width: 300px;
-  height: 100px;
+  width: 100px;
+  height: 8vh;
   border: 0.5em double black;
 }
 
 /*/footer /*/
+.footer {
+  display: flex;
+  background-color: beige;
+  justify-items: center;
+  flex-direction: column;
+}
 .footer .ubicacionC {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding: 0em 0em;
+  align-items: center;
 }
-.footer h1 {
+.footer .ubicacionC h2 {
   text-align: justify;
-  font-size: 3em;
+  font-size: 1em;
   font-weight: bolder;
 }
-.footer h1 img {
-  height: 10em;
-  width: 10em;
+.footer .ubicacionC img {
+  height: 6em;
+  width: 7em;
+}
+.footer .ubicacionC h1 {
+  text-align: center;
+  font-size: 4em;
+  font-weight: bolder;
 }
 
 /*/declaro area en grilla /*/
@@ -410,9 +426,10 @@ header {
   font-weight: bolder;
   font-family: "Roboto", sans-serif;
   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   justify-items: center;
   align-content: center;
-  grid-template-columns: 1fr;
   gap: 20px;
   grid-template-areas: "index" "CarruselMain" "menuPrincipal" "listas" "miniBanners" "miniBanners" "redes" "footer";
 }

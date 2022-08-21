@@ -5,12 +5,21 @@
  
 }
 
+body{
+  text-align: center;
+  font-family: 'Poppins',sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
 
 header {
-    display: grid;
+    display: flex;
     background-color: beige;
     background-size: cover;
-    padding: 7em;
+    padding: 2em;
     margin-bottom: 1em;
 
     .cabecera {
@@ -19,8 +28,8 @@ header {
         .logo {
             display: flex;
             img {
-                height: 7em;
-                width: 7em;
+                height: 4em;
+                width: 4em;
               }
           }
         h1 {
@@ -28,7 +37,7 @@ header {
             color: black;
             text-align: center;
             font-style: italic;
-            font-size: 7em;
+            font-size: 3em;
           }
       }
 
@@ -42,9 +51,9 @@ header {
   
   /*/ index/*/
   section.menuPricipal {
-    display: grid;
-    margin-top: 15em;
-    margin-bottom: 8em;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
     .tituloMenu {
         display: flex;
         flex-flow: row nowrap;
@@ -56,7 +65,7 @@ header {
         h1 {
             font-style: italic;
             font-weight: bolder;
-            font-size: 8em;
+            font-size: 3em;
           }
       }
       
@@ -72,8 +81,8 @@ header {
             padding: 1em;
             margin: 1em;
             img {
-                width: 7em;
-                height: 7em;
+                width: 4em;
+                height: 4em;
                 border: 1em double black;
               }
             
@@ -86,8 +95,8 @@ header {
             padding: 1em;
             margin: 1em;
             img {
-                width: 7em;
-                height: 7em;
+                width: 4em;
+                height: 4em;
                 border: 1em double black;
               }
               
@@ -102,24 +111,22 @@ header {
 
   /*/nav/*/
   .listas {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 25fr;
-    gap: 15px;
-    justify-items: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+      margin: auto;
     ul {
-        margin-top: 1cm;
-        margin-bottom: 2cm;
+      
          li{
              list-style-type: none;
              padding: 2em;
               &:hover {
-                       transform: scale(1.5);
+                       transform: scale(1.2);
                        }
                 a{
                    img {
-                    width: 100%;
-                    height: 30em;
+                    width: auto;
+                    height: 15em;
                            border: 1em solid black;
                         }
                   }
@@ -128,30 +135,28 @@ header {
   }
   section.miniBanners {
     display: grid;
-    width: 90%;
-    padding-bottom: 27EM;
     grid-template-columns: 90%;
-    grid-template-rows: 90%;
-    border:0.5EM SOLID rgb(15, 4, 4);
     justify-content: center;
+    align-content: center;
 
-    .metodoPago {
+    .metodoPago{
       display: flex;
       flex-flow: row wrap;
-      font-size: 2cm;
       flex-direction: column;
-      margin-bottom: 1.5em;
       justify-content: center;
       align-items: center;
+      margin-bottom: 5em;
+      
         img {
            
-          height: 5em;
-          width: 6em;
+          height: 10em;
+          width: 13em;
       
             border: 0.125em solid black;
           }
         h2 {
-            font-size: 1em;
+          font-weight: bolder; 
+            font-size: 3em;
             text-align: justify;
           }
       }
@@ -160,44 +165,47 @@ header {
         display: flex;
         flex-flow: row wrap;
         border: 0.25em double black;
-        padding: auto;
-        margin: auto;
-        font-size: 1cm;
-        text-align: right;
-        font-weight: bolder;   
+        justify-content: center;
+        legend{
+          float: none;
+          width: 90%;
+          padding: 0;
+          margin-bottom: 0.5rem;
+          font-size: calc(1.275rem + .3vw);
+          line-height: inherit;
+
+        }
       }
   }
   
   /*/redes/*/
   section.redes{
     display:flex;
-    margin-top: 2em;
-    margin-bottom: 1em;
-    padding: 2em;
+    
     h1{
       text-align: center;
-      font-size: 5em;
-      margin-bottom: 1em;
+      font-size: 3em;
+      margin-bottom: 2em;
       font-weight: bolder;  
         }
      ul{
         display: flex;
-        flex-flow: row wrap;
-        list-style-type: none;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: nowrap;
+      list-style-type: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
         li{
+          margin-bottom: 1em;
           &:hover{
-            transform: scale(1.5);
+            transform: scale(1.2);
         }
           a{
             width:5em; 
             height:3em;
             padding: 2em;
             img{
-              width: 300px ;
-              height: 100px;
+              width: 100px;
+              height: 8vh;
               border: 0.5em double black;
               }
             } 
@@ -208,24 +216,35 @@ header {
       
 
 /*/footer /*/
-.footer {
-    .ubicacionC{
+.footer{
+  display: flex;
+  background-color: beige;
+  justify-items: center;
+  flex-direction: column;
+  
+  .ubicacionC{
 
-     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    padding: 0em 0em;
-    }
-    h1{
-        text-align: justify;
-        font-size:3em ;
-        font-weight:bolder ;
-        img {
-              height:10em  ;
-               width:10em ;
-            }
-}
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+   h2{
+    text-align: justify;
+    font-size: 1em;
+    font-weight:bolder ;
+  }
+     img {
+           height:6em  ;
+            width:7em ;
+         }
+         h1{
+          text-align: center;
+          font-size: 4em;
+          font-weight: bolder ;
+        }
+   
+  }
 }
   
   /*/declaro area en grilla /*/
@@ -261,11 +280,11 @@ header {
       color: black;
       font-weight: bolder;
       font-family: "Roboto", sans-serif;
-
       display: grid;
+      grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
       justify-items: center;
       align-content: center;
-      grid-template-columns: 1fr;
        gap: 20px;
        grid-template-areas:
                         "index" 

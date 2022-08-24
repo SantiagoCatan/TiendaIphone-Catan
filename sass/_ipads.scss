@@ -1,4 +1,11 @@
 /*/ipads/mac/*/
+
+*{
+  padding:0px;
+  margin:0px;
+ 
+}
+
 .ipadsMac {
     grid-area: ipadsMac;
     display: grid;
@@ -81,12 +88,25 @@ section.redes{
 }
   
   .envolventeMac {
-    background-color: white;
-    margin-top: 1.5em;
-    display: grid;
+    background-color: aquamarine;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+     gap: 10px;
     grid-template-areas: "header" "cabecera" "ipadsMac" "footer";
   }
 
+
+  @media screen and (min-width: 480px){
+
+    .envolventeMac {
+      background-color: aquamarine;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+       gap: 10px;
+      grid-template-areas: "header" "cabecera" "ipadsMac" "footer";
+    }
+  
+  }
 
   
 

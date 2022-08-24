@@ -47,6 +47,10 @@ header {
 
   .CarruselMain{
     display: none;
+    .carousel-item{
+                width:620px;
+                height:450px;
+    }
   }
   
   /*/ index/*/
@@ -121,7 +125,7 @@ header {
              list-style-type: none;
              padding: 2em;
               &:hover {
-                       transform: scale(1.2);
+                       transform: scale(1.1);
                        }
                 a{
                    img {
@@ -181,7 +185,7 @@ header {
   /*/redes/*/
   section.redes{
     display:flex;
-    
+    padding: auto;
     h1{
       text-align: center;
       font-size: 3em;
@@ -197,12 +201,12 @@ header {
         li{
           margin-bottom: 1em;
           &:hover{
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
           a{
             width:5em; 
             height:3em;
-            padding: 2em;
+           
             img{
               width: 100px;
               height: 8vh;
@@ -231,7 +235,7 @@ header {
    align-items: center;
    h2{
     text-align: justify;
-    font-size: 1em;
+    font-size: 0.75em;
     font-weight:bolder ;
   }
      img {
@@ -272,19 +276,18 @@ header {
   
   
 
- 
+ /*MOBILE*/
 
   .AllIndex {
       background-color: beige;
-
+      margin:auto;
       color: black;
       font-weight: bolder;
       font-family: "Roboto", sans-serif;
       display: grid;
       grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-      justify-items: center;
-      align-content: center;
+      grid-template-rows: 1fr;
+      min-width: 100vh;
        gap: 20px;
        grid-template-areas:
                         "index" 
@@ -298,16 +301,18 @@ header {
   }
   
 
- @media screen and (min-width: 975px){
+
+
+ @media (min-width:975px){
   
 
   .AllIndex {
     background-color: aquamarine;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: 1fr ;
      gap: 10px;
      grid-template-areas:
-                      " index index " 
+                      "index index " 
                       "CarruselMain CarruselMain  "
                       "menuPrincipal menuPrincipal"
                       "listas listas" 
@@ -318,33 +323,271 @@ header {
 
 
 header {
-
-  background-size: cover;
-  padding: 7em;
-  margin-bottom: 1em;
+   padding: 7em;
+    margin-bottom: 1em;
 
   .cabecera {
-      display: flex;
   
       .logo {
-          display: flex;
+          
           img {
               height: 3em;
               width: 3em;
             }
         }
       h1 {
-          display: flex;
         
           font-size: 3em;
         }
     }
-
+}
+.CarruselMain{
 }
 
  }
+ body{
+  text-align: center;
+  font-family: 'Poppins',sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
 
- @media screen and (min-width:  1220px){
+header {
+    display: flex;
+    background-color: beige;
+    background-size: cover;
+    padding: 2em;
+    margin-bottom: 1em;
+
+    .cabecera {
+        display: flex;
+    
+        .logo {
+            display: flex;
+            img {
+                height: 4em;
+                width: 4em;
+              }
+          }
+        h1 {
+            display: flex;
+            color: black;
+            text-align: center;
+            font-style: italic;
+            font-size: 3em;
+          }
+      }
+
+  }
+
+/*carrusel*/
+
+  .CarruselMain{
+    display: none;
+  }
+  
+  /*/ index/*/
+  section.menuPricipal {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    .tituloMenu {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-content: space-between;
+        padding: 2em;
+        font-weight: lighter;
+        text-decoration: none;
+        h1 {
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 3em;
+          }
+      }
+      
+
+    .tituloMenuprincipal {
+        display: flex;
+        flex-flow: row nowrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        padding: auto;
+        .registro{
+            padding: 1em;
+            margin: 1em;
+            img {
+                width: 4em;
+                height: 4em;
+                border: 1em double black;
+              }
+            
+          }
+          .registro:hover {
+            transform: scale(1.5);
+          }
+          
+          .carrito {
+            padding: 1em;
+            margin: 1em;
+            img {
+                width: 4em;
+                height: 4em;
+                border: 1em double black;
+              }
+              
+              
+          }
+          carrito:hover {
+            transform: scale(1.5);
+          }
+    
+      }
+  }
+
+  /*/nav/*/
+  .listas {
+    display: flex;
+    align-items: center;
+    align-content: center;
+      margin: auto;
+    ul {
+      
+         li{
+             list-style-type: none;
+             padding: 2em;
+              &:hover {
+                       transform: scale(1.1);
+                       }
+                a{
+                   img {
+                    width: auto;
+                    height: 15em;
+                           border: 1em solid black;
+                        }
+                  }
+            }
+          }  
+  }
+  section.miniBanners {
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    align-content: center;
+
+    .metodoPago{
+      display: flex;
+      flex-flow: row wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 5em;
+      
+        img {
+           
+          height: 10em;
+          width: 13em;
+      
+            border: 0.125em solid black;
+          }
+        h2 {
+          font-weight: bolder; 
+            font-size: 3em;
+            text-align: justify;
+          }
+      }
+  
+      .contacto {
+        display: flex;
+        flex-flow: row wrap;
+        border: 0.25em double black;
+        justify-content: center;
+        legend{
+          float: none;
+          width: 90%;
+          padding: 0;
+          margin-bottom: 0.5rem;
+          font-size: calc(1.275rem + .3vw);
+          line-height: inherit;
+
+        }
+      }
+  }
+  
+  /*/redes/*/
+  section.redes{
+    display:flex;
+    padding: auto;
+    h1{
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 2em;
+      font-weight: bolder;  
+        }
+     ul{
+        display: flex;
+      list-style-type: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+        li{
+          margin-bottom: 1em;
+          &:hover{
+            transform: scale(1.1);
+        }
+          a{
+            width:5em; 
+            height:3em;
+           
+            img{
+              width: 100px;
+              height: 8vh;
+              border: 0.5em double black;
+              }
+            } 
+          
+        }
+          }
+        }
+      
+
+/*/footer /*/
+.footer{
+  display: flex;
+  background-color: beige;
+  justify-items: center;
+  flex-direction: column;
+  
+  .ubicacionC{
+
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+   h2{
+    text-align: justify;
+    font-size: 0.75em;
+    font-weight:bolder ;
+  }
+     img {
+           height:6em  ;
+            width:7em ;
+         }
+         h1{
+          text-align: center;
+          font-size: 4em;
+          font-weight: bolder ;
+        }
+   
+  }
+}
+
+ @media (min-width:1220px){
 
  
   .AllIndex {
@@ -352,18 +595,262 @@ header {
     color: black;
     font-weight: bolder;
     font-family: "Roboto", sans-serif;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr ;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
      gap: 15px;
      grid-template-areas:
-                      " index index  index" 
-                      "CarruselMain  CarruselMain "
+                      " index index  index " 
+                      "CarruselMain  CarruselMain  CarruselMain "
                       "menuPrincipal menuPrincipal menuPrincipal "
                       "listas  listas  listas " 
-                      "miniBanners miniBanners" 
+                      "miniBanners miniBanners miniBanners" 
                       "redes redes redes "
                       " footer footer footer ";
 }
 
+.CarruselMain{
+  display: flex;
+}
+body{
+  text-align: center;
+  font-family: 'Poppins',sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+    display: flex;
+    background-color: beige;
+    background-size: cover;
+    padding: 2em;
+    margin-bottom: 1em;
+
+    .cabecera {
+        display: flex;
+    
+        .logo {
+            display: flex;
+            img {
+                height: 4em;
+                width: 4em;
+              }
+          }
+        h1 {
+            display: flex;
+            color: black;
+            text-align: center;
+            font-style: italic;
+            font-size: 3em;
+          }
+      }
+
+  }
+
+/*carrusel*/
+
+  .CarruselMain{
+    display: none;
+  }
+  
+  /*/ index/*/
+  section.menuPricipal {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    .tituloMenu {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-content: space-between;
+        padding: 2em;
+        font-weight: lighter;
+        text-decoration: none;
+        h1 {
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 3em;
+          }
+      }
+      
+
+    .tituloMenuprincipal {
+        display: flex;
+        flex-flow: row nowrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        padding: auto;
+        .registro{
+            padding: 1em;
+            margin: 1em;
+            img {
+                width: 4em;
+                height: 4em;
+                border: 1em double black;
+              }
+            
+          }
+          .registro:hover {
+            transform: scale(1.5);
+          }
+          
+          .carrito {
+            padding: 1em;
+            margin: 1em;
+            img {
+                width: 4em;
+                height: 4em;
+                border: 1em double black;
+              }
+              
+              
+          }
+          carrito:hover {
+            transform: scale(1.5);
+          }
+    
+      }
+  }
+
+  /*/nav/*/
+  .listas {
+    display: flex;
+    align-items: center;
+    align-content: center;
+      margin: auto;
+    ul {
+      
+         li{
+             list-style-type: none;
+             padding: 2em;
+              &:hover {
+                       transform: scale(1.1);
+                       }
+                a{
+                   img {
+                    width: auto;
+                    height: 15em;
+                           border: 1em solid black;
+                        }
+                  }
+            }
+          }  
+  }
+  section.miniBanners {
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    align-content: center;
+
+    .metodoPago{
+      display: flex;
+      flex-flow: row wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 5em;
+      
+        img {
+           
+          height: 10em;
+          width: 13em;
+      
+            border: 0.125em solid black;
+          }
+        h2 {
+          font-weight: bolder; 
+            font-size: 3em;
+            text-align: justify;
+          }
+      }
+  
+      .contacto {
+        display: flex;
+        flex-flow: row wrap;
+        border: 0.25em double black;
+        justify-content: center;
+        legend{
+          float: none;
+          width: 90%;
+          padding: 0;
+          margin-bottom: 0.5rem;
+          font-size: calc(1.275rem + .3vw);
+          line-height: inherit;
+
+        }
+      }
+  }
+  
+  /*/redes/*/
+  section.redes{
+    display:flex;
+    padding: auto;
+    h1{
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 2em;
+      font-weight: bolder;  
+        }
+     ul{
+        display: flex;
+      list-style-type: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+        li{
+          margin-bottom: 1em;
+          &:hover{
+            transform: scale(1.1);
+        }
+          a{
+            width:5em; 
+            height:3em;
+           
+            img{
+              width: 100px;
+              height: 8vh;
+              border: 0.5em double black;
+              }
+            } 
+          
+        }
+          }
+        }
+      
+
+/*/footer /*/
+.footer{
+  display: flex;
+  background-color: beige;
+  justify-items: center;
+  flex-direction: column;
+  
+  .ubicacionC{
+
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+   h2{
+    text-align: justify;
+    font-size: 0.75em;
+    font-weight:bolder ;
+  }
+     img {
+           height:6em  ;
+            width:7em ;
+         }
+         h1{
+          text-align: center;
+          font-size: 4em;
+          font-weight: bolder ;
+        }
+   
+  }
+}
 
  }

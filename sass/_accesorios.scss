@@ -1,7 +1,11 @@
 
 
 /*/accessorios/*/
-
+*{
+  padding:0px;
+  margin:0px;
+ 
+}
 
   
   .AccessoriosMain {
@@ -196,7 +200,7 @@ section.redes{
   .AllAccesorios {
       background-color: aquamarine;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr ;
+      grid-template-rows: auto;
        gap: 10px;
        grid-template-areas: "header" 
        "RC" 

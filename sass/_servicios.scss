@@ -1,4 +1,11 @@
 /*/Redes/*/
+
+*{
+    padding:0px;
+    margin:0px;
+   
+  }
+
 section.redes{
     display:grid ;
     margin-top: 2em;
@@ -57,3 +64,65 @@ section.redes{
     }
 }
 }
+/*DECALARACION DE AREA*/
+
+.HeaderSectores{
+   grid-area:  HeaderSectores;
+
+}
+
+.headerRC{
+        grid-area: headerRC;
+}
+
+.cabeceraMain{
+        grid-area: cabeceraMain;
+}
+
+
+.listamatenimiento{
+            grid-area: listamatenimiento;
+}
+
+.redes{
+            grid-area: redes;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+
+.AllServicio{
+    background-color: aquamarine;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+     gap: 10px;
+    grid-template-areas: 
+    
+                        "HeaderSectores"
+                        "cabeceraMain" 
+                        "listamatenimiento" 
+                        "redes"
+                        "footer";
+  }
+
+
+  @media screen and (min-width: 480px){
+
+
+    .AllServicio{
+        background-color: aquamarine;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+         gap: 10px;
+        grid-template-areas: 
+        
+                            "HeaderSectores"
+                            "cabeceraMain" 
+                            "listamatenimiento" 
+                            "redes"
+                            "footer";
+      }
+    
+  }

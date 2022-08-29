@@ -1,5 +1,10 @@
 @import "https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;300&family=Roboto:ital,wght@0,100;0,300;1,700&display=swap";
 /*/accessorios/*/
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 .AccessoriosMain {
   display: grid;
   grid-area: iphones;
@@ -165,7 +170,7 @@ section.redes .redes ul li:hover {
   .AllAccesorios {
     background-color: aquamarine;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
     gap: 10px;
     grid-template-areas: "header" "RC" "cabecera" "AccessoriosMain" "fundas" "vidrios " "redes" "footer";
   }
@@ -174,16 +179,6 @@ section.redes .redes ul li:hover {
 * {
   padding: 0px;
   margin: 0px;
-}
-
-body {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: bolder;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
 }
 
 header {
@@ -434,7 +429,6 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  min-width: 100vh;
   gap: 20px;
   grid-template-areas: "index" "CarruselMain" "menuPrincipal" "listas" "miniBanners" "miniBanners" "redes" "footer";
 }
@@ -896,6 +890,11 @@ section.redes ul li a img {
     font-weight: bolder;
   }
 }
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 .HeaderSectores {
   display: grid;
   grid-template-columns: 1fr;
@@ -1112,26 +1111,23 @@ section.redes .redes ul li:hover {
   grid-area: footer;
 }
 
-/*
-.AllIphone{
-    background-color: beige;
-      color: black;
-      font-weight: bolder;
-      font-family: "Roboto", sans-serif;
-      display: grid;
-      grid-template-columns: 1fr;
-    gap: 20px;
-     grid-template: 
-                    "HeaderSectores"
-                    "RC"
-                    "cabecera"
-                    "iphones"
-                    "redes"
-                    "footer";
-
+.AllIphone {
+  background-color: beige;
+  color: black;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  grid-template: "HeaderSectores" "RC" "cabecera" "iphones" "redes" "footer";
 }
-*/
+
 /*/ipads/mac/*/
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 .ipadsMac {
   grid-area: ipadsMac;
   display: grid;
@@ -1203,12 +1199,22 @@ section.redes .redes ul li:hover {
 }
 
 .envolventeMac {
-  background-color: white;
-  margin-top: 1.5em;
-  display: grid;
+  background-color: aquamarine;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
   grid-template-areas: "header" "cabecera" "ipadsMac" "footer";
 }
 
+@media screen and (min-width: 480px) {
+  .envolventeMac {
+    background-color: aquamarine;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    grid-template-areas: "header" "cabecera" "ipadsMac" "footer";
+  }
+}
 /*/Redes/*/
 section.redes {
   display: grid;
@@ -1263,6 +1269,11 @@ section.redes .redes ul li:hover {
 }
 
 /*/Redes/*/
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 section.redes {
   display: grid;
   margin-top: 2em;
@@ -1313,4 +1324,47 @@ section.redes .redes ul li:hover {
 .footer h1 img {
   height: 10em;
   width: 10em;
+}
+
+/*DECALARACION DE AREA*/
+.HeaderSectores {
+  grid-area: HeaderSectores;
+}
+
+.headerRC {
+  grid-area: headerRC;
+}
+
+.cabeceraMain {
+  grid-area: cabeceraMain;
+}
+
+.listamatenimiento {
+  grid-area: listamatenimiento;
+}
+
+.redes {
+  grid-area: redes;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.AllServicio {
+  background-color: aquamarine;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+  grid-template-areas: "HeaderSectores" "cabeceraMain" "listamatenimiento" "redes" "footer";
+}
+
+@media screen and (min-width: 480px) {
+  .AllServicio {
+    background-color: aquamarine;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    grid-template-areas: "HeaderSectores" "cabeceraMain" "listamatenimiento" "redes" "footer";
+  }
 }/*# sourceMappingURL=estilos.css.map */

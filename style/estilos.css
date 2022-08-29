@@ -419,18 +419,11 @@ header {
   grid-area: footer;
 }
 
-/*MOBILE*/
 .AllIndex {
   background-color: beige;
-  margin: auto;
   color: black;
   font-weight: bolder;
   font-family: "Roboto", sans-serif;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  gap: 20px;
-  grid-template-areas: "index" "CarruselMain" "menuPrincipal" "listas" "miniBanners" "miniBanners" "redes" "footer";
 }
 
 @media (min-width: 975px) {

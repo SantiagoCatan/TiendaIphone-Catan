@@ -181,6 +181,16 @@ section.redes .redes ul li:hover {
   margin: 0px;
 }
 
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
 header {
   display: flex;
   background-color: beige;
@@ -663,6 +673,7 @@ section.redes ul li a img {
 
 @media (min-width: 1220px) {
   .AllIndex {
+    height: 100vh;
     background-color: rgb(201, 21, 21);
     color: black;
     font-weight: bolder;

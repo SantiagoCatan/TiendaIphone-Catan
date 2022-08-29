@@ -4,9 +4,6 @@
   margin:0px;
  
 }
-
-
-
 header {
     display: flex;
     background-color: beige;
@@ -266,33 +263,12 @@ header {
     grid-area: footer;
   }
   
-  
-
- /*MOBILE*/
-
   .AllIndex{
-      background-color: beige;
-      margin:auto;
-      color:black;
-      font-weight: bolder;
-      font-family: "Roboto", sans-serif;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-       gap: 20px;
-       grid-template-areas:
-                        "index" 
-                        "CarruselMain"
-                        "menuPrincipal"
-                        "listas" 
-                        "miniBanners"
-                        "miniBanners" 
-                        "redes"
-                        "footer";
-  }
+  background-color: beige;
+  color: black;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;}
   
-
-
 
  @media (min-width:975px){
   

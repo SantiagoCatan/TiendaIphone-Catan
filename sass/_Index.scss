@@ -282,13 +282,13 @@ header {
       display: grid;
        gap: 10px;
        grid-template-areas:
-                        "index index " 
-                        "CarruselMain CarruselMain  "
+                        "index index" 
+                        "CarruselMain CarruselMain"
                         "menuPrincipal menuPrincipal"
                         "listas listas" 
                         "miniBanners miniBanners"
-                        "redes redes "
-                        " footer footer" ;
+                        "redes redes"
+                        "footer footer" ;
     }
     .CarruselMain{
       display: flex;

@@ -6,14 +6,13 @@
 }
 
 body {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-weight: bolder;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    min-height: 100vh;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
 }
 
 header {
@@ -279,26 +278,40 @@ header {
     .AllIndex {
       align-items: stretch;
       background-color: aquamarine;
-      grid-template-columns: 1fr;
+      grid-template-columns: auto auto;
       grid-template-rows: repeat(7,auto) ;
+      display: grid;
        gap: 10px;
        grid-template-areas:
-                        "index " 
-                        "CarruselMain "
-                        "menuPrincipal "
+                        "index index " 
+                        "CarruselMain CarruselMain  "
+                        "menuPrincipal menuPrincipal"
                         "listas listas" 
-                        "miniBanners "
-                        "redes  "
-                        " footer ";
+                        "miniBanners miniBanners"
+                        "redes redes "
+                        " footer footer" ;
+    }
+    .CarruselMain{
+      display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    header {
+      margin-bottom: 1em;
+      align-items: center;
+      justify-content: center;
   }
+    
   
   }
  @media (min-width:975px){
   .AllIndex {
     align-items: stretch;
     background-color: aquamarine;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: repeat(7,auto) ;
+    display: grid;
      gap: 10px;
      grid-template-areas:
                       "index index " 
@@ -309,6 +322,23 @@ header {
                       "redes redes "
                       " footer footer" ;
   }
+  .CarruselMain{
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+  }
+
+
+  body {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100vh;
+}
 header {
    padding: 7em;
     margin-bottom: 1em;
@@ -327,17 +357,6 @@ header {
           font-size: 3em;
         }
     }
-}
-
- 
- body{
-  text-align: center;
-  font-family: 'Poppins',sans-serif;
-  font-weight: bolder;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
 }
 
 header {
@@ -586,8 +605,9 @@ header {
     background-color: rgb(201, 21, 21);
     color: black;
     font-weight: bolder;
+    display: grid;
     font-family: "Roboto", sans-serif;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,auto);
     grid-template-rows: repeat(7,auto);
      gap: 15px;
      grid-template-areas:
@@ -599,18 +619,29 @@ header {
                       "redes redes redes "
                       " footer footer footer ";
 }
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
+}
 
 .CarruselMain{
   display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 header {
     display: flex;
     background-color: beige;
     background-size: cover;
-    padding: 2em;
+    padding: 6em;
     justify-content: center;
-
     margin-bottom: 1em;
 
     .cabecera {
@@ -619,8 +650,8 @@ header {
         .logo {
             display: flex;
             img {
-                height: 4em;
-                width: 4em;
+                height: 8em;
+                width: 8em;
               }
           }
         h1 {
@@ -628,7 +659,7 @@ header {
             color: black;
             text-align: center;
             font-style: italic;
-            font-size: 3em;
+            font-size: 8em;
           }
       }
 
@@ -636,9 +667,6 @@ header {
 
 /*carrusel*/
 
-  .CarruselMain{
-    display: none;
-  }
   
   /*/ index/*/
   section.menuPricipal {
@@ -656,7 +684,7 @@ header {
         h1 {
             font-style: italic;
             font-weight: bolder;
-            font-size: 3em;
+            font-size: 9em;
           }
       }
       
@@ -666,14 +694,13 @@ header {
         flex-flow: row nowrap;
         align-content: center;
         align-items: center;
-        justify-content: center;
-        padding: auto;
+        justify-content: space-between;
         .registro{
             padding: 1em;
             margin: 1em;
             img {
-                width: 4em;
-                height: 4em;
+                width: 7em;
+                height: 7em;
                 border: 1em double black;
               }
             
@@ -686,8 +713,8 @@ header {
             padding: 1em;
             margin: 1em;
             img {
-                width: 4em;
-                height: 4em;
+                width: 7em;
+                height: 7em;
                 border: 1em double black;
               }
               
@@ -719,7 +746,7 @@ header {
                 a{
                    img {
                     width: auto;
-                    height: 15em;
+                    height: 45vh;
                            border: 1em solid black;
                         }
                   }
@@ -797,8 +824,8 @@ header {
             height:3em;
            
             img{
-              width: 100px;
-              height: 8vh;
+              width: auto;
+              height: 14vh;
               border: 0.5em double black;
               }
             } 
@@ -824,7 +851,7 @@ header {
    align-items: center;
    h2{
     text-align: justify;
-    font-size: 0.75em;
+    font-size: 1.75em;
     font-weight:bolder ;
   }
      img {

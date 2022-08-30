@@ -188,7 +188,7 @@ body {
   font-weight: bolder;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
   min-height: 100vh;
 }
 
@@ -434,20 +434,46 @@ header {
   .AllIndex {
     align-items: stretch;
     background-color: aquamarine;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: repeat(7, auto);
+    display: grid;
     gap: 10px;
-    grid-template-areas: "index " "CarruselMain " "menuPrincipal " "listas listas" "miniBanners " "redes  " " footer ";
+    grid-template-areas: "index index " "CarruselMain CarruselMain  " "menuPrincipal menuPrincipal" "listas listas" "miniBanners miniBanners" "redes redes " " footer footer";
+  }
+  .CarruselMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    margin-bottom: 1em;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (min-width: 975px) {
   .AllIndex {
     align-items: stretch;
     background-color: aquamarine;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: repeat(7, auto);
+    display: grid;
     gap: 10px;
     grid-template-areas: "index index " "CarruselMain CarruselMain  " "menuPrincipal menuPrincipal" "listas listas" "miniBanners miniBanners" "redes redes " " footer footer";
+  }
+  .CarruselMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100vh;
   }
   header {
     padding: 7em;
@@ -459,15 +485,6 @@ header {
   }
   header .cabecera h1 {
     font-size: 3em;
-  }
-  body {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-weight: bolder;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
   }
   header {
     display: flex;
@@ -677,20 +694,32 @@ header {
     background-color: rgb(201, 21, 21);
     color: black;
     font-weight: bolder;
+    display: grid;
     font-family: "Roboto", sans-serif;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(7, auto);
     gap: 15px;
     grid-template-areas: " index index  index " "CarruselMain  CarruselMain  CarruselMain " "menuPrincipal menuPrincipal menuPrincipal " "listas  listas  listas " "miniBanners miniBanners miniBanners" "redes redes redes " " footer footer footer ";
   }
+  body {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100vh;
+  }
   .CarruselMain {
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   header {
     display: flex;
     background-color: beige;
     background-size: cover;
-    padding: 2em;
+    padding: 6em;
     justify-content: center;
     margin-bottom: 1em;
   }
@@ -701,20 +730,17 @@ header {
     display: flex;
   }
   header .cabecera .logo img {
-    height: 4em;
-    width: 4em;
+    height: 8em;
+    width: 8em;
   }
   header .cabecera h1 {
     display: flex;
     color: black;
     text-align: center;
     font-style: italic;
-    font-size: 3em;
+    font-size: 8em;
   }
   /*carrusel*/
-  .CarruselMain {
-    display: none;
-  }
   /*/ index/*/
   section.menuPricipal {
     display: flex;
@@ -733,23 +759,22 @@ header {
   section.menuPricipal .tituloMenu h1 {
     font-style: italic;
     font-weight: bolder;
-    font-size: 3em;
+    font-size: 9em;
   }
   section.menuPricipal .tituloMenuprincipal {
     display: flex;
     flex-flow: row nowrap;
     align-content: center;
     align-items: center;
-    justify-content: center;
-    padding: auto;
+    justify-content: space-between;
   }
   section.menuPricipal .tituloMenuprincipal .registro {
     padding: 1em;
     margin: 1em;
   }
   section.menuPricipal .tituloMenuprincipal .registro img {
-    width: 4em;
-    height: 4em;
+    width: 7em;
+    height: 7em;
     border: 1em double black;
   }
   section.menuPricipal .tituloMenuprincipal .registro:hover {
@@ -760,8 +785,8 @@ header {
     margin: 1em;
   }
   section.menuPricipal .tituloMenuprincipal .carrito img {
-    width: 4em;
-    height: 4em;
+    width: 7em;
+    height: 7em;
     border: 1em double black;
   }
   section.menuPricipal .tituloMenuprincipal carrito:hover {
@@ -784,7 +809,7 @@ header {
   }
   .listas ul li a img {
     width: auto;
-    height: 15em;
+    height: 45vh;
     border: 1em solid black;
   }
   section.miniBanners {
@@ -854,8 +879,8 @@ header {
     height: 3em;
   }
   section.redes ul li a img {
-    width: 100px;
-    height: 8vh;
+    width: auto;
+    height: 14vh;
     border: 0.5em double black;
   }
   /*/footer /*/
@@ -874,7 +899,7 @@ header {
   }
   .footer .ubicacionC h2 {
     text-align: justify;
-    font-size: 0.75em;
+    font-size: 1.75em;
     font-weight: bolder;
   }
   .footer .ubicacionC img {

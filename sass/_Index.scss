@@ -2,9 +2,7 @@
 *{
   padding:0px;
   margin:0px;
- 
 }
-
 body {
   background-color: beige;
   text-align: center;
@@ -15,8 +13,7 @@ body {
   align-items: center;
   min-height: 100vh;
 }
-
-header {
+header{
     display: flex;
     background-size: cover;
     padding: 2em;
@@ -24,7 +21,6 @@ header {
 
     .cabecera {
         display: flex;
-    
         .logo {
             display: flex;
             img {
@@ -40,11 +36,8 @@ header {
             font-size: 3em;
           }
       }
-
   }
-
 /*carrusel*/
-
   .CarruselMain{
     display: none;
     .carousel-item{
@@ -118,6 +111,7 @@ header {
     display: flex;
     align-items: center;
     align-content: center;
+    justify-content: center;
       margin: auto;
     ul {
       
@@ -273,8 +267,29 @@ header {
   .footer {
     grid-area: footer;
   }
+
+  @media screen and (min-width:320px){
+
+    .AllIndex {
+      align-items: stretch;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(7,auto) ;
+      display: grid;
+       gap: 10px;
+       grid-template-areas:
+                        "index " 
+                        "CarruselMain "
+                        "menuPrincipal "
+                        "listas listas" 
+                        "miniBanners "
+                        "redes "
+                        "footer" ;
+    }
+  }
+
+
   
-  @media screen and (min-width:580px) {
+  @media (min-width:580px) {
     .AllIndex {
       align-items: stretch;
       grid-template-columns: auto auto;

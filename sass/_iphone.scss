@@ -253,6 +253,7 @@ section.redes{
       font-family: "Roboto", sans-serif;
       display: grid;
       grid-template-columns: 1fr;
+      grid-template-rows: repeat(6,auto);
     gap: 20px;
      grid-template: 
                     "HeaderSectores"

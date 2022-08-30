@@ -90,7 +90,7 @@ section.redes{
   .envolventeMac {
     background-color: aquamarine;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: repeat(4,auto);
      gap: 10px;
     grid-template-areas: "header" "cabecera" "ipadsMac" "footer";
   }
@@ -101,7 +101,7 @@ section.redes{
     .envolventeMac {
       background-color: aquamarine;
       grid-template-columns: 1fr;
-      grid-template-rows: auto;
+      grid-template-rows: repeat(4,auto);
        gap: 10px;
       grid-template-areas: "header" "cabecera" "ipadsMac" "footer";
     }

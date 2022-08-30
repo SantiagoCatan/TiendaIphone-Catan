@@ -162,6 +162,7 @@ section.redes .redes ul li:hover {
   font-family: "Roboto", sans-serif;
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, auto);
   gap: 20px;
   grid-template-areas: "HeaderSectores" "RC" "cabecera" "AccessoriosMain" "fundas" "vidrios " "redes" "footer";
 }
@@ -170,7 +171,7 @@ section.redes .redes ul li:hover {
   .AllAccesorios {
     background-color: aquamarine;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: repeat(8, auto);
     gap: 10px;
     grid-template-areas: "header" "RC" "cabecera" "AccessoriosMain" "fundas" "vidrios " "redes" "footer";
   }
@@ -1114,6 +1115,7 @@ section.redes .redes ul li:hover {
   font-family: "Roboto", sans-serif;
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
   gap: 20px;
   grid-template: "HeaderSectores" "RC" "cabecera" "iphones" "redes" "footer";
 }
@@ -1197,7 +1199,7 @@ section.redes .redes ul li:hover {
 .envolventeMac {
   background-color: aquamarine;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: repeat(4, auto);
   gap: 10px;
   grid-template-areas: "header" "cabecera" "ipadsMac" "footer";
 }
@@ -1206,7 +1208,7 @@ section.redes .redes ul li:hover {
   .envolventeMac {
     background-color: aquamarine;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: repeat(4, auto);
     gap: 10px;
     grid-template-areas: "header" "cabecera" "ipadsMac" "footer";
   }
@@ -1350,7 +1352,7 @@ section.redes .redes ul li:hover {
 .AllServicio {
   background-color: aquamarine;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: repeat(5, auto);
   gap: 10px;
   grid-template-areas: "HeaderSectores" "cabeceraMain" "listamatenimiento" "redes" "footer";
 }
@@ -1359,7 +1361,7 @@ section.redes .redes ul li:hover {
   .AllServicio {
     background-color: aquamarine;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: repeat(5, auto);
     gap: 10px;
     grid-template-areas: "HeaderSectores" "cabeceraMain" "listamatenimiento" "redes" "footer";
   }

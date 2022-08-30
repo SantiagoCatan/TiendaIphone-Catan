@@ -295,8 +295,8 @@ section.menuPricipal .tituloMenuprincipal carrito:hover {
   transform: scale(1.1);
 }
 .listas ul li a img {
-  width: auto;
-  height: 15em;
+  width: 100%;
+  height: 11em;
   border: 1em solid black;
 }
 
@@ -342,7 +342,8 @@ section.miniBanners .contacto legend {
 /*/redes/*/
 section.redes {
   display: flex;
-  padding: auto;
+  justify-items: stretch;
+  justify-content: center;
 }
 section.redes h1 {
   text-align: center;
@@ -352,10 +353,11 @@ section.redes h1 {
 }
 section.redes ul {
   display: flex;
+  flex-flow: row wrap;
   list-style-type: none;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 section.redes ul li {
   margin-bottom: 1em;
@@ -389,7 +391,6 @@ section.redes ul li a img {
 }
 .footer .ubicacionC h2 {
   text-align: justify;
-  font-size: 0.75em;
   font-weight: bolder;
 }
 .footer .ubicacionC img {
@@ -398,7 +399,7 @@ section.redes ul li a img {
 }
 .footer .ubicacionC h1 {
   text-align: center;
-  font-size: 4em;
+  font-size: 2em;
   font-weight: bolder;
 }
 

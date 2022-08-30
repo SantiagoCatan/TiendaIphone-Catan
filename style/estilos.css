@@ -183,6 +183,7 @@ section.redes .redes ul li:hover {
 }
 
 body {
+  background-color: beige;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
@@ -194,7 +195,6 @@ body {
 
 header {
   display: flex;
-  background-color: beige;
   background-size: cover;
   padding: 2em;
   margin-bottom: 1em;
@@ -433,7 +433,6 @@ header {
 @media screen and (min-width: 580px) {
   .AllIndex {
     align-items: stretch;
-    background-color: aquamarine;
     grid-template-columns: auto auto;
     grid-template-rows: repeat(7, auto);
     display: grid;
@@ -454,7 +453,6 @@ header {
 @media (min-width: 975px) {
   .AllIndex {
     align-items: stretch;
-    background-color: aquamarine;
     grid-template-columns: auto auto;
     grid-template-rows: repeat(7, auto);
     display: grid;
@@ -480,11 +478,11 @@ header {
     margin-bottom: 1em;
   }
   header .cabecera .logo img {
-    height: 3em;
-    width: 3em;
+    height: 5em;
+    width: 5em;
   }
   header .cabecera h1 {
-    font-size: 3em;
+    font-size: 5em;
   }
   header {
     display: flex;
@@ -511,10 +509,6 @@ header {
     font-style: italic;
     font-size: 3em;
   }
-  /*carrusel*/
-  .CarruselMain {
-    display: none;
-  }
   /*/ index/*/
   section.menuPricipal {
     display: flex;
@@ -533,7 +527,7 @@ header {
   section.menuPricipal .tituloMenu h1 {
     font-style: italic;
     font-weight: bolder;
-    font-size: 3em;
+    font-size: 5em;
   }
   section.menuPricipal .tituloMenuprincipal {
     display: flex;
@@ -548,8 +542,8 @@ header {
     margin: 1em;
   }
   section.menuPricipal .tituloMenuprincipal .registro img {
-    width: 4em;
-    height: 4em;
+    width: 5em;
+    height: 5em;
     border: 1em double black;
   }
   section.menuPricipal .tituloMenuprincipal .registro:hover {
@@ -560,8 +554,8 @@ header {
     margin: 1em;
   }
   section.menuPricipal .tituloMenuprincipal .carrito img {
-    width: 4em;
-    height: 4em;
+    width: 5em;
+    height: 5em;
     border: 1em double black;
   }
   section.menuPricipal .tituloMenuprincipal carrito:hover {
@@ -583,8 +577,8 @@ header {
     transform: scale(1.1);
   }
   .listas ul li a img {
-    width: auto;
-    height: 15em;
+    width: 100%;
+    height: 40vh;
     border: 1em solid black;
   }
   section.miniBanners {
@@ -691,7 +685,6 @@ header {
   .AllIndex {
     align-items: stretch;
     height: 100vh;
-    background-color: rgb(201, 21, 21);
     color: black;
     font-weight: bolder;
     display: grid;
@@ -712,8 +705,11 @@ header {
   }
   .CarruselMain {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    align-content: stretch;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0em 20em;
   }
   header {
     display: flex;

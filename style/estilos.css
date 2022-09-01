@@ -356,7 +356,6 @@ section.redes h1 {
 }
 section.redes ul {
   display: flex;
-  flex-flow: row wrap;
   list-style-type: none;
   align-content: center;
   flex-direction: column;
@@ -395,6 +394,7 @@ section.redes ul li a img {
 .footer .ubicacionC h2 {
   text-align: justify;
   font-weight: bolder;
+  font-size: 0.85em;
 }
 .footer .ubicacionC h1 {
   display: flex;
@@ -450,6 +450,175 @@ header {
     margin-bottom: 1em;
     align-items: center;
     justify-content: center;
+  }
+  section.menuPricipal {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  section.menuPricipal .tituloMenu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: space-between;
+    padding: 2em;
+    font-weight: lighter;
+    text-decoration: none;
+  }
+  section.menuPricipal .tituloMenu h1 {
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 3em;
+  }
+  section.menuPricipal .tituloMenuprincipal {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+  }
+  section.menuPricipal .tituloMenuprincipal .registro {
+    padding: 1em;
+    margin: 1em;
+  }
+  section.menuPricipal .tituloMenuprincipal .registro img {
+    width: 4em;
+    height: 4em;
+    border: 1em double black;
+  }
+  section.menuPricipal .tituloMenuprincipal .registro:hover {
+    transform: scale(1.5);
+  }
+  section.menuPricipal .tituloMenuprincipal .carrito {
+    padding: 1em;
+    margin: 1em;
+  }
+  section.menuPricipal .tituloMenuprincipal .carrito img {
+    width: 4em;
+    height: 4em;
+    border: 1em double black;
+  }
+  section.menuPricipal .tituloMenuprincipal carrito:hover {
+    transform: scale(1.5);
+  }
+  /*/nav/*/
+  .listas {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .listas ul li {
+    list-style-type: none;
+    padding: 2em;
+  }
+  .listas ul li:hover {
+    transform: scale(1.1);
+  }
+  .listas ul li a img {
+    width: 100%;
+    height: 11em;
+    border: 1em solid black;
+  }
+  section.miniBanners {
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    align-content: center;
+  }
+  section.miniBanners .metodoPago {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5em;
+  }
+  section.miniBanners .metodoPago img {
+    height: 10em;
+    width: 13em;
+    border: 0.125em solid black;
+  }
+  section.miniBanners .metodoPago h2 {
+    font-weight: bolder;
+    font-size: 2em;
+    margin-bottom: 2em;
+    text-align: justify;
+  }
+  section.miniBanners .contacto {
+    display: flex;
+    flex-flow: row wrap;
+    border: 0.25em double black;
+    justify-content: center;
+  }
+  section.miniBanners .contacto legend {
+    float: none;
+    width: 90%;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    font-size: calc(1.275rem + 0.3vw);
+    line-height: inherit;
+  }
+  /*/redes/*/
+  section.redes {
+    display: flex;
+    justify-items: stretch;
+    justify-content: center;
+  }
+  section.redes h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 2em;
+    font-weight: bolder;
+  }
+  section.redes ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    align-content: center;
+    flex-direction: column;
+  }
+  section.redes ul li {
+    margin-bottom: 1em;
+  }
+  section.redes ul li:hover {
+    transform: scale(1.1);
+  }
+  section.redes ul li a {
+    width: 5em;
+    height: 3em;
+  }
+  section.redes ul li a img {
+    width: 100px;
+    height: 8vh;
+    border: 0.5em double black;
+  }
+  /*/footer /*/
+  .footer {
+    display: flex;
+    background-color: beige;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer .ubicacionC {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .footer .ubicacionC h2 {
+    text-align: justify;
+    font-weight: bolder;
+  }
+  .footer .ubicacionC h1 {
+    display: flex;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
   }
 }
 @media (min-width: 975px) {

@@ -42,8 +42,8 @@ header{
   .CarruselMain{
     display: none;
     .carousel-item{
-                width:620px;
-                height:450px;
+      width: 100vh;
+      height: auto;
     }
   }
   /*/ index/*/
@@ -228,10 +228,7 @@ header{
     text-align: justify;
     font-weight:bolder ;
   }
-     img {
-           height:6em  ;
-            width:7em ;
-         }
+   
          h1{
           text-align: center;
           font-size: 2em;
@@ -281,8 +278,8 @@ header{
     }
     .CarruselMain{
       display: flex;
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
     header {
       margin-bottom: 1em;
@@ -560,16 +557,14 @@ header {
    align-items: center;
    h2{
     text-align: justify;
-    font-size: 0.75em;
     font-weight:bolder ;
+    font-size: 0.80em;
+
   }
-     img {
-           height:6em  ;
-            width:7em ;
-         }
+    
          h1{
           text-align: center;
-          font-size: 4em;
+          font-size: 3em;
           font-weight: bolder ;
         }
    
@@ -616,7 +611,6 @@ body {
   flex-direction: row;
   justify-content: center;
   padding: 0em 20em;
-
 }
 
 header {
@@ -830,14 +824,13 @@ header {
    h2{
     text-align: justify;
     font-weight:bolder ;
+    font-size: 0.80em;
+
   }
-     img {
-           height:6em  ;
-            width:7em ;
-         }
+    
          h1{
           text-align: center;
-          font-size: 4em;
+          font-size: 3em;
           font-weight: bolder ;
         }
    

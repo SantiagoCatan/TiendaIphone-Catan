@@ -198,6 +198,7 @@ header {
   background-size: cover;
   padding: 2em;
   margin-bottom: 1em;
+  justify-content: center;
 }
 header .cabecera {
   display: flex;
@@ -223,8 +224,8 @@ header .cabecera h1 {
   display: none;
 }
 .CarruselMain .carousel-item {
-  width: 620px;
-  height: 450px;
+  width: 100vh;
+  height: auto;
 }
 
 /*/ index/*/
@@ -392,10 +393,6 @@ section.redes ul li a img {
 .footer .ubicacionC h2 {
   text-align: justify;
   font-weight: bolder;
-}
-.footer .ubicacionC img {
-  height: 6em;
-  width: 7em;
 }
 .footer .ubicacionC h1 {
   text-align: center;
@@ -671,16 +668,12 @@ header {
   }
   .footer .ubicacionC h2 {
     text-align: justify;
-    font-size: 0.75em;
     font-weight: bolder;
-  }
-  .footer .ubicacionC img {
-    height: 6em;
-    width: 7em;
+    font-size: 0.8em;
   }
   .footer .ubicacionC h1 {
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: bolder;
   }
 }
@@ -898,14 +891,11 @@ header {
   .footer .ubicacionC h2 {
     text-align: justify;
     font-weight: bolder;
-  }
-  .footer .ubicacionC img {
-    height: 6em;
-    width: 7em;
+    font-size: 0.8em;
   }
   .footer .ubicacionC h1 {
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: bolder;
   }
 }

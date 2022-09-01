@@ -1625,10 +1625,10 @@ section.redes ul li a img {
   }
   .cabeceraSectores li a {
     color: black;
-    font-size: 1.5em;
+    font-size: 2.5em;
     text-decoration: none;
     list-style-type: none;
-    letter-spacing: 0.5em;
+    letter-spacing: 1em;
     text-align: center;
   }
   /*/ iphones/*/
@@ -1652,8 +1652,9 @@ section.redes ul li a img {
   }
   section.iphones .iphone- {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    align-content: center;
   }
   section.iphones .iphone- img {
     height: 600px;
@@ -1689,11 +1690,8 @@ section.redes ul li a img {
   }
   section.redes ul {
     display: flex;
-    flex-flow: row wrap;
     list-style-type: none;
-    justify-content: center;
     flex-direction: row;
-    flex-wrap: nowrap;
   }
   section.redes ul a {
     width: 5em;
@@ -1701,8 +1699,8 @@ section.redes ul li a img {
     padding: 2em;
   }
   section.redes img {
-    width: 300px;
-    height: 100px;
+    width: auto;
+    height: 13vh;
     border: 0.5em double black;
   }
   section.redes .redes ul li:hover {
@@ -1718,10 +1716,10 @@ section.redes ul li a img {
   }
   .footer h1 {
     text-align: justify;
-    font-size: 1em;
+    font-size: 5em;
     font-weight: bolder;
   }
-  .footer h1 img {
+  .footer img {
     height: 10em;
     width: 10em;
   }
@@ -1822,10 +1820,10 @@ section.redes ul li a img {
   }
   .cabeceraSectores li a {
     color: black;
-    font-size: 1.5em;
+    font-size: 2.5em;
     text-decoration: none;
     list-style-type: none;
-    letter-spacing: 0.5em;
+    letter-spacing: 1em;
     text-align: center;
   }
   /*/ iphones/*/
@@ -1849,8 +1847,9 @@ section.redes ul li a img {
   }
   section.iphones .iphone- {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    align-content: center;
   }
   section.iphones .iphone- img {
     height: 600px;
@@ -1886,11 +1885,8 @@ section.redes ul li a img {
   }
   section.redes ul {
     display: flex;
-    flex-flow: row wrap;
     list-style-type: none;
-    justify-content: center;
     flex-direction: row;
-    flex-wrap: nowrap;
   }
   section.redes ul a {
     width: 5em;
@@ -1898,8 +1894,8 @@ section.redes ul li a img {
     padding: 2em;
   }
   section.redes img {
-    width: 300px;
-    height: 100px;
+    width: auto;
+    height: 13vh;
     border: 0.5em double black;
   }
   section.redes .redes ul li:hover {
@@ -1915,10 +1911,10 @@ section.redes ul li a img {
   }
   .footer h1 {
     text-align: justify;
-    font-size: 1em;
+    font-size: 5em;
     font-weight: bolder;
   }
-  .footer h1 img {
+  .footer img {
     height: 10em;
     width: 10em;
   }

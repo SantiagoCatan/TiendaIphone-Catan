@@ -510,20 +510,13 @@ section.redes{
                         "redes redes"
                         "footer footer";
     }
-    
-    
-    
-    
-    
     .HeaderSectores{
         display: grid;
         grid-template-columns: auto;
         background-size:cover;
         padding: 4em;
         background-color: $fondos;
-    
     }
-    
     .cabecera{
         display: flex;
         background-size: cover;
@@ -600,10 +593,10 @@ section.redes{
                 }
                 a{
                     color: $colorDeLetra;
-                    font-size: 1.5em;
+                    font-size: 2.5em;
                     text-decoration: none;
                     list-style-type: none;
-                    letter-spacing: 0.5em;
+                    letter-spacing: 1em;
                     text-align: center;
                 }
             }
@@ -636,9 +629,9 @@ section.redes{
         }
         .iphone-{
             display: flex;
-            justify-content: center;
+            flex-direction: row;
             align-items: center;
-            
+            align-content: center;
             img{
                
                 height: 600px;
@@ -682,12 +675,10 @@ section.redes{
         
         }
         ul{
-            display: flex;
-            flex-flow: row wrap;
+            display: flex;  
             list-style-type: none;
-            justify-content: center;
             flex-direction: row;
-            flex-wrap: nowrap;
+           
             a {
                 width:5em; 
                 height:3em;
@@ -697,8 +688,8 @@ section.redes{
         
         }
         img {
-            width: 300px ;
-            height: 100px;
+            width: auto;
+            height: 13vh;
             border: 0.5em double black;
         
         }
@@ -720,15 +711,15 @@ section.redes{
         
         h1{
             text-align: justify;
-            font-size:1em ;
+            font-size:5em ;
             font-weight:bolder ;
         
-    
+        }
         img {
             height:10em  ;
             width:10em ;
         }
-    }
+
     
     }
     }
@@ -765,9 +756,7 @@ section.redes{
             background-size:cover;
             padding: 4em;
             background-color: $fondos;
-        
         }
-        
         .cabecera{
             display: flex;
             background-size: cover;
@@ -844,10 +833,10 @@ section.redes{
                     }
                     a{
                         color: $colorDeLetra;
-                        font-size: 1.5em;
+                        font-size: 2.5em;
                         text-decoration: none;
                         list-style-type: none;
-                        letter-spacing: 0.5em;
+                        letter-spacing: 1em;
                         text-align: center;
                     }
                 }
@@ -880,9 +869,9 @@ section.redes{
             }
             .iphone-{
                 display: flex;
-                justify-content: center;
+                flex-direction: row;
                 align-items: center;
-                
+                align-content: center;
                 img{
                    
                     height: 600px;
@@ -926,12 +915,10 @@ section.redes{
             
             }
             ul{
-                display: flex;
-                flex-flow: row wrap;
+                display: flex;  
                 list-style-type: none;
-                justify-content: center;
                 flex-direction: row;
-                flex-wrap: nowrap;
+               
                 a {
                     width:5em; 
                     height:3em;
@@ -941,8 +928,8 @@ section.redes{
             
             }
             img {
-                width: 300px ;
-                height: 100px;
+                width: auto;
+                height: 13vh;
                 border: 0.5em double black;
             
             }
@@ -964,15 +951,15 @@ section.redes{
             
             h1{
                 text-align: justify;
-                font-size:1em ;
+                font-size:5em ;
                 font-weight:bolder ;
             
-        
+            }
             img {
                 height:10em  ;
                 width:10em ;
             }
-        }
+    
         
         }
-        }
+    }

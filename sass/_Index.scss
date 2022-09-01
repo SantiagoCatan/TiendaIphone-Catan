@@ -269,38 +269,6 @@ header{
     grid-area: footer;
   }
 
-  @media (min-width:320px){
-
-    .AllIndex {
-      align-items: stretch;
-      grid-template-columns:auto;
-      grid-template-rows: repeat(6,auto);
-      display:grid;
-       gap: 10px;
-       grid-template-areas:
-                        "index" 
-                        "menuPrincipal"
-                        "listas listas" 
-                        "miniBanners"
-                        "redes"
-                        "footer";
-    }
-
-    body {
-      background-color: rgb(228, 228, 19);
-      text-align: center;
-      font-family: "Poppins", sans-serif;
-      font-weight: bolder;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-    }
-    .CarruselMain{
-      display: none;
-    }
-  }
-
 
   
   @media (min-width:580px) {

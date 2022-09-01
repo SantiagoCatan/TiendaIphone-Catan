@@ -142,7 +142,7 @@ section.redes ul li a img {
 }
 
 .AccessoriosMain {
-  grid-area: AccessoriosMain;
+  grid-area: cabecera;
 }
 
 .fundas {
@@ -175,7 +175,7 @@ section.redes ul li a img {
   grid-template-areas: "HeaderSectores" "RC" "cabecera" "AccessoriosMain" "fundas" "vidrios " "redes" "footer";
 }
 
-@media screen and (min-width: 480px) {
+@media (min-width: 580px) {
   .AllAccesorios {
     background-color: aquamarine;
     grid-template-columns: 1fr;
@@ -1336,7 +1336,201 @@ section.redes ul li a img {
   grid-area: footer;
 }
 
-@media screen and (min-width: 580px) {
+@media (min-width: 580px) {
+  .AllIphone {
+    background-color: beige;
+    color: black;
+    font-weight: bolder;
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(6, auto);
+    gap: 20px;
+    grid-template: "HeaderSectores HeaderSectores" "RC RC" "cabecera cabecera" "iphoness iphones" "redes redes" "footer footer";
+  }
+  .HeaderSectores {
+    display: grid;
+    grid-template-columns: auto;
+    background-size: cover;
+    padding: 4em;
+    background-color: beige;
+  }
+  .cabecera {
+    display: flex;
+    background-size: cover;
+    padding: 2em;
+    margin-bottom: 1em;
+    justify-content: center;
+  }
+  .cabecera .cabecera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cabecera .cabecera .logo {
+    display: flex;
+  }
+  .cabecera .cabecera .logo img {
+    height: 8em;
+    width: 8em;
+  }
+  .cabecera .cabecera h1 {
+    display: flex;
+    color: black;
+    text-align: center;
+    font-style: italic;
+    font-size: 5em;
+  }
+  .headerRC {
+    display: flex;
+    padding: 2em 20em;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+  .headerRC .registroSector a {
+    display: flex;
+  }
+  .headerRC .registroSector a img {
+    width: 3em;
+    height: 3em;
+    border: 1em double black;
+  }
+  .headerRC .carritoSector a {
+    display: flex;
+  }
+  .headerRC .carritoSector a img {
+    width: 3em;
+    height: 3em;
+    border: 1em double black;
+  }
+  section.cabeceraMain {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+  }
+  .cabeceraSectores {
+    display: flex;
+    margin-top: 9em;
+    padding: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+  }
+  .cabeceraSectores li {
+    background-color: white;
+    margin-bottom: 5em;
+    margin-top: 0em;
+    border: 0.5em double black;
+    list-style-type: none;
+  }
+  .cabeceraSectores li:hover {
+    transform: scale(1.25);
+  }
+  .cabeceraSectores li a {
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: 1.5em;
+    text-align: center;
+  }
+  /*/ iphones/*/
+  section.iphones {
+    display: grid;
+    grid-area: iphones;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    padding: 0em;
+  }
+  section.iphones .TituloIphone {
+    display: flex;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 2em;
+    text-align: center;
+    background-color: gray;
+    padding: 3em 9em;
+    margin: 2em 3em;
+  }
+  section.iphones .iphone- {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section.iphones .iphone- img {
+    height: 600px;
+    width: 500px;
+  }
+  section.iphones .iphone- .Caracteristica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0em 17em;
+  }
+  section.iphones .iphone- .Caracteristica h2 {
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 4em;
+  }
+  section.iphones .iphone- .Caracteristica li {
+    font-size: 2em;
+    font-style: normal;
+  }
+  /*/Redes/*/
+  section.redes {
+    display: grid;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding: 2em;
+  }
+  section.redes h1 {
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 1em;
+    font-weight: bolder;
+  }
+  section.redes ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+  }
+  section.redes ul a {
+    width: 5em;
+    height: 3em;
+    padding: 2em;
+  }
+  section.redes img {
+    width: 300px;
+    height: 100px;
+    border: 0.5em double black;
+  }
+  section.redes .redes ul li:hover {
+    transform: scale(1.5);
+  }
+  /*/footer /*/
+  .footer {
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 2em;
+    background-color: beige;
+    justify-items: center;
+  }
+  .footer h1 {
+    text-align: justify;
+    font-size: 1em;
+    font-weight: bolder;
+  }
+  .footer h1 img {
+    height: 10em;
+    width: 10em;
+  }
+}
+@media (min-width: 975px) {
   .AllIphone {
     background-color: beige;
     color: black;
@@ -1348,6 +1542,291 @@ section.redes ul li a img {
     grid-template-rows: repeat(6, auto);
     gap: 20px;
     grid-template: "HeaderSectores HeaderSectores" "RC RC" "cabecera cabecera" "iphones iphone" "redes redes" "footer footer";
+  }
+  .HeaderSectores {
+    display: grid;
+    grid-template-columns: auto;
+    background-size: cover;
+    padding: 4em;
+    background-color: beige;
+  }
+  .cabecera {
+    display: flex;
+    background-size: cover;
+    padding: 2em;
+    margin-bottom: 1em;
+    justify-content: center;
+  }
+  .cabecera .cabecera {
+    display: flex;
+    justify-content: center;
+  }
+  .cabecera .cabecera .logo {
+    display: flex;
+  }
+  .cabecera .cabecera .logo img {
+    height: 4em;
+    width: 4em;
+  }
+  .cabecera .cabecera h1 {
+    display: flex;
+    color: black;
+    text-align: center;
+    font-style: italic;
+    font-size: 2em;
+  }
+  .headerRC {
+    display: flex;
+    padding: 2em 4em;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  .headerRC .registroSector a {
+    display: flex;
+  }
+  .headerRC .registroSector a img {
+    width: 3em;
+    height: 3em;
+    border: 1em double black;
+  }
+  .headerRC .carritoSector a {
+    display: flex;
+  }
+  .headerRC .carritoSector a img {
+    width: 3em;
+    height: 3em;
+    border: 1em double black;
+  }
+  section.cabeceraMain {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+  }
+  .cabeceraSectores {
+    display: flex;
+    margin-top: 9em;
+    padding: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+  }
+  .cabeceraSectores li {
+    background-color: white;
+    margin-bottom: 5em;
+    margin-top: 0em;
+    border: 0.5em double black;
+    list-style-type: none;
+  }
+  .cabeceraSectores li:hover {
+    transform: scale(1.25);
+  }
+  .cabeceraSectores li a {
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: 0.5em;
+    text-align: center;
+  }
+  /*/ iphones/*/
+  section.iphones {
+    display: grid;
+    grid-area: iphones;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    padding: 0em;
+  }
+  section.iphones .TituloIphone {
+    display: flex;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 3em;
+    text-align: center;
+    background-color: gray;
+    padding: 0em 9em;
+    margin: 2em 3em;
+  }
+  section.iphones .iphone- {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section.iphones .iphone- img {
+    height: 600px;
+    width: 500px;
+  }
+  section.iphones .iphone- .Caracteristica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0em 17em;
+  }
+  section.iphones .iphone- .Caracteristica h2 {
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 4em;
+  }
+  section.iphones .iphone- .Caracteristica li {
+    font-size: 2em;
+    font-style: normal;
+  }
+  /*/Redes/*/
+  section.redes {
+    display: grid;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding: 2em;
+  }
+  section.redes h1 {
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 1em;
+    font-weight: bolder;
+  }
+  section.redes ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  section.redes ul a {
+    width: 5em;
+    height: 3em;
+    padding: 2em;
+  }
+  section.redes img {
+    width: 300px;
+    height: 100px;
+    border: 0.5em double black;
+  }
+  section.redes .redes ul li:hover {
+    transform: scale(1.5);
+  }
+  /*/footer /*/
+  .footer {
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 2em;
+    background-color: beige;
+    justify-items: center;
+  }
+  .footer h1 {
+    text-align: justify;
+    font-size: 1em;
+    font-weight: bolder;
+  }
+  .footer h1 img {
+    height: 10em;
+    width: 10em;
+  }
+}
+@media (min-width: 1220px) {
+  .AllIphone {
+    background-color: beige;
+    color: black;
+    height: 100vh;
+    font-weight: bolder;
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(6, auto);
+    gap: 20px;
+    grid-template: "HeaderSectores HeaderSectores HeaderSectores" "RC RC RC" "cabecera cabecera cabecera" "iphones iphone iphone" "redes  redes redes" "footer  footer footer";
+  }
+  .HeaderSectores {
+    display: grid;
+    grid-template-columns: auto;
+    background-size: cover;
+    padding: 4em;
+    background-color: beige;
+  }
+  .cabecera {
+    display: flex;
+    background-size: cover;
+    padding: 2em;
+    margin-bottom: 1em;
+    justify-content: center;
+  }
+  .cabecera .cabecera {
+    display: flex;
+    justify-content: center;
+  }
+  .cabecera .cabecera .logo {
+    display: flex;
+  }
+  .cabecera .cabecera .logo img {
+    height: 4em;
+    width: 4em;
+  }
+  .cabecera .cabecera h1 {
+    display: flex;
+    color: black;
+    text-align: center;
+    font-style: italic;
+    font-size: 2em;
+  }
+  .headerRC {
+    display: flex;
+    padding: 2em 4em;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  .headerRC .registroSector a {
+    display: flex;
+  }
+  .headerRC .registroSector a img {
+    width: 3em;
+    height: 3em;
+    border: 1em double black;
+  }
+  .headerRC .carritoSector a {
+    display: flex;
+  }
+  .headerRC .carritoSector a img {
+    width: 3em;
+    height: 3em;
+    border: 1em double black;
+  }
+  section.cabeceraMain {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+  }
+  .cabeceraSectores {
+    display: flex;
+    margin-top: 9em;
+    padding: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+  }
+  .cabeceraSectores li {
+    background-color: white;
+    margin-bottom: 5em;
+    margin-top: 0em;
+    border: 0.5em double black;
+    list-style-type: none;
+  }
+  .cabeceraSectores li:hover {
+    transform: scale(1.25);
+  }
+  .cabeceraSectores li a {
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: 0.5em;
+    text-align: center;
   }
   /*/ iphones/*/
   section.iphones {
@@ -1536,7 +2015,7 @@ section.redes ul li a img {
   grid-template-areas: "header" "cabecera" "ipadsMac" "footer";
 }
 
-@media screen and (min-width: 480px) {
+@media (min-width: 580px) {
   .envolventeMac {
     background-color: aquamarine;
     grid-template-columns: 1fr;
@@ -1678,11 +2157,11 @@ section.redes ul li a img {
 }
 
 .headerRC {
-  grid-area: headerRC;
+  grid-area: RC;
 }
 
 .cabeceraMain {
-  grid-area: cabeceraMain;
+  grid-area: cabecera;
 }
 
 .listamatenimiento {
@@ -1705,7 +2184,7 @@ section.redes ul li a img {
   grid-template-areas: "HeaderSectores" "cabeceraMain" "listamatenimiento" "redes" "footer";
 }
 
-@media screen and (min-width: 480px) {
+@media (min-width: 580px) {
   .AllServicio {
     background-color: aquamarine;
     grid-template-columns: 1fr;

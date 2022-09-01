@@ -74,15 +74,14 @@
 
 .HeaderSectores{
    grid-area:  HeaderSectores;
-
 }
 
 .headerRC{
-        grid-area: headerRC;
+        grid-area:RC;
 }
 
 .cabeceraMain{
-        grid-area: cabeceraMain;
+    grid-area:cabecera;
 }
 
 
@@ -114,7 +113,7 @@
   }
 
 
-  @media screen and (min-width: 480px){
+  @media (min-width: 580px){
 
 
     .AllServicio{

@@ -188,8 +188,9 @@ header{
         }
      ul{
       display: flex;
+      flex-flow: row wrap;
       list-style-type: none;
-      justify-content: center;
+      align-content: center;
       flex-direction: column;
         li{
           margin-bottom: 1em;
@@ -216,6 +217,7 @@ header{
   background-color: beige;
   justify-items: center;
   flex-direction: column;
+  justify-content: center;
   
   .ubicacionC{
 
@@ -230,6 +232,7 @@ header{
   }
    
          h1{
+          display: flex;
           text-align: center;
           font-size: 2em;
           font-weight: bolder ;

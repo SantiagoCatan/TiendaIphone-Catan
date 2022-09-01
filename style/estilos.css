@@ -356,8 +356,9 @@ section.redes h1 {
 }
 section.redes ul {
   display: flex;
+  flex-flow: row wrap;
   list-style-type: none;
-  justify-content: center;
+  align-content: center;
   flex-direction: column;
 }
 section.redes ul li {
@@ -382,6 +383,7 @@ section.redes ul li a img {
   background-color: beige;
   justify-items: center;
   flex-direction: column;
+  justify-content: center;
 }
 .footer .ubicacionC {
   display: flex;
@@ -395,6 +397,7 @@ section.redes ul li a img {
   font-weight: bolder;
 }
 .footer .ubicacionC h1 {
+  display: flex;
   text-align: center;
   font-size: 2em;
   font-weight: bolder;

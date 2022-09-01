@@ -18,7 +18,7 @@ header{
     background-size: cover;
     padding: 2em;
     margin-bottom: 1em;
-
+    justify-content: center;
     .cabecera {
         display: flex;
         justify-content: center;
@@ -46,7 +46,6 @@ header{
                 height:450px;
     }
   }
-  
   /*/ index/*/
   section.menuPricipal{
     display:flex;
@@ -106,7 +105,6 @@ header{
     
       }
   }
-
   /*/nav/*/
   .listas {
     display: flex;
@@ -177,7 +175,6 @@ header{
         }
       }
   }
-  
   /*/redes/*/
   section.redes{
     display:flex;
@@ -213,8 +210,6 @@ header{
         }
           }
         }
-      
-
 /*/footer /*/
 .footer{
   display: flex;
@@ -245,7 +240,6 @@ header{
    
   }
 }
-  
   /*/declaro area en grilla /*/
   header {
     grid-area: index;
@@ -269,8 +263,6 @@ header{
     grid-area: footer;
   }
 
-
-  
   @media (min-width:580px) {
     .AllIndex {
       align-items: stretch;
@@ -291,15 +283,12 @@ header{
       display: flex;
         flex-direction: column;
         align-items: center;
-    
     }
     header {
       margin-bottom: 1em;
       align-items: center;
       justify-content: center;
   }
-    
-  
   }
  @media (min-width:975px){
   .AllIndex {

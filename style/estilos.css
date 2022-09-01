@@ -74,55 +74,63 @@ section.Vidrios {
 
 /*/Redes/*/
 section.redes {
-  display: grid;
-  margin-top: 2em;
-  margin-bottom: 1em;
-  padding: 2em;
+  display: flex;
+  justify-items: stretch;
+  justify-content: center;
 }
 section.redes h1 {
   text-align: center;
-  font-size: 5em;
-  margin-bottom: 1em;
+  font-size: 3em;
+  margin-bottom: 2em;
   font-weight: bolder;
 }
 section.redes ul {
   display: flex;
-  flex-flow: row wrap;
   list-style-type: none;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  align-content: center;
+  flex-direction: column;
 }
-section.redes ul a {
+section.redes ul li {
+  margin-bottom: 1em;
+}
+section.redes ul li:hover {
+  transform: scale(1.1);
+}
+section.redes ul li a {
   width: 5em;
   height: 3em;
-  padding: 2em;
 }
-section.redes img {
-  width: 300px;
-  height: 100px;
+section.redes ul li a img {
+  width: 100px;
+  height: 8vh;
   border: 0.5em double black;
-}
-section.redes .redes ul li:hover {
-  transform: scale(1.5);
 }
 
 /*/footer /*/
 .footer {
-  display: grid;
-  grid-template-rows: 1fr;
-  padding: 2em;
+  display: flex;
   background-color: beige;
   justify-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
-.footer h1 {
+.footer .ubicacionC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.footer .ubicacionC h2 {
   text-align: justify;
-  font-size: 1em;
   font-weight: bolder;
+  font-size: 0.85em;
 }
-.footer h1 img {
-  height: 10em;
-  width: 10em;
+.footer .ubicacionC h1 {
+  display: flex;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bolder;
 }
 
 .HeaderSectores {
@@ -277,7 +285,7 @@ section.menuPricipal .tituloMenuprincipal .carrito img {
   height: 4em;
   border: 1em double black;
 }
-section.menuPricipal .tituloMenuprincipal carrito:hover {
+section.menuPricipal .tituloMenuprincipal .carrito:hover {
   transform: scale(1.5);
 }
 
@@ -299,7 +307,7 @@ section.menuPricipal .tituloMenuprincipal carrito:hover {
 .listas ul li a img {
   width: 100%;
   height: 11em;
-  border: 1em solid black;
+  border: 0.45em solid black;
 }
 
 section.miniBanners {
@@ -1089,12 +1097,13 @@ header {
 }
 
 body {
+  background-color: beige;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  justify-content: center;
   min-height: 100vh;
 }
 
@@ -1108,23 +1117,28 @@ body {
 
 .cabecera {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  background-size: cover;
+  padding: 2em;
+  margin-bottom: 1em;
   justify-content: center;
-  align-items: center;
 }
-.cabecera h1 {
-  color: black;
-  text-align: center;
-  font-style: normal;
-  font-size: 3em;
+.cabecera .cabecera {
+  display: flex;
+  justify-content: center;
 }
-.cabecera .logo {
+.cabecera .cabecera .logo {
   display: flex;
 }
-.cabecera .logo img {
+.cabecera .cabecera .logo img {
   height: 4em;
   width: 4em;
+}
+.cabecera .cabecera h1 {
+  display: flex;
+  color: black;
+  text-align: center;
+  font-style: italic;
+  font-size: 2em;
 }
 
 .headerRC {
@@ -1240,55 +1254,63 @@ section.iphones .iphone- .Caracteristica li {
 
 /*/Redes/*/
 section.redes {
-  display: grid;
-  margin-top: 2em;
-  margin-bottom: 1em;
-  padding: 2em;
+  display: flex;
+  justify-items: stretch;
+  justify-content: center;
 }
 section.redes h1 {
   text-align: center;
-  font-size: 5em;
-  margin-bottom: 1em;
+  font-size: 3em;
+  margin-bottom: 2em;
   font-weight: bolder;
 }
 section.redes ul {
   display: flex;
-  flex-flow: row wrap;
   list-style-type: none;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  align-content: center;
+  flex-direction: column;
 }
-section.redes ul a {
+section.redes ul li {
+  margin-bottom: 1em;
+}
+section.redes ul li:hover {
+  transform: scale(1.1);
+}
+section.redes ul li a {
   width: 5em;
   height: 3em;
-  padding: 2em;
 }
-section.redes img {
-  width: 300px;
-  height: 100px;
+section.redes ul li a img {
+  width: 100px;
+  height: 8vh;
   border: 0.5em double black;
-}
-section.redes .redes ul li:hover {
-  transform: scale(1.5);
 }
 
 /*/footer /*/
 .footer {
-  display: grid;
-  grid-template-rows: 1fr;
-  padding: 2em;
+  display: flex;
   background-color: beige;
   justify-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
-.footer h1 {
+.footer .ubicacionC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.footer .ubicacionC h2 {
   text-align: justify;
-  font-size: 1em;
   font-weight: bolder;
+  font-size: 0.85em;
 }
-.footer h1 img {
-  height: 10em;
-  width: 10em;
+.footer .ubicacionC h1 {
+  display: flex;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bolder;
 }
 
 /*/responsive/*/
@@ -1327,7 +1349,7 @@ section.redes .redes ul li:hover {
     grid-template-columns: auto;
     grid-template-rows: repeat(6, auto);
     gap: 20px;
-    grid-template: "HeaderSectores" "RC" "cabecera" "iphones" "redes" "footer";
+    grid-template: "HeaderSectores HeaderSectores" "RC RC" "cabecera cabecera" "iphones iphone" "redes redes" "footer footer";
   }
   /*/ iphones/*/
   section.iphones {
@@ -1449,55 +1471,63 @@ section.redes .redes ul li:hover {
 
 /*/Redes/*/
 section.redes {
-  display: grid;
-  margin-top: 2em;
-  margin-bottom: 1em;
-  padding: 2em;
+  display: flex;
+  justify-items: stretch;
+  justify-content: center;
 }
 section.redes h1 {
   text-align: center;
-  font-size: 5em;
-  margin-bottom: 1em;
+  font-size: 3em;
+  margin-bottom: 2em;
   font-weight: bolder;
 }
 section.redes ul {
   display: flex;
-  flex-flow: row wrap;
   list-style-type: none;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  align-content: center;
+  flex-direction: column;
 }
-section.redes ul a {
+section.redes ul li {
+  margin-bottom: 1em;
+}
+section.redes ul li:hover {
+  transform: scale(1.1);
+}
+section.redes ul li a {
   width: 5em;
   height: 3em;
-  padding: 2em;
 }
-section.redes img {
-  width: 300px;
-  height: 100px;
+section.redes ul li a img {
+  width: 100px;
+  height: 8vh;
   border: 0.5em double black;
-}
-section.redes .redes ul li:hover {
-  transform: scale(1.5);
 }
 
 /*/footer /*/
 .footer {
-  display: grid;
-  grid-template-rows: 1fr;
-  padding: 2em;
+  display: flex;
   background-color: beige;
   justify-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
-.footer h1 {
+.footer .ubicacionC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.footer .ubicacionC h2 {
   text-align: justify;
-  font-size: 1em;
   font-weight: bolder;
+  font-size: 0.85em;
 }
-.footer h1 img {
-  height: 10em;
-  width: 10em;
+.footer .ubicacionC h1 {
+  display: flex;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bolder;
 }
 
 .envolventeMac {
@@ -1519,55 +1549,63 @@ section.redes .redes ul li:hover {
 }
 /*/Redes/*/
 section.redes {
-  display: grid;
-  margin-top: 2em;
-  margin-bottom: 1em;
-  padding: 2em;
+  display: flex;
+  justify-items: stretch;
+  justify-content: center;
 }
 section.redes h1 {
   text-align: center;
-  font-size: 5em;
-  margin-bottom: 1em;
+  font-size: 3em;
+  margin-bottom: 2em;
   font-weight: bolder;
 }
 section.redes ul {
   display: flex;
-  flex-flow: row wrap;
   list-style-type: none;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  align-content: center;
+  flex-direction: column;
 }
-section.redes ul a {
+section.redes ul li {
+  margin-bottom: 1em;
+}
+section.redes ul li:hover {
+  transform: scale(1.1);
+}
+section.redes ul li a {
   width: 5em;
   height: 3em;
-  padding: 2em;
 }
-section.redes img {
-  width: 300px;
-  height: 100px;
+section.redes ul li a img {
+  width: 100px;
+  height: 8vh;
   border: 0.5em double black;
-}
-section.redes .redes ul li:hover {
-  transform: scale(1.5);
 }
 
 /*/footer /*/
 .footer {
-  display: grid;
-  grid-template-rows: 1fr;
-  padding: 2em;
+  display: flex;
   background-color: beige;
   justify-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
-.footer h1 {
+.footer .ubicacionC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.footer .ubicacionC h2 {
   text-align: justify;
-  font-size: 1em;
   font-weight: bolder;
+  font-size: 0.85em;
 }
-.footer h1 img {
-  height: 10em;
-  width: 10em;
+.footer .ubicacionC h1 {
+  display: flex;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bolder;
 }
 
 /*/Redes/*/
@@ -1577,55 +1615,63 @@ section.redes .redes ul li:hover {
 }
 
 section.redes {
-  display: grid;
-  margin-top: 2em;
-  margin-bottom: 1em;
-  padding: 2em;
+  display: flex;
+  justify-items: stretch;
+  justify-content: center;
 }
 section.redes h1 {
   text-align: center;
-  font-size: 5em;
-  margin-bottom: 1em;
+  font-size: 3em;
+  margin-bottom: 2em;
   font-weight: bolder;
 }
 section.redes ul {
   display: flex;
-  flex-flow: row wrap;
   list-style-type: none;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  align-content: center;
+  flex-direction: column;
 }
-section.redes ul a {
+section.redes ul li {
+  margin-bottom: 1em;
+}
+section.redes ul li:hover {
+  transform: scale(1.1);
+}
+section.redes ul li a {
   width: 5em;
   height: 3em;
-  padding: 2em;
 }
-section.redes img {
-  width: 300px;
-  height: 100px;
+section.redes ul li a img {
+  width: 100px;
+  height: 8vh;
   border: 0.5em double black;
-}
-section.redes .redes ul li:hover {
-  transform: scale(1.5);
 }
 
 /*/footer /*/
 .footer {
-  display: grid;
-  grid-template-rows: 1fr;
-  padding: 2em;
+  display: flex;
   background-color: beige;
   justify-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
-.footer h1 {
+.footer .ubicacionC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.footer .ubicacionC h2 {
   text-align: justify;
-  font-size: 1em;
   font-weight: bolder;
+  font-size: 0.85em;
 }
-.footer h1 img {
-  height: 10em;
-  width: 10em;
+.footer .ubicacionC h1 {
+  display: flex;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bolder;
 }
 
 /*DECALARACION DE AREA*/

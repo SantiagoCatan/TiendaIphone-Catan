@@ -575,6 +575,11 @@ header {
   grid-area: footer;
 }
 
+.AllIndex {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 580px) {
   .AllIndex {
     align-items: stretch;

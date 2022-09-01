@@ -446,6 +446,10 @@ header {
     flex-direction: column;
     align-items: center;
   }
+  .CarruselMain .carousel-item {
+    width: 100vh;
+    height: auto;
+  }
   header {
     margin-bottom: 1em;
     align-items: center;
@@ -634,6 +638,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .CarruselMain .carousel-item {
+    width: 100vh;
+    height: auto;
   }
   body {
     text-align: center;
@@ -878,6 +886,10 @@ header {
     flex-direction: row;
     justify-content: center;
     padding: 0em 20em;
+  }
+  .CarruselMain .carousel-item {
+    width: 100vh;
+    height: auto;
   }
   header {
     display: flex;

@@ -74,12 +74,8 @@
     }
     }
 }
-
-
 section.cabeceraMain{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 90%;
     justify-items: center;
     justify-content: center;
 }
@@ -96,19 +92,17 @@ section.cabeceraMain{
             background-color: white;
             margin-bottom: 5em;
             margin-top: 0em;
-            border: 1em double black;
+            border: 0.5em double black;
             list-style-type: none;
             &:hover{
                 transform: scale(1.25);
             }
             a{
                 color: $colorDeLetra;
-                font-size: 2em;
-                padding: 0em 2em 1em 4em;
+                font-size: 1.5em;
                 text-decoration: none;
                 list-style-type: none;
                 letter-spacing: 0.5em;
-                font: bolder;
                 text-align: center;
             }
         }
@@ -120,11 +114,8 @@ section.cabeceraMain{
 
 section.iphones{
     display:grid ;
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    padding: 0em;
-    margin: 0em;
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -133,7 +124,7 @@ section.iphones{
         display: flex;
         font-style: normal;
         font-weight: bolder;
-        font-size: 1.5em;
+        font-size: 1.25em;
         text-align: center;
         background-color: gray;
         padding: 1em 9em;
@@ -141,9 +132,10 @@ section.iphones{
     }
     .iphone-{
         display: flex;
-        align-items: stretch;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        margin-top: 5em;
         
         img{
            
@@ -156,14 +148,16 @@ section.iphones{
             flex-direction: column;
             align-items: center;
             padding: 0em 17em;
+            margin-top: 3em;
             h2{
                 
                 font-style:oblique;
                 font-weight: bolder;
-                font-size: 3em;
+                font-size: 2em;
             }
             li{
-                font-size:1em ;
+                font-size: 1.25em;
+                margin-top: 1em;
                 font-style: normal;
             }
         }
@@ -179,6 +173,8 @@ section.redes{
     display:flex;
     justify-items: stretch;
     justify-content: center;
+    flex-direction: column;
+    margin-top: 3em;
     h1{
       text-align: center;
       font-size: 3em;

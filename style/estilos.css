@@ -1925,21 +1925,164 @@ section.redes ul li a img {
   margin: 0px;
 }
 
-.ipadsMac {
-  grid-area: ipadsMac;
-  display: grid;
-  margin-top: 100em;
-  margin-bottom: 20em;
-}
-
-.bannerIM img {
-  margin-top: 70em;
-  width: 1000;
-  height: 100vh;
-}
-
-.mac {
+body {
+  background-color: beige;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.HeaderSectores {
+  display: grid;
+  grid-template-columns: auto;
+  background-size: cover;
+  padding: 4em;
+  background-color: beige;
+}
+
+.cabecera {
+  display: flex;
+  background-size: cover;
+  padding: 2em;
+  margin-bottom: 1em;
+  justify-content: center;
+}
+.cabecera .cabecera {
+  display: flex;
+  justify-content: center;
+}
+.cabecera .cabecera .logo {
+  display: flex;
+}
+.cabecera .cabecera .logo img {
+  height: 4em;
+  width: 4em;
+}
+.cabecera .cabecera h1 {
+  display: flex;
+  color: black;
+  text-align: center;
+  font-style: italic;
+  font-size: 2em;
+}
+
+.headerRC {
+  display: flex;
+  padding: 2em 4em;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.headerRC .registroSector a {
+  display: flex;
+}
+.headerRC .registroSector a img {
+  width: 3em;
+  height: 3em;
+  border: 1em double black;
+}
+.headerRC .carritoSector a {
+  display: flex;
+}
+.headerRC .carritoSector a img {
+  width: 3em;
+  height: 3em;
+  border: 1em double black;
+}
+
+section.cabeceraMain {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+}
+
+.cabeceraSectores {
+  display: flex;
+  margin-top: 9em;
+  padding: 1em;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+.cabeceraSectores li {
+  background-color: white;
+  margin-bottom: 5em;
+  margin-top: 0em;
+  border: 0.5em double black;
+  list-style-type: none;
+}
+.cabeceraSectores li:hover {
+  transform: scale(1.25);
+}
+.cabeceraSectores li a {
+  color: black;
+  font-size: 1.5em;
+  text-decoration: none;
+  list-style-type: none;
+  letter-spacing: 0.5em;
+  text-align: center;
+}
+
+.ipadsMac {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  /*/ ipads/*/
+}
+.ipadsMac section.ipadsMac {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.ipadsMac section.ipadsMac .TituloIpad {
+  display: flex;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 1.25em;
+  text-align: center;
+  background-color: gray;
+  padding: 1em 9em;
+  margin: 1em 0em;
+}
+.ipadsMac section.ipadsMac .ipad- {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+}
+.ipadsMac section.ipadsMac .ipad- img {
+  height: auto;
+  width: 50vh;
+}
+.ipadsMac section.ipadsMac .ipad- .Caracteristicas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0em 17em;
+  margin-top: 3em;
+}
+.ipadsMac section.ipadsMac .ipad- .Caracteristicas H2 {
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: 2em;
+}
+.ipadsMac section.ipadsMac .ipad- .Caracteristicas li {
+  font-size: 1.25em;
+  margin-top: 1em;
+  font-style: normal;
 }
 
 /*/Redes/*/
@@ -1947,6 +2090,42 @@ section.redes {
   display: flex;
   justify-items: stretch;
   justify-content: center;
+}
+section.redes h1 {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 2em;
+  font-weight: bolder;
+}
+section.redes ul {
+  display: flex;
+  list-style-type: none;
+  align-content: center;
+  flex-direction: column;
+}
+section.redes ul li {
+  margin-bottom: 1em;
+}
+section.redes ul li:hover {
+  transform: scale(1.1);
+}
+section.redes ul li a {
+  width: 5em;
+  height: 3em;
+}
+section.redes ul li a img {
+  width: 100px;
+  height: 8vh;
+  border: 0.5em double black;
+}
+
+/*/Redes/*/
+section.redes {
+  display: flex;
+  justify-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3em;
 }
 section.redes h1 {
   text-align: center;
@@ -2003,21 +2182,42 @@ section.redes ul li a img {
   font-weight: bolder;
 }
 
-.envolventeMac {
-  background-color: aquamarine;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, auto);
-  gap: 10px;
-  grid-template-areas: "header" "cabecera" "ipadsMac" "footer";
-}
-
 @media (min-width: 580px) {
   .envolventeMac {
-    background-color: aquamarine;
-    grid-template-columns: 1fr;
+    align-items: stretch;
+    grid-template-columns: auto;
     grid-template-rows: repeat(4, auto);
+    display: grid;
     gap: 10px;
     grid-template-areas: "header" "cabecera" "ipadsMac" "footer";
+  }
+}
+@media (min-width: 975px) {
+  .envolventeMac {
+    align-items: stretch;
+    height: 100vh;
+    color: black;
+    font-weight: bolder;
+    display: grid;
+    font-family: "Roboto", sans-serif;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(7, auto);
+    gap: 15px;
+    grid-template-areas: "header header" "cabecera cabecera" "ipadsMac ipadsMac" "footer footer ";
+  }
+}
+@media (min-width: 1220px) {
+  .envolventeMac {
+    align-items: stretch;
+    height: 100vh;
+    color: black;
+    font-weight: bolder;
+    display: grid;
+    font-family: "Roboto", sans-serif;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(7, auto);
+    gap: 15px;
+    grid-template-areas: "header header header" "cabecera cabecera cabecera" "ipadsMac  ipadsMac ipadsMac" "footer footer footer";
   }
 }
 /*/Redes/*/

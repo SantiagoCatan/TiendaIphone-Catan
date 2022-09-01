@@ -25,67 +25,70 @@
 
 
   /*/Redes/*/
-section.redes{
-  display:grid ;
-  margin-top: 2em;
-  margin-bottom: 1em;
-  padding: 2em;
-  h1{
+  section.redes{
+    display:flex;
+    justify-items: stretch;
+    justify-content: center;
+    h1{
       text-align: center;
-      font-size: 5em;
-      margin-bottom: 1em;
+      font-size: 3em;
+      margin-bottom: 2em;
       font-weight: bolder;  
-  
-  }
-  ul{
+        }
+     ul{
       display: flex;
-      flex-flow: row wrap;
       list-style-type: none;
-      justify-content: center;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      a {
-          width:5em; 
-          height:3em;
-          padding: 2em;
-      }
-      
-  
-  }
-  img {
-      width: 300px ;
-      height: 100px;
-      border: 0.5em double black;
-  
-  }
-  .redes ul li:hover{
-      transform: scale(1.5);
-  }
-  
-}
+      align-content: center;
+      flex-direction: column;
+        li{
+          margin-bottom: 1em;
+          &:hover{
+            transform: scale(1.1);
+        }
+          a{
+            width:5em; 
+            height:3em;
+            img{
+              width: 100px;
+              height: 8vh;
+              border: 0.5em double black;
+              }
+            } 
+          
+        }
+          }
+        }
 
 
 /*/footer /*/
-
 .footer{
-  display: grid;
-  grid-template-rows: 1fr;
-  padding: 2em;
-  background-color: $fondos;
-  justify-items: center;
-  
-  h1{
+    display: flex;
+    background-color: beige;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    .ubicacionC{
+      display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-content: center;
+     align-items: center;
+     h2{
       text-align: justify;
-      font-size:1em ;
       font-weight:bolder ;
-  
-
-  img {
-      height:10em  ;
-      width:10em ;
+      font-size: 0.85em;
+    }
+    
+           h1{
+            display: flex;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bolder ;
+          }
+     
+    }
   }
-}
-}
   
   .envolventeMac {
     background-color: aquamarine;

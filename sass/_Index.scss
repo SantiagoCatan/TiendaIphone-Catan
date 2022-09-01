@@ -67,7 +67,7 @@ header{
       }
       
 
-    .tituloMenuprincipal {
+      .tituloMenuprincipal {
         display: flex;
         flex-flow: row nowrap;
         align-content: center;
@@ -82,7 +82,7 @@ header{
                 height: 4em;
                 border: 1em double black;
               }
-            
+      
           }
           .registro:hover {
             transform: scale(1.5);
@@ -99,8 +99,8 @@ header{
               
               
           }
-          carrito:hover {
-            transform: scale(1.5);
+          .carrito:hover {
+            transform:scale(1.5);
           }
     
       }
@@ -199,7 +199,6 @@ header{
           a{
             width:5em; 
             height:3em;
-           
             img{
               width: 100px;
               height: 8vh;

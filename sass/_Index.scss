@@ -10,7 +10,7 @@ body {
   font-weight: bolder;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   min-height: 100vh;
 }
 header{
@@ -21,6 +21,7 @@ header{
 
     .cabecera {
         display: flex;
+        justify-content: center;
         .logo {
             display: flex;
             img {
@@ -33,7 +34,7 @@ header{
             color: black;
             text-align: center;
             font-style: italic;
-            font-size: 3em;
+            font-size: 2em;
           }
       }
   }
@@ -133,7 +134,7 @@ header{
   }
   section.miniBanners {
     display: grid;
-    grid-template-columns: 90%;
+    grid-template-columns: 80%;
     justify-content: center;
     align-content: center;
 
@@ -154,7 +155,8 @@ header{
           }
         h2 {
           font-weight: bolder; 
-            font-size: 3em;
+          font-size:2em;
+          margin-bottom:2em;
             text-align: justify;
           }
       }
@@ -189,11 +191,9 @@ header{
         }
      ul{
       display: flex;
-      flex-flow: row wrap;
       list-style-type: none;
       justify-content: center;
-      flex-direction: row;
-      flex-wrap: wrap;
+      flex-direction: column;
         li{
           margin-bottom: 1em;
           &:hover{
@@ -269,22 +269,35 @@ header{
     grid-area: footer;
   }
 
-  @media screen and (min-width:320px){
+  @media (min-width:320px){
 
     .AllIndex {
       align-items: stretch;
-      grid-template-columns: auto;
-      grid-template-rows: repeat(7,auto) ;
-      display: grid;
+      grid-template-columns:auto;
+      grid-template-rows: repeat(6,auto);
+      display:grid;
        gap: 10px;
        grid-template-areas:
-                        "index " 
-                        "CarruselMain "
-                        "menuPrincipal "
+                        "index" 
+                        "menuPrincipal"
                         "listas listas" 
-                        "miniBanners "
-                        "redes "
-                        "footer" ;
+                        "miniBanners"
+                        "redes"
+                        "footer";
+    }
+
+    body {
+      background-color: rgb(228, 228, 19);
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      font-weight: bolder;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .CarruselMain{
+      display: none;
     }
   }
 
@@ -294,7 +307,7 @@ header{
     .AllIndex {
       align-items: stretch;
       grid-template-columns: auto auto;
-      grid-template-rows: repeat(7,auto) ;
+      grid-template-rows: repeat(7,auto);
       display: grid;
        gap: 10px;
        grid-template-areas:
@@ -468,10 +481,11 @@ header {
   /*/nav/*/
   .listas {
     display: flex;
+    flex-direction: column;
     align-items: center;
     align-content: center;
-      margin: auto;
-      justify-content: center;
+    margin: auto;
+    justify-content: center;
 
     ul {
       
@@ -493,7 +507,7 @@ header {
   }
   section.miniBanners {
     display: grid;
-    grid-template-columns: 90%;
+    grid-template-columns: 55%;
     justify-content: center;
     align-content: center;
 
@@ -671,15 +685,12 @@ header {
             color: black;
             text-align: center;
             font-style: italic;
-            font-size: 8em;
+            font-size: 5em;
           }
       }
 
   }
 
-/*carrusel*/
-
-  
   /*/ index/*/
   section.menuPricipal {
     display: flex;
@@ -696,7 +707,7 @@ header {
         h1 {
             font-style: italic;
             font-weight: bolder;
-            font-size: 9em;
+            font-size: 7em;
           }
       }
       
@@ -711,8 +722,8 @@ header {
             padding: 1em;
             margin: 1em;
             img {
-                width: 7em;
-                height: 7em;
+                width: 5em;
+                height: 5em;
                 border: 1em double black;
               }
             
@@ -725,8 +736,8 @@ header {
             padding: 1em;
             margin: 1em;
             img {
-                width: 7em;
-                height: 7em;
+                width: 5em;
+                height: 5em;
                 border: 1em double black;
               }
               
@@ -778,13 +789,11 @@ header {
       justify-content: center;
       align-items: center;
       margin-bottom: 5em;
-      
+    
         img {
-           
           height: 10em;
           width: 13em;
-      
-            border: 0.125em solid black;
+          border: 0.125em solid black;
           }
         h2 {
           font-weight: bolder; 
@@ -800,7 +809,7 @@ header {
         justify-content: center;
         legend{
           float: none;
-          width: 90%;
+          width: 55%;
           padding: 0;
           margin-bottom: 0.5rem;
           font-size: calc(1.275rem + .3vw);
@@ -863,7 +872,6 @@ header {
    align-items: center;
    h2{
     text-align: justify;
-    font-size: 1.75em;
     font-weight:bolder ;
   }
      img {

@@ -201,6 +201,7 @@ header {
 }
 header .cabecera {
   display: flex;
+  justify-content: center;
 }
 header .cabecera .logo {
   display: flex;
@@ -214,7 +215,7 @@ header .cabecera h1 {
   color: black;
   text-align: center;
   font-style: italic;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 /*carrusel*/
@@ -353,11 +354,10 @@ section.redes h1 {
 }
 section.redes ul {
   display: flex;
-  flex-flow: row wrap;
   list-style-type: none;
   justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 section.redes ul li {
   margin-bottom: 1em;
@@ -436,10 +436,23 @@ header {
   .AllIndex {
     align-items: stretch;
     grid-template-columns: auto;
-    grid-template-rows: repeat(7, auto);
+    grid-template-rows: repeat(6, auto);
     display: grid;
     gap: 10px;
-    grid-template-areas: "index " "CarruselMain " "menuPrincipal " "listas listas" "miniBanners " "redes " "footer";
+    grid-template-areas: "index" "menuPrincipal" "listas listas" "miniBanners" "redes" "footer";
+  }
+  body {
+    background-color: rgb(228, 228, 19);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .CarruselMain {
+    display: none;
   }
 }
 @media (min-width: 580px) {
@@ -576,6 +589,7 @@ header {
   /*/nav/*/
   .listas {
     display: flex;
+    flex-direction: column;
     align-items: center;
     align-content: center;
     margin: auto;

@@ -869,7 +869,7 @@ header {
         h1 {
             font-style: italic;
             font-weight: bolder;
-            font-size: 7em;
+            font-size: 14em;
           }
       }
       
@@ -953,13 +953,14 @@ header {
       margin-bottom: 5em;
     
         img {
-          height: 10em;
-          width: 13em;
+          height: 26em;
+          width: 31em;
           border: 0.125em solid black;
           }
         h2 {
           font-weight: bolder; 
-            font-size: 3em;
+          font-size: 7em;
+          margin-top: 2em;
             text-align: justify;
           }
       }
@@ -994,9 +995,7 @@ header {
      ul{
         display: flex;
       list-style-type: none;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      flex-direction: row;
         li{
           margin-bottom: 1em;
           &:hover{
@@ -1005,10 +1004,9 @@ header {
           a{
             width:5em; 
             height:3em;
-           
             img{
-              width: auto;
-              height: 14vh;
+              width: 22em;
+              height: 8vh;
               border: 0.5em double black;
               }
             } 
@@ -1032,16 +1030,20 @@ header {
    justify-content: center;
    align-content: center;
    align-items: center;
+   .img-footer{
+           width:300em;
+           height:auto; 
+   }
    h2{
     text-align: justify;
     font-weight:bolder ;
-    font-size: 0.80em;
+    font-size: 4em;
 
   }
     
          h1{
           text-align: center;
-          font-size: 3em;
+          font-size: 7em;
           font-weight: bolder ;
         }
    

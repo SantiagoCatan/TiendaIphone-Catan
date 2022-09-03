@@ -111,13 +111,6 @@ section.cabeceraMain{
       }
   }
 
-.ipadsMac {
-  display:grid ;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
   
   /*/ ipads/*/
 section.ipadsMac{
@@ -126,18 +119,21 @@ section.ipadsMac{
   grid-template-rows: auto;
   justify-content: center;
   align-items: center;
+  gap: 50px;
   justify-items: center;
 
   .TituloIpad{
       display: flex;
-      font-style: normal;
-      font-weight: bolder;
-      font-size: 1.25em;
-      text-align: center;
-      background-color: gray;
-      padding: 1em 9em;
-      margin: 1em 0em;
       
+      h1{
+        font-size: 1.25em;
+        background-color: grey;
+        font-style: normal;
+        font-weight: bolder;
+        text-align: center;
+        padding: 2em 11em;
+        margin: 1em 0em;
+      }
   }
   .ipad-{
       display: flex;
@@ -149,7 +145,6 @@ section.ipadsMac{
           height: auto;
           width:50vh;
       }
-     
       .Caracteristicas{
           display: flex;
           flex-direction: column;
@@ -169,7 +164,7 @@ section.ipadsMac{
       }
   }
 }
-}
+
   /*/Redes/*/
   section.redes{
     display:flex;
@@ -288,6 +283,102 @@ section.redes{
                           "ipadsMac" 
                           "footer";
     }
+    
+  
+    
+    .headerRC{
+      display: flex;
+      padding: 2em 7em;
+      justify-items: center;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      .registroSector a{
+          display: flex;
+          img {
+              width:3em;
+             height:3em;
+             border: 1em double black
+      }
+      }
+      .carritoSector a{
+          display: flex;
+           img {
+              width:3em;
+              height:3em;
+              border: 1em double black
+         
+      }
+      }
+    }
+      
+    /*/Redes/*/
+    section.redes{
+      display:flex;
+      justify-items: stretch;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 3em;
+      h1{
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 2em;
+        font-weight: bolder;  
+          }
+       ul{
+        display: flex;
+        list-style-type: none;
+        flex-direction: row;
+        flex-wrap: nowrap;
+          li{
+            margin-bottom: 1em;
+            &:hover{
+              transform: scale(1.1);
+          }
+            a{
+              width:5em; 
+              height:3em;
+              img{
+                width: 100px;
+                height: 8vh;
+                border: 0.5em double black;
+                }
+              } 
+            
+          }
+            }
+          }
+    
+    
+    /*/footer /*/
+    .footer{
+      display: flex;
+      background-color: beige;
+      justify-items: center;
+      flex-direction: column;
+      justify-content: center;
+      
+      .ubicacionC{
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-content: center;
+       align-items: center;
+       h2{
+        text-align: justify;
+        font-weight:bolder ;
+        font-size: 1em;
+      }
+      
+             h1{
+              display: flex;
+              text-align: center;
+              font-size: 2em;
+              font-weight: bolder ;
+            }
+       
+      }
+    }
   
   }
 
@@ -309,8 +400,97 @@ section.redes{
                            "ipadsMac ipadsMac"
                            "footer footer ";
     }
-  
+    .headerRC{
+      display: flex;
+      padding: 2em 16em;
+      justify-items: center;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      .registroSector a{
+          display: flex;
+          img {
+              width:3em;
+             height:3em;
+             border: 1em double black
+      }
+      }
+      .carritoSector a{
+          display: flex;
+           img {
+              width:3em;
+              height:3em;
+              border: 1em double black
+         
+      }
+      }
+    }
+   /*MENU*/   
+    .cabeceraSectores li a {
+      font-size: 3.5em;
+  }
 
+
+  /*GRID DE IPAD*/
+  section.ipadsMac .ipad- {
+    display: flex;
+    margin-top: 5em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+    /*/Redes/*/
+    section.redes{
+      display:flex;
+      margin-top: 3em;
+      h1{
+       
+        font-size: 3em;
+        margin-bottom: 2em;
+        
+          }
+       ul{
+          li{
+            margin-bottom: 1em;
+            &:hover{
+              transform: scale(1.1);
+          }
+            a{
+              width:5em; 
+              height:3em;
+              img{
+                width: 100px;
+                height: 8vh;
+                border: 0.5em double black;
+                }
+              } 
+            
+          }
+            }
+          }
+    
+    
+    /*/footer /*/
+    .footer{
+      display: flex;
+      .ubicacionC{
+      
+       h2{
+       
+        font-size: 1em;
+      }
+      
+             h1{
+            
+              font-size: 2em;
+             
+            }
+       
+      }
+    }
+  
   }
 
   @media (min-width:1220px){
@@ -330,6 +510,88 @@ section.redes{
                            "cabecera cabecera cabecera" 
                            "ipadsMac  ipadsMac ipadsMac" 
                            "footer footer footer";
+    }
+  
+    .headerRC{
+      padding: 2em 23em;
+      .registroSector a{
+          display: flex;
+          img {
+              width:3em;
+             height:3em;
+             border: 1em double black
+      }
+      }
+      .carritoSector a{
+          display: flex;
+           img {
+              width:3em;
+              height:3em;
+              border: 1em double black
+         
+      }
+      }
+    }
+   /*MENU*/   
+    .cabeceraSectores li a {
+      font-size: 3.5em;
+  }
+
+
+  /*GRID DE IPAD*/
+  section.ipadsMac .ipad- {
+    margin-top: 5em;
+}
+
+
+    /*/Redes/*/
+    section.redes{
+      display:flex;
+      margin-top: 3em;
+      h1{
+       
+        font-size: 3em;
+        margin-bottom: 2em;
+        
+          }
+       ul{
+          li{
+            margin-bottom: 1em;
+            &:hover{
+              transform: scale(1.1);
+          }
+            a{
+              width:5em; 
+              height:3em;
+              img{
+                width: 100px;
+                height: 8vh;
+                border: 0.5em double black;
+                }
+              } 
+            
+          }
+            }
+          }
+    
+    
+    /*/footer /*/
+    .footer{
+      display: flex;
+      .ubicacionC{
+      
+       h2{
+       
+        font-size: 1em;
+      }
+      
+             h1{
+            
+              font-size: 2em;
+             
+            }
+       
+      }
     }
   
   }

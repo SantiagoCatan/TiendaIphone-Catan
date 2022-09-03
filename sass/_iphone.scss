@@ -47,7 +47,7 @@
             font-size: 2em;
           }
       }
-  }
+ }
 
 .headerRC{
     display: flex;
@@ -106,8 +106,7 @@ section.cabeceraMain{
                 text-align: center;
             }
         }
-    }
-
+ }
 /*/ iphones/*/
 section.iphones{
     display:grid ;
@@ -164,7 +163,6 @@ section.iphones{
     
     
 }
-
 /*/Redes/*/
 section.redes{
     display:flex;
@@ -200,9 +198,7 @@ section.redes{
           
         }
           }
-        }
-
-
+ }
 /*/footer /*/
 .footer{
     display: flex;
@@ -231,7 +227,7 @@ section.redes{
           }
      
     }
-  }
+ }
 /*/responsive/*/
 
 .HeaderSectores{
@@ -722,9 +718,7 @@ section.redes{
 
     
     }
-    }
-
-
+}
     @media (min-width:1220px) {
         .AllIphone{
             background-color: beige;

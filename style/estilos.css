@@ -290,6 +290,233 @@ section.redes ul li a img {
     gap: 20px;
     grid-template: "HeaderSectores " "RC" "cabecera" "fundas" "vidrios " "redes" "footer";
   }
+  .HeaderSectores {
+    display: grid;
+    grid-template-columns: auto;
+    background-size: cover;
+    padding: 4em;
+    background-color: beige;
+  }
+  .cabecera {
+    display: flex;
+    background-size: cover;
+    padding: 2em;
+    margin-bottom: 1em;
+    justify-content: center;
+  }
+  .cabecera .cabecera {
+    display: flex;
+    justify-content: center;
+  }
+  .cabecera .cabecera .logo {
+    display: flex;
+  }
+  .cabecera .cabecera .logo img {
+    height: 4em;
+    width: 4em;
+  }
+  .cabecera .cabecera h1 {
+    display: flex;
+    color: black;
+    text-align: center;
+    font-style: italic;
+    font-size: 2em;
+  }
+  .headerRC {
+    display: flex;
+    padding: 2em 4em;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  .headerRC .registroSector a {
+    display: flex;
+  }
+  .headerRC .registroSector a img {
+    width: 3em;
+    height: 3em;
+    border: 1em double black;
+  }
+  .headerRC .carritoSector a {
+    display: flex;
+  }
+  .headerRC .carritoSector a img {
+    width: 3em;
+    height: 3em;
+    border: 1em double black;
+  }
+  section.cabeceraMain {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+  }
+  .cabeceraSectores {
+    display: flex;
+    margin-top: 9em;
+    padding: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+  }
+  .cabeceraSectores li {
+    background-color: white;
+    margin-bottom: 5em;
+    margin-top: 0em;
+    border: 0.5em double black;
+    list-style-type: none;
+  }
+  .cabeceraSectores li:hover {
+    transform: scale(1.25);
+  }
+  .cabeceraSectores li a {
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: 0.5em;
+    text-align: center;
+  }
+  .AccessoriosMain {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .AccessoriosMain .Titulos {
+    display: flex;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 1.25em;
+    text-align: center;
+    background-color: gray;
+    padding: 1em 9em;
+    margin: 1em 0em;
+  }
+  .AccessoriosMain .Titulos h1 {
+    font-size: 1em;
+    font-weight: normal;
+  }
+  .AccessoriosMain .airpods {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+  }
+  .AccessoriosMain .airpods img {
+    height: auto;
+    width: 50vh;
+  }
+  .AccessoriosMain .airpods .Caracteristica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0em 17em;
+    margin-top: 3em;
+  }
+  .AccessoriosMain .airpods .Caracteristica h2 {
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 2em;
+  }
+  .AccessoriosMain .airpods .Caracteristica li {
+    font-size: 1.25em;
+    margin-top: 1em;
+    font-style: normal;
+  }
+  section.fundas {
+    display: grid;
+    justify-content: center;
+  }
+  section.fundas img {
+    height: auto;
+    width: 65vh;
+    margin: 5em 0em;
+  }
+  section.fundas h1 {
+    font-size: 4em;
+    margin: 3em 1em;
+    font-weight: bolder;
+    background-color: gray;
+    padding: 1em 2em;
+  }
+  section.Vidrios {
+    display: grid;
+    justify-content: center;
+  }
+  section.Vidrios h1 {
+    font-size: 4em;
+    margin: 3em 1em;
+    font-weight: bolder;
+    background-color: gray;
+    padding: 1em 2em;
+  }
+  /*/Redes/*/
+  section.redes {
+    display: flex;
+    justify-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3em;
+  }
+  section.redes h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 2em;
+    font-weight: bolder;
+  }
+  section.redes ul {
+    display: flex;
+    list-style-type: none;
+    align-content: center;
+    flex-direction: column;
+  }
+  section.redes ul li {
+    margin-bottom: 1em;
+  }
+  section.redes ul li:hover {
+    transform: scale(1.1);
+  }
+  section.redes ul li a {
+    width: 5em;
+    height: 3em;
+  }
+  section.redes ul li a img {
+    width: 100px;
+    height: 8vh;
+    border: 0.5em double black;
+  }
+  /*/footer /*/
+  .footer {
+    display: flex;
+    background-color: beige;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer .ubicacionC {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .footer .ubicacionC h2 {
+    text-align: justify;
+    font-weight: bolder;
+    font-size: 0.85em;
+  }
+  .footer .ubicacionC h1 {
+    display: flex;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+  }
 }
 @media (min-width: 975px) {
   .AllIphone {
@@ -1082,7 +1309,7 @@ header {
   section.menuPricipal .tituloMenu h1 {
     font-style: italic;
     font-weight: bolder;
-    font-size: 7em;
+    font-size: 14em;
   }
   section.menuPricipal .tituloMenuprincipal {
     display: flex;
@@ -1150,13 +1377,14 @@ header {
     margin-bottom: 5em;
   }
   section.miniBanners .metodoPago img {
-    height: 10em;
-    width: 13em;
+    height: 26em;
+    width: 31em;
     border: 0.125em solid black;
   }
   section.miniBanners .metodoPago h2 {
     font-weight: bolder;
-    font-size: 3em;
+    font-size: 7em;
+    margin-top: 2em;
     text-align: justify;
   }
   section.miniBanners .contacto {
@@ -1187,9 +1415,7 @@ header {
   section.redes ul {
     display: flex;
     list-style-type: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
   }
   section.redes ul li {
     margin-bottom: 1em;
@@ -1202,8 +1428,8 @@ header {
     height: 3em;
   }
   section.redes ul li a img {
-    width: auto;
-    height: 14vh;
+    width: 22em;
+    height: 8vh;
     border: 0.5em double black;
   }
   /*/footer /*/
@@ -1220,14 +1446,18 @@ header {
     align-content: center;
     align-items: center;
   }
+  .footer .ubicacionC .img-footer {
+    width: 300em;
+    height: auto;
+  }
   .footer .ubicacionC h2 {
     text-align: justify;
     font-weight: bolder;
-    font-size: 0.8em;
+    font-size: 4em;
   }
   .footer .ubicacionC h1 {
     text-align: center;
-    font-size: 3em;
+    font-size: 7em;
     font-weight: bolder;
   }
 }
@@ -2169,57 +2399,52 @@ section.cabeceraMain {
   text-align: center;
 }
 
-.ipadsMac {
+/*/ ipads/*/
+section.ipadsMac {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   justify-content: center;
   align-items: center;
-  justify-items: center;
-  /*/ ipads/*/
-}
-.ipadsMac section.ipadsMac {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  justify-content: center;
-  align-items: center;
+  gap: 50px;
   justify-items: center;
 }
-.ipadsMac section.ipadsMac .TituloIpad {
+section.ipadsMac .TituloIpad {
   display: flex;
+}
+section.ipadsMac .TituloIpad h1 {
+  font-size: 1.25em;
+  background-color: grey;
   font-style: normal;
   font-weight: bolder;
-  font-size: 1.25em;
   text-align: center;
-  background-color: gray;
-  padding: 1em 9em;
+  padding: 2em 11em;
   margin: 1em 0em;
 }
-.ipadsMac section.ipadsMac .ipad- {
+section.ipadsMac .ipad- {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 5em;
 }
-.ipadsMac section.ipadsMac .ipad- img {
+section.ipadsMac .ipad- img {
   height: auto;
   width: 50vh;
 }
-.ipadsMac section.ipadsMac .ipad- .Caracteristicas {
+section.ipadsMac .ipad- .Caracteristicas {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0em 17em;
   margin-top: 3em;
 }
-.ipadsMac section.ipadsMac .ipad- .Caracteristicas H2 {
+section.ipadsMac .ipad- .Caracteristicas H2 {
   font-style: oblique;
   font-weight: bolder;
   font-size: 2em;
 }
-.ipadsMac section.ipadsMac .ipad- .Caracteristicas li {
+section.ipadsMac .ipad- .Caracteristicas li {
   font-size: 1.25em;
   margin-top: 1em;
   font-style: normal;
@@ -2331,6 +2556,91 @@ section.redes ul li a img {
     gap: 10px;
     grid-template-areas: "header" "cabecera" "ipadsMac" "footer";
   }
+  .headerRC {
+    display: flex;
+    padding: 2em 7em;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  .headerRC .registroSector a {
+    display: flex;
+  }
+  .headerRC .registroSector a img {
+    width: 3em;
+    height: 3em;
+    border: 1em double black;
+  }
+  .headerRC .carritoSector a {
+    display: flex;
+  }
+  .headerRC .carritoSector a img {
+    width: 3em;
+    height: 3em;
+    border: 1em double black;
+  }
+  /*/Redes/*/
+  section.redes {
+    display: flex;
+    justify-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3em;
+  }
+  section.redes h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 2em;
+    font-weight: bolder;
+  }
+  section.redes ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  section.redes ul li {
+    margin-bottom: 1em;
+  }
+  section.redes ul li:hover {
+    transform: scale(1.1);
+  }
+  section.redes ul li a {
+    width: 5em;
+    height: 3em;
+  }
+  section.redes ul li a img {
+    width: 100px;
+    height: 8vh;
+    border: 0.5em double black;
+  }
+  /*/footer /*/
+  .footer {
+    display: flex;
+    background-color: beige;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer .ubicacionC {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .footer .ubicacionC h2 {
+    text-align: justify;
+    font-weight: bolder;
+    font-size: 1em;
+  }
+  .footer .ubicacionC h1 {
+    display: flex;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+  }
 }
 @media (min-width: 975px) {
   .envolventeMac {
@@ -2345,6 +2655,76 @@ section.redes ul li a img {
     gap: 15px;
     grid-template-areas: "header header" "cabecera cabecera" "ipadsMac ipadsMac" "footer footer ";
   }
+  .headerRC {
+    display: flex;
+    padding: 2em 16em;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  .headerRC .registroSector a {
+    display: flex;
+  }
+  .headerRC .registroSector a img {
+    width: 3em;
+    height: 3em;
+    border: 1em double black;
+  }
+  .headerRC .carritoSector a {
+    display: flex;
+  }
+  .headerRC .carritoSector a img {
+    width: 3em;
+    height: 3em;
+    border: 1em double black;
+  }
+  /*MENU*/
+  .cabeceraSectores li a {
+    font-size: 3.5em;
+  }
+  /*GRID DE IPAD*/
+  section.ipadsMac .ipad- {
+    display: flex;
+    margin-top: 5em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  /*/Redes/*/
+  section.redes {
+    display: flex;
+    margin-top: 3em;
+  }
+  section.redes h1 {
+    font-size: 3em;
+    margin-bottom: 2em;
+  }
+  section.redes ul li {
+    margin-bottom: 1em;
+  }
+  section.redes ul li:hover {
+    transform: scale(1.1);
+  }
+  section.redes ul li a {
+    width: 5em;
+    height: 3em;
+  }
+  section.redes ul li a img {
+    width: 100px;
+    height: 8vh;
+    border: 0.5em double black;
+  }
+  /*/footer /*/
+  .footer {
+    display: flex;
+  }
+  .footer .ubicacionC h2 {
+    font-size: 1em;
+  }
+  .footer .ubicacionC h1 {
+    font-size: 2em;
+  }
 }
 @media (min-width: 1220px) {
   .envolventeMac {
@@ -2358,6 +2738,67 @@ section.redes ul li a img {
     grid-template-rows: repeat(7, auto);
     gap: 15px;
     grid-template-areas: "header header header" "cabecera cabecera cabecera" "ipadsMac  ipadsMac ipadsMac" "footer footer footer";
+  }
+  .headerRC {
+    padding: 2em 23em;
+  }
+  .headerRC .registroSector a {
+    display: flex;
+  }
+  .headerRC .registroSector a img {
+    width: 3em;
+    height: 3em;
+    border: 1em double black;
+  }
+  .headerRC .carritoSector a {
+    display: flex;
+  }
+  .headerRC .carritoSector a img {
+    width: 3em;
+    height: 3em;
+    border: 1em double black;
+  }
+  /*MENU*/
+  .cabeceraSectores li a {
+    font-size: 3.5em;
+  }
+  /*GRID DE IPAD*/
+  section.ipadsMac .ipad- {
+    margin-top: 5em;
+  }
+  /*/Redes/*/
+  section.redes {
+    display: flex;
+    margin-top: 3em;
+  }
+  section.redes h1 {
+    font-size: 3em;
+    margin-bottom: 2em;
+  }
+  section.redes ul li {
+    margin-bottom: 1em;
+  }
+  section.redes ul li:hover {
+    transform: scale(1.1);
+  }
+  section.redes ul li a {
+    width: 5em;
+    height: 3em;
+  }
+  section.redes ul li a img {
+    width: 100px;
+    height: 8vh;
+    border: 0.5em double black;
+  }
+  /*/footer /*/
+  .footer {
+    display: flex;
+  }
+  .footer .ubicacionC h2 {
+    font-size: 1em;
+  }
+  .footer .ubicacionC h1 {
+    font-size: 2em;
   }
 }
 /*/Redes/*/
@@ -2427,10 +2868,165 @@ section.redes ul li a img {
   margin: 0px;
 }
 
+body {
+  background-color: beige;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.HeaderSectores {
+  display: grid;
+  grid-template-columns: auto;
+  background-size: cover;
+  padding: 4em;
+  background-color: beige;
+}
+
+.cabecera {
+  display: flex;
+  background-size: cover;
+  padding: 2em;
+  margin-bottom: 1em;
+  justify-content: center;
+}
+.cabecera .cabecera {
+  display: flex;
+  justify-content: center;
+}
+.cabecera .cabecera .logo {
+  display: flex;
+}
+.cabecera .cabecera .logo img {
+  height: 4em;
+  width: 4em;
+}
+.cabecera .cabecera h1 {
+  display: flex;
+  color: black;
+  text-align: center;
+  font-style: italic;
+  font-size: 2em;
+}
+
+.headerRC {
+  display: flex;
+  padding: 2em 4em;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.headerRC .registroSector a {
+  display: flex;
+}
+.headerRC .registroSector a img {
+  width: 3em;
+  height: 3em;
+  border: 1em double black;
+}
+.headerRC .carritoSector a {
+  display: flex;
+}
+.headerRC .carritoSector a img {
+  width: 3em;
+  height: 3em;
+  border: 1em double black;
+}
+
+section.cabeceraMain {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+}
+
+.cabeceraSectores {
+  display: flex;
+  margin-top: 9em;
+  padding: 1em;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+.cabeceraSectores li {
+  background-color: white;
+  margin-bottom: 5em;
+  margin-top: 0em;
+  border: 0.5em double black;
+  list-style-type: none;
+}
+.cabeceraSectores li:hover {
+  transform: scale(1.25);
+}
+.cabeceraSectores li a {
+  color: black;
+  font-size: 1.5em;
+  text-decoration: none;
+  list-style-type: none;
+  letter-spacing: 0.5em;
+  text-align: center;
+}
+
+/*lista de mantenimiento*/
+.listamatenimiento {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.listamatenimiento .Titulo-General {
+  display: flex;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 1.25em;
+  text-align: center;
+  background-color: gray;
+  padding: 1em 9em;
+  margin: 1em 0em;
+}
+.listamatenimiento .Titulo-Matenimiento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+}
+.listamatenimiento .Titulo-Matenimiento img {
+  height: auto;
+  width: 50vh;
+}
+.listamatenimiento .Caracteristica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0em 17em;
+  margin-top: 3em;
+}
+.listamatenimiento .Caracteristica h2 {
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: 2em;
+}
+.listamatenimiento .Caracteristica li {
+  font-size: 1.25em;
+  margin-top: 1em;
+  font-style: normal;
+}
+
+/*/Redes/*/
 section.redes {
   display: flex;
   justify-items: stretch;
   justify-content: center;
+  flex-direction: column;
+  margin-top: 3em;
 }
 section.redes h1 {
   text-align: center;
@@ -2512,20 +3108,13 @@ section.redes ul li a img {
   grid-area: footer;
 }
 
-.AllServicio {
-  background-color: aquamarine;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, auto);
-  gap: 10px;
-  grid-template-areas: "HeaderSectores" "cabeceraMain" "listamatenimiento" "redes" "footer";
-}
-
 @media (min-width: 580px) {
   .AllServicio {
     background-color: aquamarine;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
     gap: 10px;
+    display: grid;
     grid-template-areas: "HeaderSectores" "cabeceraMain" "listamatenimiento" "redes" "footer";
   }
 }/*# sourceMappingURL=estilos.css.map */

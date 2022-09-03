@@ -1,5 +1,3 @@
-/*/Redes/*/
-
 *{
   padding:0px;
   margin:0px;
@@ -76,8 +74,6 @@ body{
   }
   }
 }
-
-
 section.cabeceraMain{
   display: grid;
   justify-items: center;
@@ -128,22 +124,30 @@ section.cabeceraMain{
   font-style: normal;
   font-weight: bolder;
   font-size: 1.25em;
+}
+.Titulo-Matenimiento{
+  display: flex;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 1.25em;
   text-align: center;
   background-color: gray;
   padding: 1em 9em;
   margin: 1em 0em;
+  
 }
-.Titulo-Matenimiento{
+
+.Mantenimiento-{
   display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5em;
-        img{
-           
-          height: auto;
-          width:50vh;
-      }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+  img{
+     
+    height: auto;
+    width:50vh;
+}
 }
 .Caracteristica{
   display: flex;

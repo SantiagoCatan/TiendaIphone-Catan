@@ -2862,7 +2862,6 @@ section.redes ul li a img {
   font-weight: bolder;
 }
 
-/*/Redes/*/
 * {
   padding: 0px;
   margin: 0px;
@@ -2986,19 +2985,25 @@ section.cabeceraMain {
   font-style: normal;
   font-weight: bolder;
   font-size: 1.25em;
+}
+.listamatenimiento .Titulo-Matenimiento {
+  display: flex;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 1.25em;
   text-align: center;
   background-color: gray;
   padding: 1em 9em;
   margin: 1em 0em;
 }
-.listamatenimiento .Titulo-Matenimiento {
+.listamatenimiento .Mantenimiento- {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 5em;
 }
-.listamatenimiento .Titulo-Matenimiento img {
+.listamatenimiento .Mantenimiento- img {
   height: auto;
   width: 50vh;
 }

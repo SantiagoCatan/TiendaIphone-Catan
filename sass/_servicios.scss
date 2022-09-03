@@ -79,7 +79,7 @@ section.cabeceraMain{
   justify-items: center;
   justify-content: center;
 }
-  .cabeceraSectores{
+.cabeceraSectores{
       display: flex;
   
       margin-top: 9em;
@@ -110,8 +110,14 @@ section.cabeceraMain{
 
 /*lista de mantenimiento*/
 
+.Titulo-General{
+  display: flex;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 1em;
+}
 
-.listamatenimiento{
+.ListaMantenimiento{
   display:grid ;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -119,12 +125,6 @@ section.cabeceraMain{
   align-items: center;
   justify-items: center;
 
-.Titulo-General{
-  display: flex;
-  font-style: normal;
-  font-weight: bolder;
-  font-size: 1.25em;
-}
 .Titulo-Matenimiento{
   display: flex;
   font-style: normal;
@@ -245,7 +245,6 @@ section.cabeceraMain{
 .cabeceraMain{
   grid-area:cabecera;
 }
-
 .listamatenimiento{
   grid-area: listamatenimiento;
 }
@@ -264,9 +263,9 @@ section.cabeceraMain{
          gap: 10px;
          display: grid;
         grid-template-areas: 
-        
                             "HeaderSectores"
-                            "cabeceraMain" 
+                            "RC"
+                            "Cabecera" 
                             "listamatenimiento" 
                             "redes"
                             "footer";

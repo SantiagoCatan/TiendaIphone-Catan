@@ -70,7 +70,6 @@ body{
           width:3em;
           height:3em;
           border: 1em double black
-     
   }
   }
 }
@@ -112,11 +111,19 @@ section.cabeceraMain{
 
 .Titulo-General{
   display: flex;
-  font-style: normal;
-  font-weight: bolder;
-  font-size: 1em;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 1em;
+  h2{
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 2em;
+  }
+ 
 }
 
+/*Mantenimiento*/
 .ListaMantenimiento{
   display:grid ;
   grid-template-columns: 1fr;
@@ -125,16 +132,16 @@ section.cabeceraMain{
   align-items: center;
   justify-items: center;
 
-.Titulo-Matenimiento{
+.Titulo{
   display: flex;
   font-style: normal;
   font-weight: bolder;
   font-size: 1.25em;
   text-align: center;
   background-color: gray;
-  padding: 1em 3em;
+  padding: 1em 9em;
   margin: 1em 0em;
-  
+
 }
 
 .Mantenimiento-{
@@ -144,11 +151,12 @@ section.cabeceraMain{
   align-items: center;
   margin-top: 5em;
   img{
-     
+           
     height: auto;
     width:50vh;
 }
-}
+
+
 .Caracteristica{
   display: flex;
   flex-direction: column;
@@ -169,6 +177,7 @@ section.cabeceraMain{
 }
 }
 
+}
 /*/Redes/*/
   section.redes{
     display:flex;
@@ -243,7 +252,10 @@ section.cabeceraMain{
   grid-area:RC;
 }
 .cabeceraMain{
-  grid-area:cabecera;
+  grid-area:Cabecera;
+}
+.Titulo-General{
+  grid-area:Titulo-General;
 }
 .listamatenimiento{
   grid-area: listamatenimiento;
@@ -257,18 +269,136 @@ section.cabeceraMain{
 
   @media (min-width: 580px){
     .AllServicio{
-        background-color: aquamarine;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5,auto);
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(7,auto);
          gap: 10px;
          display: grid;
+         align-items: stretch;
         grid-template-areas: 
-                            "HeaderSectores"
-                            "RC"
-                            "Cabecera" 
-                            "listamatenimiento" 
-                            "redes"
-                            "footer";
+                            "HeaderSectores HeaderSectores"
+                            "RC RC"
+                            "Cabecera Cabecera" 
+                            "Titulo-General Titulo-General"
+                            "listamatenimiento listamatenimiento" 
+                            "redes redes"
+                            "footer footer";
+      }
+
+
+
+
+      .headerRC{
+        padding: 2em 13em;
+       
+      
       }
     
+  }
+
+ @media (min-width:975px){
+    .AllServicio{
+      grid-template-columns: auto auto;
+      grid-template-rows: repeat(7,auto);
+       gap: 10px;
+       display: grid;
+       align-items: stretch;
+      grid-template-areas: 
+                          "HeaderSectores HeaderSectores"
+                          "RC RC"
+                          "Cabecera Cabecera" 
+                          "Titulo-General Titulo-General"
+                          "listamatenimiento listamatenimiento" 
+                          "redes redes"
+                          "footer footer";
+    }
+
+
+
+
+    .HeaderSectores{
+      padding: 7em;
+    }
+    .cabecera{
+      .cabecera {
+          .logo {
+            align-items: center;
+              img {
+                  height: 4em;
+                  width: 4em;
+                }
+            }
+          h1 {
+              font-size: 3em;
+            }
+        }
+    }
+    
+    .headerRC{
+    justify-content: space-around;
+    }
+
+
+    section.cabeceraMain{
+    }
+    .cabeceraSectores{
+          
+          li{
+             
+              a{
+                  font-size: 2.5em;
+                  letter-spacing: 1em;
+              }
+          }
+    }
+    
+    /*lista de mantenimiento*/
+    
+    .Titulo-General{
+      h2{
+        font-size: 3em;
+        background: slategrey;
+      }
+     
+    }
+    .Titulo{
+      font-size: 1.50em;
+      padding: 3em 18em;
+    
+    }
+
+    .Mantenimiento-{
+      display: flex;
+      flex-direction: row;
+      margin-top: 5em;
+      img{
+               
+        height: auto;
+        width: 30vh;
+    }
+    .Caracteristica{
+      padding: 0em 9em;
+      h2{
+          
+          font-style:oblique;
+          font-weight: bolder;
+          font-size: 2em;
+      }
+      li{
+          font-size: 0.75em;
+          margin-top: 1em;
+          font-style: normal;
+      }
+    }
+    }
+
+    section.redes ul {
+      display: flex;
+      list-style-type: none;
+      flex-direction: row;
+  }
+  .footer .ubicacionC h2 {
+    text-align: justify;
+    font-weight: bolder;
+    font-size: 1.85em;
+}
   }

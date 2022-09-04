@@ -374,7 +374,7 @@ section.cabeceraMain{
 
 section.iphones{
     display:grid ;
-    grid-area:iphones ;
+    grid-area:iphones;
     grid-template-columns: 1fr ;
     grid-template-rows: 1fr;
     justify-items: center;

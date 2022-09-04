@@ -2802,6 +2802,125 @@ section.redes ul li a img {
   }
 }
 /*/Redes/*/
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: beige;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.HeaderSectores {
+  display: grid;
+  grid-template-columns: auto;
+  background-size: cover;
+  padding: 4em;
+  background-color: beige;
+}
+
+.cabecera {
+  display: flex;
+  background-size: cover;
+  padding: 2em;
+  margin-bottom: 1em;
+  justify-content: center;
+}
+.cabecera .cabecera {
+  display: flex;
+  justify-content: center;
+}
+.cabecera .cabecera .logo {
+  display: flex;
+}
+.cabecera .cabecera .logo img {
+  height: 4em;
+  width: 4em;
+}
+.cabecera .cabecera h1 {
+  display: flex;
+  color: black;
+  text-align: center;
+  font-style: italic;
+  font-size: 2em;
+}
+
+.headerRC {
+  display: flex;
+  padding: 2em 4em;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.headerRC .registroSector a {
+  display: flex;
+}
+.headerRC .registroSector a img {
+  width: 3em;
+  height: 3em;
+  border: 1em double black;
+}
+.headerRC .carritoSector a {
+  display: flex;
+}
+.headerRC .carritoSector a img {
+  width: 3em;
+  height: 3em;
+  border: 1em double black;
+}
+
+section.cabeceraMain {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+}
+
+.cabeceraSectores {
+  display: flex;
+  margin-top: 9em;
+  padding: 1em;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+.cabeceraSectores li {
+  background-color: white;
+  margin-bottom: 5em;
+  margin-top: 0em;
+  border: 0.5em double black;
+  list-style-type: none;
+}
+.cabeceraSectores li:hover {
+  transform: scale(1.25);
+}
+.cabeceraSectores li a {
+  color: black;
+  font-size: 1.5em;
+  text-decoration: none;
+  list-style-type: none;
+  letter-spacing: 0.5em;
+  text-align: center;
+}
+
+.registroSector {
+  display: flex;
+}
+.registroSector legend {
+  font-size: 3em;
+}
+.registroSector label {
+  font-size: 1em;
+}
+
 section.redes {
   display: flex;
   justify-items: stretch;

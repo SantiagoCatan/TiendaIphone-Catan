@@ -2972,21 +2972,21 @@ section.cabeceraMain {
 }
 
 /*lista de mantenimiento*/
-.Titulo-General {
+.TituloGeneral {
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
   margin-bottom: 1em;
 }
-.Titulo-General h2 {
+.TituloGeneral h2 {
   font-style: normal;
   font-weight: bolder;
   font-size: 2em;
 }
 
 /*Mantenimiento*/
-.ListaMantenimiento {
+.Lista {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -2994,7 +2994,7 @@ section.cabeceraMain {
   align-items: center;
   justify-items: center;
 }
-.ListaMantenimiento .Titulo {
+.Lista .Titulo {
   display: flex;
   font-style: normal;
   font-weight: bolder;
@@ -3004,30 +3004,30 @@ section.cabeceraMain {
   padding: 1em 9em;
   margin: 1em 0em;
 }
-.ListaMantenimiento .Mantenimiento- {
+.Lista .Mantenimiento- {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 5em;
 }
-.ListaMantenimiento .Mantenimiento- img {
+.Lista .Mantenimiento- img {
   height: auto;
   width: 50vh;
 }
-.ListaMantenimiento .Mantenimiento- .Caracteristica {
+.Lista .Mantenimiento- .Caracteristica {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0em 17em;
   margin-top: 3em;
 }
-.ListaMantenimiento .Mantenimiento- .Caracteristica h2 {
+.Lista .Mantenimiento- .Caracteristica h2 {
   font-style: oblique;
   font-weight: bolder;
   font-size: 2em;
 }
-.ListaMantenimiento .Mantenimiento- .Caracteristica li {
+.Lista .Mantenimiento- .Caracteristica li {
   font-size: 1.25em;
   margin-top: 1em;
   font-style: normal;
@@ -3109,11 +3109,11 @@ section.redes ul li a img {
   grid-area: Cabecera;
 }
 
-.Titulo-General {
-  grid-area: Titulo-General;
+.TituloGeneral {
+  grid-area: TituloGeneral;
 }
 
-.listamatenimiento {
+.lista {
   grid-area: listamatenimiento;
 }
 
@@ -3132,7 +3132,7 @@ section.redes ul li a img {
     gap: 10px;
     display: grid;
     align-items: stretch;
-    grid-template-areas: "HeaderSectores HeaderSectores" "RC RC" "Cabecera Cabecera" "Titulo-General Titulo-General" "listamatenimiento listamatenimiento" "redes redes" "footer footer";
+    grid-template-areas: "HeaderSectores HeaderSectores" "RC RC" "Cabecera Cabecera" "TituloGeneral TituloGeneral" "listamatenimiento listamatenimiento" "redes redes" "footer footer";
   }
   .headerRC {
     padding: 2em 13em;
@@ -3145,7 +3145,7 @@ section.redes ul li a img {
     gap: 10px;
     display: grid;
     align-items: stretch;
-    grid-template-areas: "HeaderSectores HeaderSectores" "RC RC" "Cabecera Cabecera" "Titulo-General Titulo-General" "listamatenimiento listamatenimiento" "redes redes" "footer footer";
+    grid-template-areas: "HeaderSectores HeaderSectores" "RC RC" "Cabecera Cabecera" "TituloGeneral TituloGeneral" "listamatenimiento listamatenimiento" "redes redes" "footer footer";
   }
   .HeaderSectores {
     padding: 7em;
@@ -3168,44 +3168,55 @@ section.redes ul li a img {
     letter-spacing: 1em;
   }
   /*lista de mantenimiento*/
-  .Titulo-General h2 {
+  .TituloGeneral h2 {
     font-size: 3em;
     background: slategrey;
   }
   .Titulo {
-    font-size: 1.5em;
-    padding: 3em 18em;
+    padding: 1em 20em;
+    margin: 3em 0em;
+  }
+  .Lista {
+    display: grid;
+    margin-left: 10em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
   }
   .Mantenimiento- {
     display: flex;
-    flex-direction: row;
     margin-top: 5em;
+    flex-direction: row;
+    align-items: center;
   }
   .Mantenimiento- img {
     height: auto;
-    width: 30vh;
+    width: 50vh;
   }
   .Mantenimiento- .Caracteristica {
-    padding: 0em 9em;
+    padding: 0em 7em;
+    margin-top: 3em;
+    align-items: flex-start;
   }
   .Mantenimiento- .Caracteristica h2 {
-    font-style: oblique;
-    font-weight: bolder;
     font-size: 2em;
   }
   .Mantenimiento- .Caracteristica li {
-    font-size: 0.75em;
+    font-size: 0.85em;
     margin-top: 1em;
-    font-style: normal;
   }
   section.redes ul {
     display: flex;
     list-style-type: none;
     flex-direction: row;
   }
-  .footer .ubicacionC h2 {
-    text-align: justify;
-    font-weight: bolder;
-    font-size: 1.85em;
+}
+@media (min-width: 1220px) {
+  .AllServicio {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(7, auto);
+    gap: 10px;
+    display: grid;
+    align-items: stretch;
+    grid-template-areas: "HeaderSectores HeaderSectores HeaderSectores" "RC RC RC" "Cabecera Cabecera Cabecera" "TituloGeneral TituloGeneral TituloGeneral" "listamatenimiento listamatenimiento listamatenimiento" "redes redes redes" "footer footer  footer";
   }
 }/*# sourceMappingURL=estilos.css.map */

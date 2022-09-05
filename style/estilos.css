@@ -257,12 +257,16 @@ section.redes ul li a img {
   grid-area: HeaderSectores;
 }
 
-.RC {
+.headerRC {
   grid-area: RC;
 }
 
-.AccessoriosMain {
+.cabeceraSectores {
   grid-area: cabecera;
+}
+
+.AccessoriosMain {
+  grid-area: Accesorios;
 }
 
 .fundas {
@@ -286,9 +290,184 @@ section.redes ul li a img {
     display: grid;
     align-items: stretch;
     grid-template-columns: auto auto;
-    grid-template-rows: repeat(7, auto);
+    grid-template-rows: repeat(8, auto);
     gap: 20px;
-    grid-template: "HeaderSectores " "RC" "cabecera" "fundas" "vidrios " "redes" "footer";
+    grid-template: "HeaderSectores HeaderSectores " "RC RC" "cabecera cabecera" " Accesorios Accesorios" "fundas fundas" "vidrios  vidrios" "redes redes" "footer footer";
+  }
+  .HeaderSectores {
+    display: grid;
+    padding: 4em;
+    background-color: beige;
+  }
+  .cabecera {
+    padding: 2em;
+    margin-bottom: 1em;
+    justify-content: center;
+  }
+  .cabecera .cabecera {
+    display: flex;
+  }
+  .cabecera .cabecera .logo {
+    display: flex;
+  }
+  .cabecera .cabecera .logo img {
+    height: 4em;
+    width: 4em;
+  }
+  .cabecera .cabecera h1 {
+    font-size: 2em;
+  }
+  .headerRC {
+    display: flex;
+    padding: 2em 4em;
+  }
+  .headerRC .registroSector a {
+    display: flex;
+  }
+  .headerRC .registroSector a img {
+    width: 3em;
+    height: 3em;
+    border: 1em double black;
+  }
+  .headerRC .carritoSector a {
+    display: flex;
+  }
+  .headerRC .carritoSector a img {
+    width: 3em;
+    height: 3em;
+    border: 1em double black;
+  }
+  section.cabeceraMain {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+  }
+  .cabeceraSectores {
+    display: flex;
+    margin-top: 9em;
+    padding: 1em;
+  }
+  .cabeceraSectores li {
+    background-color: white;
+    margin-bottom: 5em;
+    margin-top: 0em;
+    border: 0.5em double black;
+    list-style-type: none;
+  }
+  .cabeceraSectores li:hover {
+    transform: scale(1.25);
+  }
+  .cabeceraSectores li a {
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: 0.5em;
+    text-align: center;
+  }
+  .AccessoriosMain .Titulos {
+    display: flex;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 1.25em;
+    text-align: center;
+    background-color: gray;
+    padding: 1em 9em;
+    margin: 1em 0em;
+  }
+  .AccessoriosMain .Titulos h1 {
+    font-size: 1em;
+    font-weight: normal;
+  }
+  .AccessoriosMain .airpods {
+    margin-top: 5em;
+  }
+  .AccessoriosMain .airpods img {
+    height: auto;
+    width: 50vh;
+  }
+  .AccessoriosMain .airpods .Caracteristica {
+    padding: 0em 17em;
+    margin-top: 3em;
+  }
+  .AccessoriosMain .airpods .Caracteristica h2 {
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 2em;
+  }
+  .AccessoriosMain .airpods .Caracteristica li {
+    font-size: 1.25em;
+    margin-top: 1em;
+    font-style: normal;
+  }
+  section.fundas {
+    display: grid;
+    justify-content: center;
+  }
+  section.fundas img {
+    height: auto;
+    width: 65vh;
+    margin: 5em 0em;
+  }
+  section.fundas h1 {
+    font-size: 4em;
+    margin: 3em 1em;
+    font-weight: bolder;
+    background-color: gray;
+    padding: 1em 2em;
+  }
+  section.Vidrios {
+    display: grid;
+    justify-content: center;
+  }
+  section.Vidrios h1 {
+    font-size: 4em;
+    margin: 3em 1em;
+    font-weight: bolder;
+    background-color: gray;
+    padding: 1em 2em;
+  }
+  /*/Redes/*/
+  section.redes {
+    margin-top: 3em;
+  }
+  section.redes h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 2em;
+    font-weight: bolder;
+  }
+  section.redes ul li {
+    margin-bottom: 1em;
+  }
+  section.redes ul li:hover {
+    transform: scale(1.1);
+  }
+  section.redes ul li a {
+    width: 5em;
+    height: 3em;
+  }
+  section.redes ul li a img {
+    width: 100px;
+    height: 8vh;
+    border: 0.5em double black;
+  }
+  /*/footer /*/
+  .footer .ubicacionC h2 {
+    font-size: 0.85em;
+  }
+  .footer .ubicacionC h1 {
+    font-size: 2em;
+  }
+}
+@media (min-width: 975px) {
+  .AllAccesorios {
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(8, auto);
+    gap: 20px;
+    grid-template: "HeaderSectores HeaderSectores " "RC RC" "cabecera cabecera " "Accesorios Accesorios" "fundas fundas " "vidrios vidrios " "redes redes" "footer footer";
   }
   .HeaderSectores {
     display: grid;
@@ -512,28 +691,11 @@ section.redes ul li a img {
     font-size: 0.85em;
   }
   .footer .ubicacionC h1 {
-    display: flex;
-    text-align: center;
-    font-size: 2em;
-    font-weight: bolder;
+    font-size: 3em;
   }
 }
-@media (min-width: 975px) {
-  .AllIphone {
-    background-color: beige;
-    color: black;
-    font-weight: bolder;
-    font-family: "Roboto", sans-serif;
-    display: grid;
-    align-items: stretch;
-    grid-template-columns: auto auto;
-    grid-template-rows: repeat(7, auto);
-    gap: 20px;
-    grid-template: "HeaderSectores HeaderSectores " "RC RC " "cabecera cabecera " "fundas fundas " "vidrios vidrios " "redes redes" "footer footer";
-  }
-}
-@media (min-width: 975px) {
-  .AllIphone {
+@media (min-width: 1220px) {
+  .AllAccesorios {
     background-color: beige;
     color: black;
     font-weight: bolder;
@@ -541,9 +703,9 @@ section.redes ul li a img {
     display: grid;
     align-items: stretch;
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(7, auto);
+    grid-template-rows: repeat(8, auto);
     gap: 20px;
-    grid-template: "HeaderSectores HeaderSectores HeaderSectores" "RC RC RC" "cabecera cabecera cabecera" "fundas fundas fundas" "vidrios vidrios vidrios  " "redes redes redes" "footer footer footer";
+    grid-template: "HeaderSectores HeaderSectores HeaderSectores" "RC RC RC" "cabecera cabecera cabecera" "Accesorios Accesorios Accesorios" "fundas fundas fundas" "vidrios vidrios vidrios  " "redes redes redes" "footer footer footer";
   }
 }
 /* FRIST MOBILE*/

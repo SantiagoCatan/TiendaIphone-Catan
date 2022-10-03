@@ -253,6 +253,7 @@ section.redes ul li a img {
   font-weight: bolder;
 }
 
+/*grid area*/
 .HeaderSectores {
   grid-area: HeaderSectores;
 }
@@ -261,8 +262,8 @@ section.redes ul li a img {
   grid-area: RC;
 }
 
-.cabeceraSectores {
-  grid-area: cabecera;
+.cabeceraMain {
+  grid-area: Cabecera;
 }
 
 .AccessoriosMain {
@@ -287,12 +288,12 @@ section.redes ul li a img {
 
 @media (min-width: 580px) {
   .AllAccesorios {
-    display: grid;
     align-items: stretch;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     grid-template-rows: repeat(8, auto);
+    display: grid;
     gap: 20px;
-    grid-template: "HeaderSectores HeaderSectores " "RC RC" "cabecera cabecera" " Accesorios Accesorios" "fundas fundas" "vidrios  vidrios" "redes redes" "footer footer";
+    grid-template-areas: "HeaderSectores" "RC" "Cabecera" " Accesorios" "fundas " "vidrios" "redes" "footer";
   }
   .HeaderSectores {
     display: grid;
@@ -302,24 +303,54 @@ section.redes ul li a img {
   .cabecera {
     padding: 2em;
     margin-bottom: 1em;
+  }
+  .cabecera .cabecera .logo img {
+    height: 2em;
+    width: 2em;
+  }
+  .cabecera .cabecera h1 {
+    font-size: 2em;
+  }
+  .HeaderSectores {
+    display: grid;
+    grid-template-columns: auto;
+    background-size: cover;
+    padding: 4em;
+    background-color: beige;
+  }
+  .cabecera {
+    display: flex;
+    background-size: cover;
+    padding: 2em;
+    margin-bottom: 1em;
     justify-content: center;
   }
   .cabecera .cabecera {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .cabecera .cabecera .logo {
     display: flex;
   }
   .cabecera .cabecera .logo img {
-    height: 4em;
-    width: 4em;
+    height: 8em;
+    width: 8em;
   }
   .cabecera .cabecera h1 {
-    font-size: 2em;
+    display: flex;
+    color: black;
+    text-align: center;
+    font-style: italic;
+    font-size: 5em;
   }
   .headerRC {
     display: flex;
-    padding: 2em 4em;
+    padding: 2em 20em;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
   }
   .headerRC .registroSector a {
     display: flex;
@@ -346,6 +377,10 @@ section.redes ul li a img {
     display: flex;
     margin-top: 9em;
     padding: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
   }
   .cabeceraSectores li {
     background-color: white;
@@ -362,7 +397,7 @@ section.redes ul li a img {
     font-size: 1.5em;
     text-decoration: none;
     list-style-type: none;
-    letter-spacing: 0.5em;
+    letter-spacing: 1.5em;
     text-align: center;
   }
   .AccessoriosMain .Titulos {
@@ -429,45 +464,212 @@ section.redes ul li a img {
   }
   /*/Redes/*/
   section.redes {
-    margin-top: 3em;
+    display: grid;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding: 2em;
   }
   section.redes h1 {
     text-align: center;
-    font-size: 3em;
-    margin-bottom: 2em;
+    font-size: 5em;
+    margin-bottom: 1em;
     font-weight: bolder;
   }
-  section.redes ul li {
-    margin-bottom: 1em;
+  section.redes ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
   }
-  section.redes ul li:hover {
-    transform: scale(1.1);
-  }
-  section.redes ul li a {
+  section.redes ul a {
     width: 5em;
     height: 3em;
+    padding: 2em;
   }
-  section.redes ul li a img {
-    width: 100px;
-    height: 8vh;
+  section.redes img {
+    width: 300px;
+    height: 100px;
     border: 0.5em double black;
   }
-  /*/footer /*/
-  .footer .ubicacionC h2 {
-    font-size: 0.85em;
+  section.redes .redes ul li:hover {
+    transform: scale(1.5);
   }
-  .footer .ubicacionC h1 {
-    font-size: 2em;
+  /*/footer /*/
+  .footer {
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 2em;
+    background-color: beige;
+    justify-items: center;
+  }
+  .footer h1 {
+    text-align: justify;
+    font-size: 1em;
+    font-weight: bolder;
+  }
+  .footer h1 img {
+    height: 10em;
+    width: 10em;
   }
 }
 @media (min-width: 975px) {
   .AllAccesorios {
     display: grid;
     align-items: stretch;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
     grid-template-rows: repeat(8, auto);
     gap: 20px;
-    grid-template: "HeaderSectores HeaderSectores " "RC RC" "cabecera cabecera " "Accesorios Accesorios" "fundas fundas " "vidrios vidrios " "redes redes" "footer footer";
+    grid-template-areas: "HeaderSectores HeaderSectores " "RC RC" "Cabecera Cabecera" "Accesorios Accesorios" "fundas fundas " "vidrios vidrios " "redes redes" "footer footer";
+  }
+  .HeaderSectores {
+    display: grid;
+    grid-template-columns: auto;
+    background-size: cover;
+    padding: 4em;
+    background-color: beige;
+  }
+  .cabecera {
+    display: flex;
+    background-size: cover;
+    padding: 2em;
+    margin-bottom: 1em;
+    justify-content: center;
+  }
+  .cabecera .cabecera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cabecera .cabecera .logo {
+    display: flex;
+  }
+  .cabecera .cabecera .logo img {
+    height: 8em;
+    width: 8em;
+  }
+  .cabecera .cabecera h1 {
+    display: flex;
+    color: black;
+    text-align: center;
+    font-style: italic;
+    font-size: 5em;
+  }
+  .headerRC {
+    display: flex;
+    padding: 2em 20em;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+  .headerRC .registroSector a {
+    display: flex;
+  }
+  .headerRC .registroSector a img {
+    width: 3em;
+    height: 3em;
+    border: 1em double black;
+  }
+  .headerRC .carritoSector a {
+    display: flex;
+  }
+  .headerRC .carritoSector a img {
+    width: 3em;
+    height: 3em;
+    border: 1em double black;
+  }
+  section.cabeceraMain {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+  }
+  .cabeceraSectores {
+    display: flex;
+    margin-top: 9em;
+    padding: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+  }
+  .cabeceraSectores li {
+    background-color: white;
+    margin-bottom: 5em;
+    margin-top: 0em;
+    border: 0.5em double black;
+    list-style-type: none;
+  }
+  .cabeceraSectores li:hover {
+    transform: scale(1.25);
+  }
+  .cabeceraSectores li a {
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: 1.5em;
+    text-align: center;
+  }
+  /*/Redes/*/
+  section.redes {
+    display: grid;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding: 2em;
+  }
+  section.redes h1 {
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 1em;
+    font-weight: bolder;
+  }
+  section.redes ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+  }
+  section.redes ul a {
+    width: 5em;
+    height: 3em;
+    padding: 2em;
+  }
+  section.redes img {
+    width: auto;
+    height: 13vh;
+    border: 0.5em double black;
+  }
+  section.redes .redes ul li:hover {
+    transform: scale(1.5);
+  }
+  /*/footer /*/
+  .footer {
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 2em;
+    background-color: beige;
+    justify-items: center;
+  }
+  .footer h1 {
+    text-align: justify;
+    font-size: 5em;
+    font-weight: bolder;
+  }
+  .footer img {
+    height: 10em;
+    width: 10em;
+  }
+}
+@media (min-width: 1220px) {
+  .AllAccesorios {
+    background-color: beige;
+    color: black;
+    font-weight: bolder;
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(8, auto);
+    gap: 20px;
+    grid-template-areas: "HeaderSectores HeaderSectores HeaderSectores" "RC RC RC" "Cabecera Cabecera Cabecera" "Accesorios Accesorios Accesorios" "fundas fundas fundas" "vidrios vidrios vidrios  " "redes redes redes" "footer footer footer";
   }
   .HeaderSectores {
     display: grid;
@@ -551,40 +753,24 @@ section.redes ul li a img {
   }
   .cabeceraSectores li a {
     color: black;
-    font-size: 1.5em;
+    font-size: 2.5em;
     text-decoration: none;
     list-style-type: none;
-    letter-spacing: 0.5em;
+    letter-spacing: 1em;
     text-align: center;
   }
   .AccessoriosMain {
-    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
   }
   .AccessoriosMain .Titulos {
-    display: flex;
-    font-style: normal;
-    font-weight: bolder;
     font-size: 1.25em;
-    text-align: center;
-    background-color: gray;
     padding: 1em 9em;
     margin: 1em 0em;
   }
   .AccessoriosMain .Titulos h1 {
     font-size: 1em;
-    font-weight: normal;
   }
   .AccessoriosMain .airpods {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-top: 5em;
   }
   .AccessoriosMain .airpods img {
@@ -592,25 +778,15 @@ section.redes ul li a img {
     width: 50vh;
   }
   .AccessoriosMain .airpods .Caracteristica {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 0em 17em;
     margin-top: 3em;
   }
   .AccessoriosMain .airpods .Caracteristica h2 {
-    font-style: oblique;
-    font-weight: bolder;
     font-size: 2em;
   }
   .AccessoriosMain .airpods .Caracteristica li {
     font-size: 1.25em;
     margin-top: 1em;
-    font-style: normal;
-  }
-  section.fundas {
-    display: grid;
-    justify-content: center;
   }
   section.fundas img {
     height: auto;
@@ -620,92 +796,60 @@ section.redes ul li a img {
   section.fundas h1 {
     font-size: 4em;
     margin: 3em 1em;
-    font-weight: bolder;
-    background-color: gray;
     padding: 1em 2em;
-  }
-  section.Vidrios {
-    display: grid;
-    justify-content: center;
   }
   section.Vidrios h1 {
     font-size: 4em;
     margin: 3em 1em;
-    font-weight: bolder;
-    background-color: gray;
     padding: 1em 2em;
   }
   /*/Redes/*/
   section.redes {
-    display: flex;
-    justify-items: stretch;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 3em;
+    display: grid;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding: 2em;
   }
   section.redes h1 {
     text-align: center;
-    font-size: 3em;
-    margin-bottom: 2em;
+    font-size: 5em;
+    margin-bottom: 1em;
     font-weight: bolder;
   }
   section.redes ul {
     display: flex;
     list-style-type: none;
-    align-content: center;
-    flex-direction: column;
+    flex-direction: row;
   }
-  section.redes ul li {
-    margin-bottom: 1em;
-  }
-  section.redes ul li:hover {
-    transform: scale(1.1);
-  }
-  section.redes ul li a {
+  section.redes ul a {
     width: 5em;
     height: 3em;
+    padding: 2em;
   }
-  section.redes ul li a img {
-    width: 100px;
-    height: 8vh;
+  section.redes img {
+    width: auto;
+    height: 13vh;
     border: 0.5em double black;
+  }
+  section.redes .redes ul li:hover {
+    transform: scale(1.5);
   }
   /*/footer /*/
   .footer {
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 2em;
     background-color: beige;
     justify-items: center;
-    flex-direction: column;
-    justify-content: center;
   }
-  .footer .ubicacionC {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-  }
-  .footer .ubicacionC h2 {
+  .footer h1 {
     text-align: justify;
+    font-size: 5em;
     font-weight: bolder;
-    font-size: 0.85em;
   }
-  .footer .ubicacionC h1 {
-    font-size: 3em;
-  }
-}
-@media (min-width: 1220px) {
-  .AllAccesorios {
-    background-color: beige;
-    color: black;
-    font-weight: bolder;
-    font-family: "Roboto", sans-serif;
-    display: grid;
-    align-items: stretch;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(8, auto);
-    gap: 20px;
-    grid-template: "HeaderSectores HeaderSectores HeaderSectores" "RC RC RC" "cabecera cabecera cabecera" "Accesorios Accesorios Accesorios" "fundas fundas fundas" "vidrios vidrios vidrios  " "redes redes redes" "footer footer footer";
+  .footer img {
+    height: 10em;
+    width: 10em;
   }
 }
 /* FRIST MOBILE*/
@@ -1853,7 +1997,7 @@ section.redes ul li a img {
 }
 
 .cabeceraMain {
-  grid-area: cabecera;
+  grid-area: Cabecera;
 }
 
 .iphones {
@@ -1879,7 +2023,7 @@ section.redes ul li a img {
     grid-template-columns: auto auto;
     grid-template-rows: repeat(6, auto);
     gap: 20px;
-    grid-template: "HeaderSectores HeaderSectores" "RC RC" "cabecera cabecera" "iphoness iphones" "redes redes" "footer footer";
+    grid-template: "HeaderSectores HeaderSectores" "RC RC" "Cabecera Cabecera" "iphoness iphones" "redes redes" "footer footer";
   }
   .HeaderSectores {
     display: grid;
@@ -2073,7 +2217,7 @@ section.redes ul li a img {
     grid-template-columns: auto;
     grid-template-rows: repeat(6, auto);
     gap: 20px;
-    grid-template: "HeaderSectores HeaderSectores" "RC RC" "cabecera cabecera" "iphones iphone" "redes redes" "footer footer";
+    grid-template: "HeaderSectores HeaderSectores" "RC RC" "Cabecera Cabecera" "iphones iphone" "redes redes" "footer footer";
   }
   .HeaderSectores {
     display: grid;
@@ -2268,7 +2412,7 @@ section.redes ul li a img {
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(6, auto);
     gap: 20px;
-    grid-template: "HeaderSectores HeaderSectores HeaderSectores" "RC RC RC" "cabecera cabecera cabecera" "iphones iphone iphone" "redes  redes redes" "footer  footer footer";
+    grid-template: "HeaderSectores HeaderSectores HeaderSectores" "RC RC RC" "Cabecera Cabecera Cabecera" "iphones iphone iphone" "redes  redes redes" "footer  footer footer";
   }
   .HeaderSectores {
     display: grid;

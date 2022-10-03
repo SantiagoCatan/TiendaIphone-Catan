@@ -1,10 +1,7 @@
 /*/Redes/*/
-
-
 *{
   padding:0px;
   margin:0px;
- 
 }
 body{
   background-color: beige;
@@ -16,16 +13,13 @@ body{
   justify-content: center;
   min-height: 100vh;
 }
-
 .HeaderSectores{
   display: grid;
   grid-template-columns: auto;
   background-size:cover;
   padding: 4em;
   background-color: $fondos;
-
 }
-
 .cabecera{
   display: flex;
   background-size: cover;
@@ -51,7 +45,6 @@ body{
         }
     }
 }
-
 .headerRC{
   display: flex;
   padding: 2em 4em;
@@ -72,8 +65,7 @@ body{
        img {
           width:3em;
           height:3em;
-          border: 1em double black
-     
+          border: 1em double black  
   }
   }
 }
@@ -110,8 +102,6 @@ section.cabeceraMain{
           }
       }
 }
-
-
 .registroSector{
   display: flex;
 legend{
@@ -120,7 +110,6 @@ legend{
 label{
   font-size: 1em;
 }
-
 }
 section.redes{
     display:flex;
@@ -150,21 +139,17 @@ section.redes{
               height: 8vh;
               border: 0.5em double black;
               }
-            } 
-          
+            }       
         }
           }
         }
-
-
 /*/footer /*/
 .footer{
     display: flex;
     background-color: beige;
     justify-items: center;
     flex-direction: column;
-    justify-content: center;
-    
+    justify-content: center; 
     .ubicacionC{
       display: flex;
      flex-direction: column;
@@ -175,14 +160,12 @@ section.redes{
       text-align: justify;
       font-weight:bolder ;
       font-size: 0.85em;
-    }
-    
+    }   
            h1{
             display: flex;
             text-align: center;
             font-size: 2em;
             font-weight: bolder ;
           }
-     
     }
   }

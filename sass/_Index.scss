@@ -65,9 +65,7 @@ header{
             font-size:3em;
           }
       }
-      
-
-      .tituloMenuprincipal {
+     .tituloMenuprincipal {
         display: flex;
         flex-flow: row nowrap;
         align-content: center;
@@ -82,12 +80,10 @@ header{
                 height: 4em;
                 border: 1em double black;
               }
-      
           }
           .registro:hover {
             transform: scale(1.5);
           }
-          
           .carrito {
             padding: 1em;
             margin: 1em;
@@ -96,13 +92,10 @@ header{
                 height: 4em;
                 border: 1em double black;
               }
-              
-              
           }
           .carrito:hover {
             transform:scale(1.5);
           }
-    
       }
   }
   /*/nav/*/
@@ -113,7 +106,6 @@ header{
     justify-content: center;
       margin: auto;
     ul {
-      
          li{
              list-style-type: none;
              padding: 2em;
@@ -135,7 +127,6 @@ header{
     grid-template-columns: 80%;
     justify-content: center;
     align-content: center;
-
     .metodoPago{
       display: flex;
       flex-flow: row wrap;
@@ -143,12 +134,9 @@ header{
       justify-content: center;
       align-items: center;
       margin-bottom: 5em;
-      
-        img {
-           
+        img {           
           height: 10em;
-          width: 13em;
-      
+          width: 13em;     
             border: 0.125em solid black;
           }
         h2 {
@@ -157,8 +145,7 @@ header{
           margin-bottom:2em;
             text-align: justify;
           }
-      }
-  
+      }  
       .contacto {
         display: flex;
         flex-flow: row wrap;
@@ -204,8 +191,7 @@ header{
               height: 8vh;
               border: 0.5em double black;
               }
-            } 
-          
+            }           
         }
           }
         }
@@ -215,8 +201,7 @@ header{
   background-color: beige;
   justify-items: center;
   flex-direction: column;
-  justify-content: center;
-  
+  justify-content: center; 
   .ubicacionC{
     display: flex;
    flex-direction: column;
@@ -227,15 +212,13 @@ header{
     text-align: justify;
     font-weight:bolder ;
     font-size: 0.85em;
-  }
-  
+  }  
          h1{
           display: flex;
           text-align: center;
           font-size: 2em;
           font-weight: bolder ;
-        }
-   
+        }   
   }
 }
   /*/declaro area en grilla /*/
@@ -265,7 +248,6 @@ header{
     display: flex;
     flex-direction: column;
   }
-
   @media (min-width:580px) {
     .AllIndex {
       align-items: stretch;
@@ -314,8 +296,6 @@ header{
             font-size:3em;
           }
       }
-      
-
     .tituloMenuprincipal {
         display: flex;
         flex-flow: row nowrap;
@@ -330,13 +310,11 @@ header{
                 width: 4em;
                 height: 4em;
                 border: 1em double black;
-              }
-            
+              }           
           }
           .registro:hover {
             transform: scale(1.5);
           }
-          
           .carrito {
             padding: 1em;
             margin: 1em;
@@ -344,14 +322,11 @@ header{
                 width: 4em;
                 height: 4em;
                 border: 1em double black;
-              }
-              
-              
+              }                           
           }
           carrito:hover {
             transform: scale(1.5);
           }
-    
       }
   }
   /*/nav/*/
@@ -362,7 +337,6 @@ header{
     justify-content: center;
       margin: auto;
     ul {
-      
          li{
              list-style-type: none;
              padding: 2em;
@@ -384,7 +358,6 @@ header{
     grid-template-columns: 80%;
     justify-content: center;
     align-content: center;
-
     .metodoPago{
       display: flex;
       flex-flow: row wrap;
@@ -392,9 +365,7 @@ header{
       justify-content: center;
       align-items: center;
       margin-bottom: 5em;
-      
         img {
-           
           height: 10em;
           width: 13em;
       
@@ -407,7 +378,6 @@ header{
             text-align: justify;
           }
       }
-  
       .contacto {
         display: flex;
         flex-flow: row wrap;
@@ -420,7 +390,6 @@ header{
           margin-bottom: 0.5rem;
           font-size: calc(1.275rem + .3vw);
           line-height: inherit;
-
         }
       }
   }
@@ -456,7 +425,6 @@ header{
               border: 0.5em double black;
               }
             } 
-          
         }
           }
         }
@@ -467,9 +435,7 @@ header{
   justify-items: center;
   flex-direction: column;
   justify-content: center;
-  
   .ubicacionC{
-
     display: flex;
    flex-direction: column;
    justify-content: center;
@@ -479,14 +445,12 @@ header{
     text-align: justify;
     font-weight:bolder ;
   }
-   
          h1{
           display: flex;
           text-align: center;
           font-size: 2em;
           font-weight: bolder ;
         }
-   
   }
 }
   }
@@ -506,8 +470,6 @@ header{
                       "redes redes "
                       " footer footer" ;
   }
-
-
   .CarruselMain{
       display:flex;
       flex-direction: column;
@@ -515,11 +477,8 @@ header{
       .carousel-item{
         width: 100vh;
         height: auto;
-      }
-  
+      } 
   }
-
-
   body {
     text-align: center;
     font-family: "Poppins", sans-serif;
@@ -556,8 +515,6 @@ header {
     padding: 2em;
     margin-bottom: 1em;
     justify-content: center;
-
-
     .cabecera {
         display: flex;
     
@@ -576,9 +533,7 @@ header {
             font-size: 3em;
           }
       }
-
-  }
-  
+  } 
   /*/ index/*/
   section.menuPricipal {
     display: flex;
@@ -598,8 +553,6 @@ header {
             font-size: 5em;
           }
       }
-      
-
     .tituloMenuprincipal {
         display: flex;
         flex-flow: row nowrap;
@@ -614,8 +567,7 @@ header {
               width: 5em;
               height: 5em;
               border: 1em double black;
-            }
-            
+            }          
           }
           .registro:hover {
             transform: scale(1.5);
@@ -628,9 +580,7 @@ header {
                 width: 5em;
                 height: 5em;
                 border: 1em double black;
-              }
-              
-              
+              }            
           }
           carrito:hover {
             transform: scale(1.5);
@@ -710,7 +660,6 @@ header {
         }
       }
   }
-  
   /*/redes/*/
   section.redes{
     display:flex;
